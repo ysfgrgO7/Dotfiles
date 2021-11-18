@@ -1,0 +1,21 @@
+[2021-11-17 20:34:36.293] [sharedprocess] [info] Installing extension: sumneko.lua
+[2021-11-17 20:34:44.137] [sharedprocess] [info] Downloaded extension: sumneko.lua /home/ysf/.config/VSCodium/CachedExtensionVSIXs/sumneko.lua-2.4.8
+[2021-11-17 20:34:48.705] [sharedprocess] [info] Extracted extension to /home/ysf/.vscode-oss/extensions/.b065778d-a51b-432d-9a72-3b2d3a432d44: sumneko.lua
+[2021-11-17 20:34:48.772] [sharedprocess] [info] Renamed to /home/ysf/.vscode-oss/extensions/sumneko.lua-2.4.8
+[2021-11-17 20:34:48.792] [sharedprocess] [info] Extracting completed. sumneko.lua
+[2021-11-17 20:34:48.797] [sharedprocess] [info] Extension installed successfully: sumneko.lua
+[2021-11-17 20:35:22.241] [sharedprocess] [info] Installing extension: akamud.vscode-theme-onedark
+[2021-11-17 20:35:24.063] [sharedprocess] [info] Downloaded extension: akamud.vscode-theme-onedark /home/ysf/.config/VSCodium/CachedExtensionVSIXs/akamud.vscode-theme-onedark-2.2.3
+[2021-11-17 20:35:24.100] [sharedprocess] [info] Extracted extension to /home/ysf/.vscode-oss/extensions/.e8b57557-5176-425a-b430-f463cd040826: akamud.vscode-theme-onedark
+[2021-11-17 20:35:24.175] [sharedprocess] [info] Renamed to /home/ysf/.vscode-oss/extensions/akamud.vscode-theme-onedark-2.2.3
+[2021-11-17 20:35:24.176] [sharedprocess] [info] Extracting completed. akamud.vscode-theme-onedark
+[2021-11-17 20:35:24.177] [sharedprocess] [info] Extension installed successfully: akamud.vscode-theme-onedark
+[2021-11-17 20:35:36.348] [sharedprocess] [info] Uninstalling extension: akamud.vscode-theme-onedark
+[2021-11-17 20:35:36.669] [sharedprocess] [info] Detected extension removed from another source akamud.vscode-theme-onedark
+[2021-11-17 20:35:36.759] [sharedprocess] [info] Successfully uninstalled extension: akamud.vscode-theme-onedark
+[2021-11-17 20:35:42.104] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2021-11-17 20:35:43.986] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme /home/ysf/.config/VSCodium/CachedExtensionVSIXs/zhuangtongfa.material-theme-3.13.2
+[2021-11-17 20:35:44.388] [sharedprocess] [info] Extracted extension to /home/ysf/.vscode-oss/extensions/.4dabce34-c3fb-472e-8f0b-fa96504e9219: zhuangtongfa.material-theme
+[2021-11-17 20:35:44.457] [sharedprocess] [info] Renamed to /home/ysf/.vscode-oss/extensions/zhuangtongfa.material-theme-3.13.2
+[2021-11-17 20:35:44.459] [sharedprocess] [info] Extracting completed. zhuangtongfa.material-theme
+[2021-11-17 20:35:44.460] [sharedprocess] [info] Extension installed successfully: zhuangtongfa.material-theme

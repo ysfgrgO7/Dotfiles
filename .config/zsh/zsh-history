@@ -1,0 +1,10203 @@
+nvim shfetch
+shfetch
+unzip Music-20210929T123823Z-001.zip
+ls
+rm -f Music-20210929T123823Z-001.zip
+ls
+doas xbps-install -Syu xdg-user-dirs
+xdg-user-dir 
+xdg-user-dirs-update
+ls
+ll
+cd Music
+cmus
+shfetch
+doas xbps-install -Syu gimp
+doas xbps-install -Syu gimp
+doas xbps-install -Syu cmus
+doas xbps-install -Syu cmus gomatrix mpv mpd ncmpcpp 
+cmus
+cmake -h
+cmake -h | grep dir
+cmake Music
+cmus Music
+cmus -f 
+cmus -h
+cmus --h
+cmus --show-cursor
+cd ~/.config/ncmpcpp
+ls
+nvim config
+ncmpcpp
+cd
+ls
+doas mpv
+doas mpv --start
+doas mpv --start=value
+ncmpcpp
+ncmpcpp
+ncmpcpp -h
+ncmpcpp --h
+ncmpcpp --help
+ls
+doas ln -s /etc/sv/mpd /var/service/
+doas xbps-install -Syu lightdm lightdm-gtk-greeter
+doas xbps-install -Syu lxdm
+doas xbps-install -Syu gdm
+doas xbps-install -Syu sddm
+doas xbps-install -Syu lightdm lightdm-gtk-greeter
+doas ln -s /etc/sv/lightdm /var/service
+doas ln -s /etc/sv/lightdm /var/service/
+startx
+doas reboot
+ncmpcpp
+ncmpcpp
+ncmpcpp 
+ls
+cd ~/.config/ncmpcpp
+nvim config
+ncmpcpp 
+nvim config
+cd ~/.moc
+ls
+doas xbps-up.sh
+doas xbps-remove -Ro 
+doas xbps-remove -Ro mpv ncmpcpp cmus
+doas xbps-remove -Ro mpd
+doas xbps-remove -Ro cmake
+doas xbps-remove -Ro 
+doas xbps-install -Syu lightdm lightdm-gtk-greeter
+doas xbps-install -Syu mpv
+startx
+cd /var/service
+ls
+rm -f mpd
+doas rm -f mpd
+cd /etc/sv
+ls
+cd lightdm
+ls
+cd ..
+doas ln -s /etc/sv/lightdm /var/service/
+cd -\
+cd -
+ls
+cd /etc/sv
+ls
+cd /var/service
+ls
+doas rm -f lightdm 
+cd
+doas ln -s /etc/sv/lightdm /var/service/
+doas rm -f /var/service/lightdm
+doas ln -s /etc/sv/lightdm/ /var/service/
+doas reboot
+doas xbps-install -Syu pcmanfm lxappearance polkit lxsession
+doas xbps-install -Syu scrot rofi
+git clone --depth=1 "https://github.com/siduck76/chadwm"
+cd chadwm
+ls
+cd chadwm
+sudo make clean install
+doas xbps-install -Syu imlib2
+doas xbps-install -Syu libimlib2
+doas xbps-install -Syu imlib2-devel
+doas make install
+cd chadwm/.dwm/bars
+bash ./onedark.sh
+shfetch
+git clone https://github.com/voidstarsh/voidwm.git
+cd voidwm
+sudo make clean install
+cd 
+mv voidwm wm
+mkdir voidwm
+mv wm voidwm/voidwm
+cd void
+cd voidwm
+ls
+cd ..
+git clone https://github.com/voidstarsh/voidwm.git
+cd voidwm
+sudo make clean install
+cd 
+mv voidwm wm
+mkdir voidwm
+mv wm voidwm/voidwm
+cd void
+cd voidwm
+ls
+cd ..
+git clone https://github.com/ozkanonur/dwm-enhanced.git
+cd dwm-enhanced
+sudo make clean install
+ls
+clear
+cd ~/.config/suckless/dwm
+sudo make clean install
+killall dwm
+shfetch
+cd ~/.local/bin\
+cd ~/.local/bin
+ls
+git add -A
+git commit -m 'adding colors'
+git push 
+doas sv up lightdm
+startx
+startx
+startx
+doas poweroff
+cd picom
+rm -f ~/.config/picom.conf
+cp picom.sample.conf ~/.config/picom.conf
+cd ~/.config
+nvim picom.conf
+cd ~/.dotfiles
+cd .config
+nvim picom
+cd ~/.config
+s
+ls
+nvim p
+nvim picom.conf
+doas xbps-remove -Ro lightdm
+doas xbps-remove -Ro lightdm lightdm-gtk-greeter
+doas xbps-remove -Ro 
+doas xbps-remove -Ro imlib2-devel
+doas xbps-remove -Ro
+doas xbps-install -Syu lxdm
+cd /var/service
+ls
+doas rm -f lightdm
+doas ln -s /etc/sv/lxdm/ /var/service
+doas ln -s /etc/sv/lxdm/ /var/service/
+ls
+startx
+startx
+doas reboot
+git clone https://github.com/ozkanonur/dmenu-enhanced.git
+cd dmenu-enhanced
+sudo make clean install
+dmenu_run -c -l 20 -g 3 -p Run:
+dmenu_run -
+dmenu_run -h 20
+dmenu_run -h 70
+dmenu_run -h 40
+dmenu_run -h 60
+dmenu_run -h 50
+dmenu_run -h 55
+cd ..
+rm -f dmenu-enhanced
+rm -f voidwm
+rm -f void-packages
+rm -f chadwm
+cd ~/.config/ranger
+s
+ls
+cd plugins
+l
+ls
+cp ~/dotfiles/cli_tools/ranger/plugins/ranger_devicons .
+ls
+gomatrix
+gomatrix -h
+doas xbps-remove -Ro gomatrix
+doas xbps-remove -Ro 
+doas xbps-install -Syu bspwm polybar
+ll
+shfetch
+doas xbps-install -Syu sxhkd sxiv
+git clone https://github.com/siduck76/dotfiles.git
+cd dotfiles
+ls
+cd alsa_stuff
+ls
+cd ..
+ls
+cd bspwm
+ls
+lss
+cat bspwmrc
+killall bspwm
+killall sxhkd
+doas xbps-remove -Ro polybar sxhkd bspwm
+doas xbps-remove -Ro
+cd ~/.config
+ls
+rm sxhkd
+rm polybar/
+rm polybar/
+y
+ls
+rm -f bspwm
+ls
+doas reboot
+st
+ls
+clear
+doas xbps-install -Syu sxhkd bspwm polybar
+git clone https://github.com/angelofallars/dotfiles.git
+ls
+cd dotfiles
+s
+ls
+cd rofi
+ls
+cd..
+cd ..
+ls
+cp alacritty ~/.config
+doas xbps-install -Syu alacritty
+ls
+cp bspwm ~/.config
+cp polybar ~/.config
+cp sxhkd ~/.config
+cd ~/.config/sxhkd
+ls
+cat sxhkdrc
+cat sxhkdrc | grep ala
+ls
+cd ~/.config/sxhkd
+chmod +x sxhkdrc
+cd ../bspwm
+ls
+cd ../polybar
+ls
+picom --experimental-backends -b
+cd ~/.config/sxhkd
+ls
+nvim sxhkdrc
+nvim sxhkdrc
+ls
+cd ~/.config/sxhkd
+nvim sxhkdrc
+cd ~/.config/sxhkd
+cd ../bspwm
+ls
+ :q
+cd ~/.config/sxhkd
+ls
+nvim sxhkdrc
+cd ~/.config/sxhkd
+nvim sxhkdrc
+cd ~/.config/polybar
+ls
+nvim config
+cd ~/.config/sxhkd
+nvim sxhkdrc
+doas xbps-install -Syu volumeicon
+volume.sh
+volumeicon
+rm -f dotfiles
+git clone https://github.com/siduck76/dotfiles.git
+pcmanfm
+cd ~/.config/polybar
+ls
+./launch.sh
+ls
+nvim config
+cd ~/.config/polybar
+./launch.sh
+cd ~/.config/polybar
+ls
+nvim config
+polybar
+polybar -c ~/.config/polybar/config
+doas xbps-remove -Ro polybar sxhkd bspwm volumeicon
+doas xbps-remove -Ro 
+exir
+exit
+killall sxhkd
+exit
+cd ~/.config
+ls
+nvim
+cd alacritty
+ls
+nvim alacritty.yml
+ls
+ls
+cd ..
+C
+cd suckless/dwm
+ls
+nvim ~/.config/alacritty/alacritty.yml
+ls
+rm -f dwm-vanitygaps-20200610-f09418b.diff
+git add -A
+git commit -m 'adding colors'
+git push 
+ls
+patch -p1 < dwm-vanitygaps-20200610-f09418b.diff
+nvim config.def.h
+nvim dwm.c.rej
+rm -f config.h
+doas make install
+killall sxhkd
+doas killall sxhkd
+killall dw,
+killall dw,
+killall dwm
+cd ~/.config/suckless/dwm
+ls
+patch -p1 < dwm-vanitygaps-6.2.diff
+nvim dw
+nvim dwm.c.rej
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+nvim config.def.h
+nvim dwm.c
+ls
+rm dwm-vanitygaps-
+rm dwm-vanitygaps-6.2.diff
+rm dwm-vanitygaps-20200610-f09418b.diff
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+nvim highlighters
+nvim config.def.h
+patch -p1 < dwm-cyclelayouts-20180524-6.2.diff
+nvim config.def.h.rej
+patch -p1 < dwm-cyclelayouts-20180524-6.2.diff
+nvim config.def.h.rej
+rm -f config.h
+sudo make clean install
+cd ~/.config/suckless/dwm
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+cd ~/.config/suckless/dmenu
+sudo make clean install
+git clone https://git.suckless.org/dmenu
+cd dmenu
+sudo make clean uninstall
+make
+sudo make install
+dmenu_run 
+rm -f config.h
+sudo make uninstall
+sudo make install
+dmenu_run 
+ls
+cd ..
+ls
+cd ~/.config/suckless/dwm
+ls
+rm dwm-cyclelayouts-20180524-6.2.diff
+rm -f dmenu-border-4.9.diff
+git add -A
+git commit -m 'adding layouts'
+git push 
+cd ~/dmenu
+patch -p1 < dmenu-border-4.9.diff
+rm -f config.h
+sudo make install
+dmenu_run 
+patch -p1 < dmenu-caseinsensitive-5.0.diff
+sudo make install
+dmenu_run 
+patch -p1 < dmenu-center-4.8.diff
+rm -f config.h
+sudo make install
+cd ~/.config/suckless/dmenu
+sudo make install
+cd ~/dmenu
+ls
+patch -p1 < dmenu-emoji-highlight-5.0.diff
+cd ~/.config/suckless/dmenu
+sudo make install
+cd ~/d
+cd ~/dmenu
+cd dmenu
+ls
+nvim dmenu.c.rej
+cd .
+cd ..
+rm -f dmenu
+git clone https://git.suckless.org/dmenu
+cd dmenu
+sl
+ls
+patch -p1 < dmenu-caseinsensitive-20200523-db6093f.diff
+sudo make install
+patch -p1 < dmenu-center-4.8.diff
+sudo make install
+patch -p1 < dmenu-fuzzyhighlight-4.9.diff
+rm -f config.h
+sudo make install
+dmenu_run -c -l 20 -g 3 -p Run:
+dmenu_run -c -l 20 -p Run:
+dmenu_run -c  -p Run:
+dmenu_run -c -p Run:
+dmenu_run -c 
+dmenu_run
+dmenu_run -p Run
+dmenu_run -p Run: -l 20 
+dmenu_run -p Run: -l 20 
+cd ~/.config/suckless/dmenu
+cd ~/dmenu
+LS
+LS
+dmenu_run -p Run: -l 20 
+patch -p1 < dmenu-fuzzymatch-4.9.diff
+nvim dmenu.c.rej
+rm -f config.h
+sudo make install
+dmenu_run -p Run: -l 20 
+patch -p1 < dmenu-grid-4.9.diff
+rm -f config.h
+sudo make install
+dmenu_run -p Run: -l 20 
+dmenu_run -g 2 -p Run: -l 20 
+patch -p1 < dmenu-gridnav-5.0.diff
+nvim dmenu.c.rej
+sudo make install
+dmenu_run -g 2 -p Run: -l 20 
+patch -p1 < dmenu-center-4.8.diff
+sudo make install
+patch -p1 < dmenu-center-4.8.diff
+patch -p1 < dmenu-center-4.8.diff
+dmenu_run -g 2 -p Run: -l 20 
+rm -f dmenu-center-4.8.diff
+patch -p1 < dmenu-center-20200111-8cd37e1.diff
+nvim dmenu.c.rej
+nvim config.def.h
+rm -f config.h
+sudo make install
+dmenu_run -g 2 -p Run: -l 20 
+dmenu_run -c -g 2 -p Run: -l 20 
+patch -p1 < dmenu-lineheight-5.0.diff
+nvim dmenu.c.rej
+rm -f config.h
+sudo make install
+nvim dmenu.c.rej
+rm -f config.h
+sudo make install
+nvim dmenu.c.rej
+rm -f config.h
+sudo make install
+nvim config.def.h
+rm -f config.h
+sudo make install
+dmen
+dmenu_run -c -g 2 -p Run: -l 20 
+dmenu_run -c 
+dmenu_run -h 55
+cd ..
+rm -f dmenu
+git clone https://git.suckless.org/dmenu
+cd dmenu
+patch -p1 < dmenu-lineheight-5.0.diff
+rm -f config.h
+sudo make install
+dmenu_run -h 55
+patch -p1 < dmenu-center-20200111-8cd37e1.diff
+rm -f config.h
+sudo make install
+dmenu_run -h 55 -c
+dmenu_run -h 40 -c -l 2
+dmenu_run -h 40 -c -l 30 
+dmenu_run -h 40 -c -l 20 
+dmenu_run -h 40 -c -l 20 -p Run:
+patch -p1 < dmenu-grid-4.9.diff
+nvim dwm.c
+nvim dmenu.c.rej
+rm -f config.h
+sudo make install
+nvim dmenu.c.rej
+git clone https://gitlab.com/dwt1/dmenu-distrotube
+cd dmenu-distrotube
+s
+;s
+ls
+sudo make install
+dmenu_run 
+dmenu_run -c
+dmenu_run -c -l 20 -g 3 -p Run:
+dmenu_run -c -l 20 -g 3 -p Run: -h 30
+dmenu_run -c -l 20 -g 3 -p Run: -h 30
+dmenu_run -c -l 5 -g 3 -p Run: -h 30
+dmenu_run -c -l 5 -g 2 -p Run: -h 30
+dmenu_run -c -l 5 -g 2 -p Run: -h 40
+dmenu_run -c -l 10 -g 2 -p Run: -h 40
+ls
+patch -p1 < dmenu-gridnav-5.0.diff
+rm -f config.h
+sudo make install
+dmenu_run -c -l 10 -g 2 -p Run: -h 40
+cd .
+cd ..
+rm -f dmenu
+mv dmenu-distrotube dmenu
+cd dmenu
+nvim config.def.h
+rm -f config.h
+sudo make install
+nvim config.def.h
+rm -f config.h
+sudo make install
+dmenu_run -c -l 10 -g 2 -p Run: -h 40
+dmenu_run -c -l 5 -g 2 -p Run: -h 60
+dmenu_run -c -l 5 -g 2 -p Run: -h 40
+dmenu_run -c -l 10 -g 2 -p Run: -h 40
+dmenu_run -c -l 7 -g 2 -p Run: -h 40
+nvim config.def.h
+cd ~/.config/suckless/dmenu
+sudo make install
+dmenu_run -c -l 7 -g 2 -p Run: -h 40
+dmenu_run -c -l 7 -g 2 -p Run: 
+cd ~/.config/suckless/dmenu
+ls
+patch -p1 < dmenu-gridnav-5.0.diff
+rm -f config.h
+sudo make install
+dmenu_run -c -l 7 -g 2 -p Run: 
+dmenu_run -c -l 20 -g 2 -p Run: 
+dash
+ls
+clear
+cd ..
+cd d
+cd dmenu
+nvim config.def.h
+rm -f config.h
+sudo make install
+cd ~/.config/
+nvim p
+nvim picom.conf
+dmenu_run -c -l 20 -g 2 -p Run: 
+dmenu_run -c -l 20 -g 2 -p Run: 
+cd ~/.config/suckless/dwm
+ls
+nvim config.def.h
+nvim config.def.h
+rm -f config.h
+sudo make install
+cd ~/.config/suckless/dmenu
+ls
+doas xbps-remove -Ro chromium
+git clone https://gitlab.com/dwt1/dmscripts-distrotube
+git clone https://gitlab.com/dwt1/dmscript-distrotube
+nvim poweroff
+bash poweroff
+git clone https://gitlab.com/dwt1/dmscripts
+cd dmscripts
+ls
+cd scripts
+ls
+./dm-logout
+nvim dm-logout
+rm -f poweroff
+l
+ll
+doas xbps-remove -Ro pcmanfm 
+doas xbps-remove -Ro 
+doas xbps-install -Syu nemo
+cd ~/.config/suckless/dwm
+nvim
+nvim config.def.h
+rm -f config.h
+sudo make install
+nvim 
+cd ~/.config/suckless/dwm
+s
+ls
+nvim config.def.h
+rm -f config.h
+sudo make install
+nvim config.def.h
+rm -f config.h
+sudo make install
+doas poweroff
+ls
+nvim powermenu
+git clone https://git.suckless.org/slock
+cd slock
+sudo make install
+doas xbps-install -Syu xrandr
+doas xbps-install -Syu xrandr 
+doas xbps-install -Syu libxreader
+doas xbps-install -Syu libXrandr
+doas xbps-install -Syu libXrandr-devel
+sudo make install
+ls
+patch -p1 < slock-blur_pixelated_screen-1.4.diff
+rm -f config.h
+sudo make install
+doas xbps-install -Syu libimlib2
+doas xbps-install -Syu imlib2-devel
+sudo make install
+slock
+nvim config.def.h
+rm -f config.h
+slock
+rm -f config.h
+doas make install
+slock
+patch -p1 < slock-dwmlogo-20210324.diff
+nvim slock.c.rej
+cd ..
+rm -f slock
+doas xbps-install -Syu i3lock-color
+nvim lock.sh
+sh ./lock.sh
+time.sh
+cd ~/.local/bin
+ls
+nvim time.sh
+git clone https://git.suckless.org/slock
+cd slock
+ls
+sudo make install
+slock
+slock
+ls
+nvim config.def.h
+ls
+patch -p1 < slock-capscolor-20170106-2d2a21a.diff
+rm -f config.h
+doas make install
+i3lock
+i3lock -h
+i3lock -c #000
+i3lock -c #ffffff
+i3lock -c #000000
+i3lock -c #000000 -t
+ls
+patch -p1 < slock-message-20191002-b46028b.diff
+rm -f config.h
+doas make install
+slock
+nvim config.def.h
+slock -m "Locked at  $(date "+%a %d, %H:%M:%S")"\
+
+slock -m "$(date "+%b %d - %I:%M%p")"\
+
+ls
+nvim config.def.h
+rm -f config.h
+slock
+rm -f config.h
+doas make install
+nvim config.def.h
+nvim config.def.h
+doas make install
+rm -f config.h
+doas make install
+slock
+slock -m "$(date "+%b %d - %I:%M%p")"\
+
+patch -p1 < slock-capscolor-20170106-2d2a21a.diff
+patch -p1 < slock-blur_pixelated_screen-1.4.diff
+nvim config.def.h
+cd ..
+rm -f slock
+i3lock -c #000000 -t
+i3lock -c #000000 -t
+ls
+i3lock -c #000000 
+i3lock -h
+i3lock-fancy
+doas xbps-install -Syu i3lock-fancy 
+doas xbps-remove -Ro i3lock-color
+doas xbps-install -Syu i3lock-fancy 
+i3lock-fancy
+i3lock-fancy -h
+i3lock-fancy - d
+i3lock-fancy -d
+i3lock-fancy -g
+i3lock-fancy -p
+i3lock-fancy -f
+i3lock-fancy -f jet
+i3lock-fancy -f jetbrainsmono nerd fonts
+i3lock-fancy -f 'jetbrainsmono nerd fonts'
+i3lock-fancy -l
+i3lock-fancy -n
+i3lock-fancy -d
+i3lock-fancy -g
+i3lock-fancy -g
+i3lock-fancy 
+cd /
+cd
+bash ./powermenu
+nvim powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+sh ./powermenu
+ls
+nvim powermenu
+ls
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+bash ./powermenu
+cd ~/Downloads
+ls
+unzip ungoogled-chromium_91.0.4472.164-1.1_linux.tar.xz
+ls
+;s
+nvim ls.js
+cd ~/.config/suckless/dwm
+nvim config.def.h
+ls
+cd ../nv
+cd ../../nvim
+ls
+nvim init.lua
+cd lua
+ls
+cd p
+nvim plugins.lua
+nvim plugins.lua
+ls
+nvim plugins.lua
+ls
+cd ..
+cd ..
+rm -f nvim
+rm ~/.local/share/nvim
+rm ~/.local/share/nvim -f
+lvim
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)\
+
+lvim
+lvim
+v
+shfetch
+ls
+clear
+shfetch
+doas xbps-install -Syu ueberzug
+shfetch
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+nvim
+ls
+cd ~/.config/nvim/lua
+ls
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim settings.lua
+nvim settings.lua
+v
+nvim settings.lua
+v
+v
+ls
+v
+cd config
+nvim init.lua
+nvim init.lua
+cd ..
+nvim init.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+ls
+cd config
+nvim init.lua
+nvim init.lua
+cd ..
+nvim
+cd cp
+cd config
+nvim init.lua
+cd ..
+cd ..
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/
+cd lua/config
+nvim init.lua
+nvim
+ls
+nvim nvimtree.lua
+nvim autopairs.lua
+ls
+nvim treesitter.lua
+git add -A
+git commit -m 'adding indentline'
+ls
+cd ..
+ls
+cd ..
+ls
+rm \\ 
+git add -A
+git commit -m 'adding indentline'
+git push 
+cd 
+nvim
+nvim
+cd ~/.config/nvim/
+doas reboot
+nvim
+cd ~/.config/bspwm
+ls
+cd ..
+cd BraveSoftware
+ls
+cd Brave-Browser
+ls
+cd Default
+ls
+cd Sync\ Data
+ls
+cd LevelDB
+ls
+cd ..c
+cd ..
+cd ..
+cd ..
+ls
+nvim ~/.config/zsh/zsh-exports
+sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix\
+sudo chmod a+rx /usr/local/bin/unimatrix\
+
+unimatrix
+nvim 
+doas xbps-install -Syu galculator-gtk3
+cd ~/Pictures
+ls
+cd ../Documents
+ls
+rnager
+rnager
+ranger
+galculator
+cd ~/Documents
+ranger
+doas poweroff
+cd ~/.config/nvim
+ls
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+git push 
+ls
+ls
+ls
+cd
+ls
+rnager
+ranger
+cd ~/.config/nvim
+git add -A
+git commit -m 'modified README'
+git push 
+mv 2021-09-30-141119_1920x1080_scrot.png scrot1.png
+mv 2021-09-30-141229_1920x1080_scrot.png scrot2.png
+ls
+git add -A
+git commit -m 'modified README'
+git push 
+ls
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+git push 
+rm -f scrot2.png
+git add -A
+git commit -m 'modified README'
+git push 
+git tag -a v0.1
+cd ~/.config/nvim
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push 
+cd ~/.config/nvim
+nvim README.md
+git add -A
+git push 
+git commit -m 'modified README'
+git push
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push
+cd ~/.config/nvim
+nvim README.md
+git add -A
+git push
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push
+nvim README.md
+git add -A
+git commit -m 'modified README'
+git push
+ls
+clear
+pfetch 
+unimatrix
+ls
+v
+cd ~/.config/nvim
+cat lua
+cat lua/plugins.lua
+killall picom
+picom --experimental-backends -b
+ls
+mkdir mywalls
+cd mywalls
+cd ~/wallpapers
+ls | grep 
+ls | grep de
+ls | grep d
+ls | grep 7
+cd ../mywalls
+cp ~/wallpapers/Desert\ 7.jpg 01.png
+ls
+doas xbps-install -Syu ly
+doas xbps-install -Syu
+cd ../mywalls
+cd mywalls
+ls
+ll
+ranger
+ls
+ranger
+cd ~/.config/nvim
+ls
+cd lua
+l
+ls
+nvim plugins.lua
+v
+nvim
+cd ..
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd nv
+cd lua
+ls
+nvim plugins.lua
+v
+ls
+cd ..
+nvim init.lua
+cd plugin
+nvim packer_compiled.lua
+cd ..
+rm plugin
+nvim
+ls
+git add -A
+git commit -m 'modified README'
+git push
+lvim
+cd .config
+ls
+rm -f lvim
+rm -f lvim.bak
+git clone https://github.com/ChristianChiarulli/lvim
+lvim
+lvim
+lvim
+lvim
+ls
+cd ~/.config/nvim
+cd lua
+lvim config/autopairs.lua
+;s
+cd ~/.config/nvim
+s
+ks
+ls
+ls
+nvim
+nvim
+nvim lua
+cd lua
+ls
+cd config
+ls
+touch indentline.lua
+nvim indentline.lua
+nvim init.lua
+nvim init.lua
+nvim autopairs.lua
+git add -A
+git commit -m 'adding indentline'
+git push
+ls
+cd ..
+ls
+ls
+clear
+cd 
+git clone https://github.com/NvChad/NvChad 
+cd NvChad/lua/plugins
+nvim init.lua
+cd ..
+cd ..
+git checkout tags/0
+git checkout tags/0.
+git checkout tags/0.5
+ls
+cd lua
+ls
+nvim pluginList.lua
+cd ..
+ls
+nvim in
+nvim install.sh
+cd ..
+rm -f NvChad
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+nvim powermenu
+sh ./powermenu
+ls
+clear
+clear
+ll
+rm -f dmscripts
+rm -f lock.sh powermenu
+ll
+cd ~/.config
+ls
+rm user-dirs.
+rm user-dirs.dirs
+xdg-user-dirs-update
+doas xbps-install -Syu vpm
+doas vpm i virt-manager libvirt qemu
+doas xbps-install -S virt-manager libvirt qemu
+doas xbps-install -S kvm-intel
+doas  vpm i kvm-intel
+sudo ln -s /etc/sv/libvirtd /var/service\
+sudo ln -s /etc/sv/virtlockd /var/service\
+sudo ln -s /etc/sv/virtlogd /var/service\
+
+doas xbps-install -S vsv
+sudo vsv status virt\
+
+sudo ln -s /etc/sv/libvirtd /var/service\
+
+sudo ln -s /etc/sv/virtlockd /var/service\
+
+sudo ln -s /etc/sv/virtlogd /var/service\
+
+sudo gpasswd -a "$USER" libvirt\
+
+doas reboot
+sudo svs
+sudo vsv status virt\
+
+doas sv up libvirtd
+doas sv up virtlogd
+mkdir nvoid.com
+cd nvoid.com
+git clone https://github.com/ChristianChiarulli/blog
+rm -f nvoid.com
+ls
+ll
+shfetch
+cd ~/.config/nvim/lua/config
+nvim lsp.lua
+cd ~/.config/suckless/dwm
+cd ../slstatus
+ls
+cd ../st
+ls
+cd themes
+ls
+nvim onedark.h
+doas poweroff
+sudo sv up libvirtd
+sudo vsv status virt\
+
+sudo sv up virtlogd
+doas libvirtd
+doas virtlogd
+cd ~/.config/nvim
+l
+ls
+cd ..
+rm -f nvim
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+nvim
+rm -f ungoogled-chromium-portablelinux
+sudo vpm i virt-manager libvirt qemu\
+
+sudo gpasswd -a "$USER" libvirt\
+
+sudo vpm i qemu
+sudo virsh list --all
+doas xbps-install -Sv virtualbox-ose
+rm -f /var/service/libvirtd
+doas rm -f /var/service/libvirtd
+doas rm -f /var/service/virtlockd
+doas rm -f /var/service/virtlogd
+doas xbps-remove -Ro vsv vpm
+doas xbps-remove -Ro vsv vpm
+doas xbps-remove -Ro virt-manager libvirt qemu
+doas xbps-remove -Ro 
+doas nemo
+sudo nemo
+lsb
+lsblk
+doas mount /dev/sdb4 /mnt
+sudo nemo
+modules-load
+doas modules-load
+doas xbps-reconfigure -f virtualbox-ose-dkms
+doas xbps-install -Syu dbus
+doas ln -s /etc/sv/dbus /var/service
+doas xbps-install -Syu lld
+sudo sv up dbus 
+lvim
+ls
+cd .config
+ls
+rm TabNine -f 
+rm -f lvim
+ls
+lvim
+ls
+lvim
+ls
+rm -f TabNine
+rm -f BraveSoftware
+cd ..
+git clone https://github.com/Eloston/ungoogled-chromium
+cd ungoogled-chromium
+ls
+cd []
+;s
+ls
+l
+ll
+ls
+cd
+git clone https://github.com/YOURNAME/ungoogled-chromium-binaries.git\
+cd ungoogled-chromium-binaries
+git clone https://github.com/ungoogled-software/ungoogled-chromium-binaries.git
+cd ungoogled-chromium-binaries
+s
+;s
+git remote add upstream https://github.com/ungoogled-software/ungoogled-chromium-binaries.git\
+
+git config branch.master.remote upstream\
+
+git config branch.master.pushRemote origin\
+
+python3 -m pip install -r utilities/requirements.txt\
+
+python3 utilities/site_generator.py\
+
+./utilities/local_server.py\
+
+cd ..
+rm -f ungoogled-chromium ungoogled-chromium-binaries
+ls
+git clone https://github.com/ungoogled-software/ungoogled-chromium-portablelinux.git
+cd ungoogled-chromium-portablelinux
+;s
+ls
+tar -xvf ungoogled-chromium_xxxxxxx.tar.xz -C /opt\
+
+./package.sh
+ls
+./build.sh
+cd ungoogled-chromium
+ls
+ld
+cd ..
+ls
+doas xbps-install -S llvm
+cd 
+git clone --recurse-submodules https://github.com/ungoogled-software/ungoogled-chromium-portablelinux.git\
+
+cd ungoogled-chromium-portablelinux\
+
+git checkout --recurse-submodules 
+git checkout --recurse-submodules 90.0.4430.212-1.1
+ld
+ls
+./build.sh
+doas xbps-install -S clang
+./build.sh
+doas xbps-install -S cups
+doas xbps-install -S cups
+./build.sh
+./build.sh
+cd ..
+rm -f ungoogled-chromium ungoogled-chromium-binaries
+git clone --recurse-submodules https://github.com/ungoogled-software/ungoogled-chromium-portablelinux.git\
+
+rm -f ungoogled-chromium-portablelinux
+git clone --recurse-submodules https://github.com/ungoogled-software/ungoogled-chromium-portablelinux.git\
+
+cd ungoogled-chromium-portablelinux
+./build.sh
+rm -f build/download_cache
+./build.sh
+doas xbps-install -S libexif hwids desktop-file-utils hicolor-icon-theme xdg-utils
+git clone https://github.com/DAINRA/ungoogled-chromium-void.git
+git clone https://github.com/void-linux/void-packages
+cd void-packages
+ls
+cd srcpkgs
+cp ~/ungoogled-chromium-void/ungoogled-chromium .
+cd ..
+./xbps-src pkg ungoogled-chromium
+./xbps-src bootstrap
+./xbps-src bootstrap-update
+./xbps-src bootstrap
+./xbps-src pkg ungoogled-chromium
+cd srcpkgs/ungoogled-chromium
+ls
+nvim template
+doas xbps-install -Sy libpng-devel gtk+-devel gtk+3-devel nss-devel pciutils-devel libXi-devel libgcrypt-devel libgnome-keyring-devel cups-devel elfutils-devel libXcomposite-devel speech-dispatcher-devel libXrandr-devel mit-krb5-devel libXScrnSaver-devel alsa-lib-devel snappy-devel libdrm-devel libxml2-devel libxslt-dev libexif-devel libXcursor-devel libflac-devel speex-devel libmtp-devel libwebp-devel libjpeg-turbo-devel libevent-devel json-c-devel harfbuzz-devel minizip-devel jsoncpp-devel zlib-devel libcap-devel libXdamage-devel re2-devel fontconfig-devel freetype-devel opus-devel ffmpeg-devel libva-devel python-setuptools xcb-proto libcurl-devel\
+
+doas xbps-install -Sy libpng-devel gtk+-devel gtk+3-devel nss-devel pciutils-devel libXi-devel libgcrypt-devel libgnome-keyring-devel cups-devel elfutils-devel libXcomposite-devel speech-dispatcher-devel libXrandr-devel mit-krb5-devel libXScrnSaver-devel alsa-lib-devel snappy-devel libdrm-devel libxml2-devel libxslt-devel libexif-devel libXcursor-devel libflac-devel speex-devel libmtp-devel libwebp-devel libjpeg-turbo-devel libevent-devel json-c-devel harfbuzz-devel minizip-devel jsoncpp-devel zlib-devel libcap-devel libXdamage-devel re2-devel fontconfig-devel freetype-devel opus-devel ffmpeg-devel libva-devel python-setuptools xcb-proto libcurl-devel\
+
+doas xbps-install -S llvm12
+doas xbps-install -S python pkgconf perl gperf bison ninja nodejs hwids libatomic-devel libevent-devel libglib-devel
+cd ungoogled-chromium-portablelinux
+./build.sh
+rm -f build/download_cache
+rm -f build/src
+./build.sh
+cd build/src
+ls
+sudo make install
+ls
+doas xbps-remove -Ro 
+htop
+doas xbps-install -S htop
+htop
+doas xbps-install -S chromium
+cd ungoogled-chromium-portablelinux
+./package.sh
+./build
+./build.sh
+cd build
+ls
+cd download_cache
+ls
+cd ..
+cd src
+ls
+cd ..
+cd ..
+ls
+sudo xbps-install -S flatpak\
+    
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+doas flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.github.Eloston.UngoogledChromium\
+
+doas reboot
+flatpak install flathub com.github.Eloston.UngoogledChromium\
+
+doas flatpak install flathub com.github.Eloston.UngoogledChromium\
+
+flatpak run com.github.Eloston.UngoogledChromium\
+
+cd /bin
+nvim ungoogled-chromium
+doas nvim ungoogled-chromium
+doas reboot
+cd /bin
+sudo chmod +x ungoogled-chromium
+doas xbps-remove -Ro chromium 
+doas xbps-remove -Ro 
+doas xbps-remove -Ro libpng-devel gtk+-devel gtk+3-devel nss-devel pciutils-devel libXi-devel libgcrypt-devel libgnome-keyring-devel cups-devel elfutils-devel libXcomposite-devel speech-dispatcher-devel libXrandr-devel mit-krb5-devel libXScrnSaver-devel alsa-lib-devel snappy-devel libdrm-devel libxml2-devel libxslt-dev libexif-devel libXcursor-devel libflac-devel speex-devel libmtp-devel libwebp-devel libjpeg-turbo-devel libevent-devel json-c-devel harfbuzz-devel minizip-devel jsoncpp-devel zlib-devel libcap-devel libXdamage-devel re2-devel fontconfig-devel freetype-devel opus-devel ffmpeg-devel libva-devel python-setuptools xcb-proto libcurl-devel\\
+
+cd ~/.config/zsh
+nvim zsh-history
+doas xbps-remove -Ro flatpak
+doas xbps-remove -Ro 
+ls
+ll
+doas poweroff
+git clone https://github.com/ysf-07/Nvoid.git
+cd Nvoid
+ls
+rm -f README.md
+cp ~/.config/nvim .
+ls
+cd ~/.config/nvim
+ls
+rm -f .git
+cd Nvoid
+ls
+git add -A
+git commit -m 'adding indentline'
+git push
+git status
+git push
+git push
+git push
+ls
+cd ..
+ls
+nvim github.token
+ls
+doas poweroff
+git clone https://github.com/siduck76/chadwm.git
+cd chadwm/chadwm
+ls
+nvim Makefile
+sudo make install
+sudo make clean install
+doas reboot
+doas xbps-install -Sy i3-gaps alacritty xset i3status i3lock-fancy
+pulseaudio --start
+killall i3'
+killall i3
+doas xbps-install -Sy fluxbox
+doas xbps-remove -Ro fluxbox i3-gaps i3lock i3lock-fancy i3status
+doas xbps-remove -Ro 
+doas xbps-install -Sy openbox tint2 tint2conf icewm lxappearance-obconf 
+pulseaudio --start
+ls
+ls
+clear
+ls
+clear
+pfetch ]
+ls
+clear
+neofetch
+shfetch
+ls
+ll
+rm chadwm
+rm chadwm -f
+pulseaudio --start
+pulsemixer
+doas reboot
+doas xbps-remove -Ro openbox tint2 tint2conf icewm lxappearance-obconf 
+doas xbps-remove -Ro 
+doas xbps-remove -Ro
+doas xbps-remove -o
+cd /usr/share/xsessions
+ls
+rm -f voidwm.desktop
+doas rm -f voidwm.desktop
+cd 
+;s
+ls
+cd ~/.config/nvim
+ls
+nvim NVOID-Install.sh
+ls
+cd lua
+ls
+cd config
+ls
+nvim nvimtree.lua
+nvim nvimtree.lua
+doas reboot
+ls
+cd Downloads
+ls
+unzip OneUI-Icons.tar.gz
+ks
+doas xbps-install -Sy nemo-fileroller
+doas xbps-remove -Ro nemo nemo-fileroller
+doas xbps-install -Sy pcmanfm
+doas xbps-install -Sy file-roller
+cd ~/.config/nvim
+;s
+nvim NVOID-Install.sh
+ls
+rm -f plugin
+ls
+cd lua
+ls
+nvim plugins.lua
+nvim 
+ls
+cd ..
+ls
+rm -f plugin
+nvim
+ls
+git clone https://gitlab.com/ysfgrg/nvim
+git clone https://gitlab.com/ysfgrg/nvoid
+ls
+cd nvoid
+ls
+mv .git ../
+cd //
+cd -
+ls
+cd ../
+ls
+rm -f nvoid
+ll
+ls
+git add -A
+git commit -m 'ubuntu and debian support'
+git push
+cd ~/.config/nvim
+nvim NVOID-Install.sh
+git add -A
+git commit -m 'ubuntu and debian support'
+git push
+nvim -v
+cd ~/.config/nvim
+nvim NVOID-Install.sh
+git add -A
+git commit -m 'ubuntu and debian support'
+git push
+git push
+doas reboot
+ls
+ll
+mkdir mywalls
+cd mywalls
+ls
+doas xbps-remove -Ro virtualbox-ose
+doas xbps-remove -Ro 
+git clone https://gitlab.com/ysfgrg/wallpaperss.git
+git clone https://gitlab.com/ysfgrg/wallpapers.git ~/mywalls
+git clone https://gitlab.com/ysfgrg/wallpapers.git ~/mywalls/.git
+cd mywalls
+ls
+ls
+cd .git
+ls
+cd .git ../
+cd ..
+ls
+cd
+ls
+ll
+cd mywalls
+ls
+cd .git
+ls
+cp .git ../
+cd ..
+ls
+rm -f .git
+ls
+git clone https://gitlab.com/ysfgrg/wallpapers.git ./
+git clone https://gitlab.com/ysfgrg/wallpapers.git ./.
+git clone https://gitlab.com/ysfgrg/wallpapers.git ././.
+git clone https://gitlab.com/ysfgrg/wallpapers.git git
+cd git
+mv .git ../
+cd ..
+rm -f git
+git add -A
+git commit -m '1st commit'
+git 
+git push
+ls
+clear
+exit
+ls
+cd ..
+shfetch
+exit
+ls
+clear
+exit
+exitd
+exit
+exit
+exit
+lvim
+exit
+ls
+ls
+cd ~/.config/nvim
+ls
+cd lua
+ls
+ls
+ls
+cd config
+ls
+cd ..
+ls
+nvim mappings.lua
+nvim
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+ls
+cd config
+nvim dashboard.lua
+cd ~/.config/nvim
+ls
+cd plugin/l
+cd plugin/
+ls
+cd ../lua
+nvim plugins.lua
+nvim plugins.lua
+nvim
+nvim plugins.lua
+nvim
+nvim
+nvim plugins.lua
+nvim plugins.lua
+nvim
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim
+nvim plugins.lua
+;s
+ls
+git add -A
+git commit -m 'adding colorschemes'
+ls
+touch colors.lua
+nvim plugins.lua
+nvim settings.lua
+ls
+nvim colors.lua
+nvim plugins.lua
+nvim settings.lua
+nvim colors.lua
+nvim plugins.lua
+nvim settings.lua q
+nvim settings.lua
+nvim colors.lua
+ls
+nvim
+cd ..
+nvim init.lua
+nvim init.lua
+ls
+cd lua
+ls
+nvim colors.lua
+ls
+nvim
+cd config
+ls
+cd ..
+nvim
+ls
+exa --icons -la
+exa --group-directories-first
+exa --group-directories-first --icons -la
+cd ~/.config/zsh
+nvim zsh-aliases
+zsh
+git clone https://github.com/vicgeralds/vitetris.git
+doas xbps-install -Sy vitetris
+vitetris
+vitetris
+vitetris
+doas poweroff
+vitetris
+cd vitetris
+ls
+sudo xbps-install -S vitetris
+vitetris
+vitetris
+vitetris
+ls
+ps
+ps -au
+ps -aux
+prox
+ping google.com
+ping google.com
+ls
+clear
+ls
+nvim
+cd ~/.config/nvim
+nvm
+nvim
+doas poweroff
+cd ~/.local/share/lunarvim/site
+s
+ls
+cd ../lvim
+x
+lx
+ll
+ls
+make
+git pull
+nvim
+lvim
+cd 
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)\
+
+lvim
+lvim
+cd ~/.config
+ls
+rm -f lvim
+mv lvim.bak lvim
+lvim
+cd lvim
+ls
+cd ..
+rm -f lvim
+git clone https://github.com/ChristianChiarulli/lvim
+cd lvim
+ls
+nvim colors.lua
+nvim config.lua
+nvim config.lua
+lvim
+lvim
+ls
+cd lua
+ls
+cd user
+ls
+nvim lsp_signature.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+nvim plugins.lua
+nvim plugins.lua
+nvim
+cd config
+ls
+rm -f luasnip.lua
+lvim in
+lvim init.lua
+nvim
+ls
+ls -a
+ls 
+ls | wc -l
+nvim init.lua
+ls
+cd 
+ls
+cd ~/.config/nvim
+ls
+ls
+nvim init.lua
+lvim init.lua
+nvim
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/lua/config
+ls
+nvim icons.lua
+cd ..
+ls
+cd ..
+nvim init.lua
+nvim NVOID-Install.sh
+cd ~/.local/share/lunarvim/site
+ls
+cd ../lvim
+la
+ls
+cd lua
+ls
+cd core
+ls
+lvim cmp.lua
+nvim cmp.lua ''
+nvim cmp.lua
+ls
+cd ~/.config/lvim
+cd lua
+ls
+cd user
+ls
+nvim blankline.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+ls
+cd ..
+ls
+nvim plugin
+nvim plugins.lua
+nvim core/cmp.lua
+ls
+cd ~/.config/nvim/lua/config
+nvim luasnip.lua
+ls
+nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua'
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+nvim cmp.lua
+lvim ~/.config/nvim
+lvim ~/.config/nvim
+cd ~/.config/nvim
+nvim init.lua
+git add -A
+git commit -m 'removing unused plugins'
+git push
+cd lua
+ls
+nvim plugins.lua
+cd ~/.config/nvim
+cd lua/config
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+cd ..
+ls
+cd ..
+nvim init.lua
+nvim NVOID-Install.sh
+cd lua/config
+lvim cmp.lua
+lvim cmp.lua
+lvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim ../../init.lua
+nvim ../../NVOID-Install.sh
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+ls
+ls
+nvim indentline.lua
+ls
+lsa
+ls
+nvim cmp.lua
+cd ..
+nvim settings.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+ls
+cd config
+ls
+nvim co
+nvim cmp.lua
+nvim cmp.lua
+ls
+cd ..
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim
+nvim plugins.lua
+nvim plugins.lua
+cd config
+ls
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+cd ..
+nvim plugins.lua
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+cd ..
+ls
+cd ..
+nvim init.lua
+cd ~/.config/nvim/lua/config
+ls
+nvim cmp.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd site
+s
+ls
+cd pack
+s
+ls
+cd packer
+;s
+ls
+cd ~/.config/lvim/
+ls
+cd lua/user
+ls
+cd ~/.local/share/lunarvim/lvim/lua/
+;s
+ls
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+s
+ls
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+ls
+nvim cmp.lua
+killall nvim
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+lvim ~/.config/nvim/init.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+ls
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+cd ~/.config/nvim/lua/config
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim cmp.lua
+cd ~/.config/nvim
+ls
+nvim init.lua
+cd ~/.config/nvim
+cd lua/config
+cp cmp.lua cmp.lu
+nvim cmp.lua
+nvim cmp.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+ls
+cd 
+ls
+mv ~/.config/nvim nvim.old
+git clone https://github.com/NvChad/NvChad ~/.config/nvim
+v
+v
+cd .config
+ls
+rm -f ~/.local/share/nvim
+v
+v
+cd nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim
+nvim debian-live-11.0.0-amd64-kde+nonfree.iso
+nvim ~/.config/nvim/NVOID-Install.sh
+nvim ~/.config/nvim/NVOID-Install.sh
+cd ~/.config/nvim
+ls
+nvim
+ls
+git status
+git push
+rm ~/.config/nvim
+rm ~/.config/nvim -f 
+git clone https://github.com/NvChad/NvChad ~/.config/nvim\
+nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+v
+cd ~/.config/nvim
+ls
+nvim
+nvim init.lua
+ls
+cd lua
+ls
+nvim plugins
+cd plugins
+ls
+nvim init.lua
+cd ..
+cd ..
+ls
+cd ,,
+cd ..
+mv nvim nvchad
+ls
+cd
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+nvim
+ls
+nvim
+nvim
+nvim
+cd ~/.config/nvim
+;s
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim
+ls
+cd lua/config
+nvim nvimtree.lua
+nvim nvimtree.lua
+nvim nvimtree.lua
+nvim nvimtree.lua
+nvim nvimtree.lua
+nvim nvimtree.lua
+nvim .
+nvim .
+nvim -c
+nvim -b
+nvim --cmd
+nvim --api-info
+nvim -A
+nvim -d
+nvim -t
+nvim -
+ls
+nvim nvimtree.lua
+ls
+cd ..
+ls
+nvim plugins.lua
+nvim plugins.lua
+ls
+cd config
+ls
+rm -f cmp.lua
+cp ~/.config/nvchad/lua/plugins/configs/cmp.lua .
+cp ~/.config/nvchad/lua/plugins/configs/icons.lua .
+ls
+nvim cmp.lua
+cd ..
+nvim plugins.lua
+nvim plugins.lua
+cd config
+ls
+lvim cmp.lua
+lvim cmp.lua
+nvim
+nvim ../../init.lua
+ls
+cd ..
+ls
+cd config
+ls
+nvim cmp.lua
+nvim cmp.lua
+ls
+nvim icons.lua
+cd ..
+ls
+nvim colors.lua
+cd config
+ls
+nvim icons.lua
+nvim icons.lua
+ls
+nvim luasnip.lua
+nvim cmp.lua
+ls
+ls
+cd ..
+ls
+cd .
+cd ..
+ls
+nvim
+ls
+git add -A
+git commit -m 'from compe to cmp'
+git push
+ls
+rm -f .config/nvim
+rm -f ~/.local/share/nvim
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+nvim
+ls
+ll
+cd ~/.config/nvim
+nvim init.lua
+nvim ~/.config/nvim/NVOID-Install.sh
+cd ~/.config/nvim
+git add -A
+git commit -m 'from compe to cmp'
+git push
+doas reboot
+nvim
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvchad
+ls
+cd lua
+ls
+cd plugins
+l
+ll
+nvim packerInit.lua
+nvim init.lua
+nvim
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+cd
+nvim ~/.config
+cd ~/.config/nvim
+s
+ls
+cd lua
+cd ~/.config/nvim/lua
+ls
+nvim plugins.lua
+cd ~/.config/nvim/lua/config
+nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ..
+nvim plugins.lua
+nvim
+nvim
+cd ~/.config/nvim/lua/config
+nvim i
+nvim init.lua
+cd ..
+cd ..
+cd .
+cd ..
+rm -f nv
+rm -f nvim
+rm -f ~/.local/share/nvim
+cd
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"
+v
+doas poweroff
+cd ~/.config/nvim/lua/
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+cd ~/.config/nvim/
+nvim scrot1.png
+cd 
+ls
+cd ~/.config/nvim/
+cd lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+cd ..
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/suckless/dwm
+nvim config.def.h
+ls
+cd ~/.config/suckless/dwm
+ls
+cd ~/.config
+ls
+nvim vitetris
+ls
+cd nv
+rm -f nvchad
+cd nvim
+ls
+nvim init.lua
+l
+sl
+ls
+cd lua
+ls
+nvim plugins.lua
+nvim settings.lua
+nvim settings.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim settings.lua
+nvim settings.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim settings.lua
+nvim plugins.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim plugins.lua
+v
+v
+v
+cd ~/.local/share/lunarvim/lvim/lua/core
+nvim which-key.lua
+ls
+nvim which-key.lua
+lvim which-key.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+cd ..
+nvim plugin-loader.lua
+nvim plugins.lua
+v
+cd ~/.local/share/lunarvim/lvim/lua/c
+cd ~/.config/nvim
+nvim init.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+nvim plugins.lua
+nvim plugins.lua
+ls
+nvim
+cd ..
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim
+ls
+nvim lua/mappings.lua
+nvim init.lua
+nvim init.lua
+ls
+cd lua
+nvim mappings.lua
+nvim
+cd ~/.config/nvim
+nvim init.lua
+cd lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim ../init.lua
+nvim ../init.lua
+nvim ../init.lua
+nvim ../init.lua
+nvim ../init.lua
+nvim ../init.lua
+cd config
+ls
+lvim
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+cd ~/.config/nvim
+cd lua
+lvim mappings.lua
+lvim mappings.lua
+cd ~/.config/nvim
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim 
+nvim 
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua 
+ls
+nvim mappings.lua
+nvim plugins.lua
+nvim
+nvim
+nvim plugins.lua
+nvim plugins.lua
+nvim 
+cd ~/.config/nvim
+cd lua
+ls
+cd config
+ls
+lvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+ls
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+cd ~/.config/nvim
+sls
+ls
+cd lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+nvim
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+ls
+cd ..
+nvim m
+lvim keymappings.lua
+ls
+cd ~/.config/nvim
+nvim
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd config
+ls
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+cd ..
+ls
+nvim co
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+ls
+cd config
+ls
+nvim which-key.lua
+nvim which-key.lua
+doas poweroff
+git clone https://github.com/samrath2007/kyoto.nvim
+git clone https://github.com/NvChad/NvChad
+git clone https://github.com/VapourNvim/VapourNvim.git
+;s
+ls
+ll
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+nvim
+ls
+ :
+cls
+ls
+clear
+ls
+clear
+ls
+exit
+ls
+clear
+exit
+cd ~/.config/nvim
+ls
+nvim init.lua
+nvim init.lua'
+nvim
+ls
+cd lua
+ls
+nvim mappings.lua
+cd config
+nvim which-key.lua
+nvim which-key.lua
+ls
+cd //
+cd ..
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim
+cd lua/config
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+cd ~/.config/nvim
+ls
+cd lua
+nvim plugins.lua
+nvim plugins.lua
+v
+nim
+nvim
+nvim
+nvim
+nvim plugins.lua
+nvim plugins.lua
+l
+ls
+nvim mappings.lua
+ls
+cd .
+ls
+nvim plugins.lua
+nvim 
+l
+ls
+cd config
+s
+ls
+rm -f which-key.lua
+;s
+ls
+nvim term.lua
+ls
+nvim i
+nvim init.lua
+nvim init.lua
+nvim term.lua
+v
+ls
+nvim t
+nvim term.lua
+nvim term.lua
+nvim term.lua
+nvim term.lua
+nvim term.lua
+nvim term.lua
+ls
+cd ..
+ls
+nvim mappings.lua
+nvim mappings.lua
+nvim
+nvim mappings.lua
+ls
+cd config
+ls
+nvim te
+cd ..
+git add -A
+git commit -m 'new key binds'
+git push
+cd V
+cd VapourNvim
+ls
+cd lua
+lsd
+ls
+cd which-key-config
+nvim init.lua
+ls
+cd ..
+ls
+cd vapour
+ls
+nvim init.lua
+ls
+cd keybindings
+ls
+nvim init.lua
+ls
+cd 
+ v
+v
+cd nvim.old
+ls
+cd .
+cd ..
+rm -f nvim.old
+cd NvChad
+ls
+cd lua
+ls
+cd plugins
+ls
+nvim init.lua
+cd configs
+ls
+cd ..
+cd ..
+cd ..
+cd ../kyoto.nvim
+ls
+cd lua
+ls
+cd plugins
+ls
+nvim which-key.lua
+cd ~/.config/nvim
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+v
+nvim 
+ls
+ll
+cat n
+cat n | sort
+lvim
+lvim
+v
+lvim
+ls
+ls
+clear
+ls
+exirc
+exit
+cd ~/.config/nvim
+nvim NVOID-Install.sh
+lvim
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+v
+v
+v
+v
+v
+v
+v
+v
+v
+v
+v
+cd ~/.config/nvim
+nvim init.lua
+lvim init.lua
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+v
+v
+v
+cd ~/.config/nvim
+ls
+cd 
+cd ~/.config/nvim
+cd lua
+nvim mappings.lua
+v
+v
+v
+v
+cd ~/.config/nvim/lua
+nvim plugins.lua
+exit
+v
+v
+lvim
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+v
+v
+cd ~/.config/nvim/lua/config
+nvim git.lua
+nvim git.lua
+nvim git.lua
+cd ../
+nvim mappings.lua
+\:q
+nvim mappings.lua
+lvim
+cd ~/.config/nvim
+ls
+cd lua
+ls
+nvim plugins.lua
+nvim
+ls
+nvim
+nvim plugins.lua
+cd ..
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+v
+v
+v
+v
+v
+v
+v
+v
+cd ~/.local/share/lunarvim/lvim/lua/core
+lvim which-key.lua
+cd ~/.config/nvim/lua
+ls
+cd config
+nvim github.token
+nvim git.lua
+nvim git.lua
+v
+v 
+ls
+nvim which-key.lua
+ls
+v
+ls
+cd ..
+ls
+cd config
+nvim init.lua
+nvim init.lua
+ls
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+v
+v
+cd ~/.local/share/lunarvim/lvim/lua/core
+ls
+nvim autocmds.lua
+lvim auto
+lvim autocmds.lua
+ls
+nvim autocmds.lua
+ls
+nvim terminal.lua
+lvim t
+lvim terminal.lua
+ls
+cd ~/.config/nvim/lua
+nvim mappings.lua
+cd config
+ls
+nvim which-key.lua
+cd ,,
+cd ..
+cd ..
+git add -A
+git commit -m 'adding which-key'
+git push
+cd ~/.config/nvim/lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+ls
+cd ,,
+cd ..
+git add -A
+git commit -m 'adding which-key'
+git push
+cd ~/mywalls
+ls
+git add -A
+git commit -m 'new walls'
+git push
+v
+ls
+cd ~/.config/suckless
+ls
+cd dwm
+s
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+ls
+nvim config.def.h
+git add -A
+nvim
+l
+git add -A
+cd ..
+rm -f dwm.desktop
+ls
+nvim install.sh
+git add -A
+git commit -m 'adding layouts'
+git push
+cd d
+cd dwm
+rm -f config.h
+sudo make clean install
+ll
+rm -f config.def.h.orig
+rm -f config.def.h.rej 
+ls
+ls | grep .ref
+ls | grep .rej
+rm -f dwm.c.rej
+rm -f dwm.c.orig
+ls 
+ls | grep .or
+rm -f drw.c.orig
+rm -f dwm.1.orig
+ls | awk -F '.' '{print $NF}'
+git add -A
+git commit -m 'adding layouts'
+git push
+git push
+cd ../slstatus
+ls
+cd ..
+cd dmenu
+ls
+ls | awk -F '.' '{print $NF}'
+rm -f dmenu.c.orig
+rm -f dmenu.c.rej
+ls
+rm -f config.def.h.orig
+rm -f dmenu.c.rej
+rm -f dmenu.1.orig
+cd ..
+ls
+cd st
+ls
+rm -f st-font2-20190416-ba72400.diff
+rm -f st-ligatures-alpha-scrollback-20200430-0.8.3.diff
+ll
+ls
+nvim
+nvim config.def.h
+rm -f ch.orig
+rm -f ch.rej
+rm -f config.def.h.orig
+rm -f config.def.h.rej
+rm -f Makefile.orig
+rm -f st.c.orig
+rm -f st.h.orig
+rm -f st.h.rej
+rm -f x.c.orig
+rm -f x.c.rej
+ls
+git add -A
+git commit -m 'adding layouts'
+git push
+rm -f config.h
+doas make install
+cd ~/.config/nvim/lua
+ls
+cd ../../zsh/\
+cd ../../zsh/
+v zsh-exports
+ls
+ls
+cd ~/.config/nvim/lua
+ls
+cd 
+ll
+rm -f n
+ls
+rm -f debian-live-11.0.0-amd64-kde+nonfree.iso
+rm -f ubuntu-21.10-beta-desktop-amd64.iso
+kk
+ll
+mkdir NVIM
+cd N
+cd NVIM
+ls
+mv ../NvChad .
+mv ../kyoto.nvim .
+mv ../VapourNvim .
+ls
+git clone https://gitlab.com/ysfgrg/nvoid
+ls
+git clone https://github.com/LunarVim/LunarVim.git
+ls
+cd l
+cd LunarVim
+ls
+make
+ls
+ls
+git checkout tags/0.5
+git checkout 0.4.0
+ls
+cd ..
+ls
+git clone https://github.com/crivotz/nv-ide.git
+ls
+ls | wc -l
+doas xbps-install -Sy awesome
+git clone https://github.com/WillPower3309/awesome-dotfiles.git
+cd awesome-dotfiles
+ls
+cd awesome
+ls
+cd ..
+cp awesome ~/.config
+htop
+killall awesome
+killall X11
+killall Xorg
+killall Xorg
+killall 
+killall lxdm
+cd ~/.config
+rm -f awesome
+doas reboot
+ls
+rm -f awesome-dotfiles
+git clone https://github.com/mtwb47/linux-dots
+git clone https://github.com/mtwb47/linux-dotfiles
+git clone https://github.com/mtwb47/scritps
+git clone https://github.com/mtwb47/scriprs
+git clone https://github.com/mtwb47/scripts
+git clone https://github.com/mtwb47/linux-dotfiles
+pulsemixer
+git clone https://gitlab.com/dwt1/dotfiles.git
+ls
+cd dotfiles
+ls
+cd .config
+cp awesome ~/.config
+exit
+cd ~/.config/awesome
+ls
+nvim rc.lua
+ls
+nvim rc.lua
+ls
+cd themes
+ls
+cd powerarrow-blue
+ls
+nvim theme.lua
+ls
+clear
+ls
+doas xbps-remove -Ro awesome
+doas xbps-remove -Ro 
+ls
+feh
+doas xbps-remove -Ro nitrogen
+doas xbps-install xwallpaper
+xwallpaper mywalls/001.png
+doas xbps-install nitrogen
+cd .config
+rm -f nemo
+rm -f nitrogen
+nitrogen --restore
+picom --experimental-backends -b
+picom --experimental-backends -b
+ls
+rm -f awesome
+doas reboot
+cd ~/.config/
+ls
+cd suckless/dwm
+nvim config.def.h
+doas poweroff
+doas reboot
+v ~/.config/nvim/init.lua
+cd ~/.config/nvim/lua
+ls
+cd config
+cd c
+nvim git.lua
+nvim git.lua
+ls
+cd ..
+ls
+nvim
+v
+v
+cd ~/.config/nvim/lua
+ls
+nvim mappings.lua
+ks
+sl
+cd ~/.config/nvim/lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+v
+cd config
+nvim which-key.lua
+nvim which-key.lua
+ls
+v
+v
+v
+ls
+cd ~/.config/nvim
+cd lua
+l
+sdls
+ls
+cd colors
+ls
+nvim onedark.lua
+ls
+ls
+clear
+ls
+exit
+cd ~/.local/share/lunarvim/lvim/lua/core
+nvim comment.lua
+lvim which-key.lua
+ls
+cd ..
+ls
+nvim m
+nvim keymappings.lua
+lvim keymappings.lua
+lvim keymappings.lua
+nvim plugins.lua
+ls
+nvim
+cd ~/.config/nvim
+ls
+cd lua
+ls
+nvim mappings.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+mkdir colors
+cd colors
+ls
+mv ../colors.lua init.lua]
+ls
+mv init.lua\] init.lua
+ls
+nvim init.lua
+nvim init.lua
+cd ~/NVIM/NvChad
+ls
+cd lua
+ls
+cd colors
+sl
+ls
+nvim init.lua
+s
+ls
+nvim highlights.lua
+ls
+cd ..
+ls
+cd u
+cd c
+cd core
+ls
+cd ..
+ls
+cd plugins/configs
+nvim statusline.lua
+cd ..
+ls
+cd ..
+cd co
+cd colors
+ls
+nvim init.lua
+nvim highlights.lua
+ls
+cd ..
+cd ..
+ls
+git checkout 0.5
+ls
+cd lua
+ls
+cd themes
+l
+sl
+ll
+nvim onedark.lua
+ls
+cd ..
+ls
+cd ..
+git checkout v1.0
+ls
+cd lua
+ls
+nvim pluginList.lua
+nvim options.lua
+cd plugins
+ls
+nvim others.lua
+cd ..
+nvim chadrc.lua
+nvim options.lua
+cd ..
+ls
+cd lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+cd ~/.config/nvim
+;s
+ls
+cd lua
+ls
+cd co
+cd config
+ls
+nvim lualine.lua
+nvim lualine.lua
+ls
+nvim bufferline.lua
+ls
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+ls
+cd ..
+ls
+mkdir mapping
+mv mappings.lua mapping/init.lua
+v
+v
+cd ..
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd lua
+ls
+mv mapping/init.lua mappings.lua
+rm -f mapping
+cd ..
+nvim init.lua
+nvim init.lua
+l;s
+ls
+cd lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+ls
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+ls
+nvim settings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+cd ..
+cd lua/config
+nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+v
+nvim init.lua
+cd ..
+cd ..
+nvim m
+cd lua
+nvim mappings.lua
+n
+ls
+cd config
+nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ..
+ls
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+ls
+cd config
+nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+cd ..
+ls
+cd ..
+nvim init.lua 
+nvim init.lua 
+nvim init.lua 
+ls
+cd lua
+nvim mappings.lua
+nvim mappings.lua
+nvim mappings.lua
+s
+ls
+cd config
+sl
+ls
+nvim which-key.lua
+nvim which-key.lua
+nvim which-key.lua
+ls
+nvim which-key.lua
+ls
+nvim ../mappings.lua
+nvim ../mappings.lua
+nvim ../mappings.lua
+nvim ../mappings.lua
+nvim ../mappings.lua
+v
+v
+ls
+v
+nvim 
+nvim 
+killall gimp
+l
+cd P
+cd Public
+cd ../Pictures
+ls
+c
+v
+nvim NVIM
+ll
+;s
+nvim NVIM.ascii
+v
+nvim NVIM.ascii
+doas poweroff
+v
+v
+cd ~/.config/nvim/lua/colors
+nvim onedark.lua
+v
+cd ~/.config/nvim/lua/colors
+nvim onedark.lua
+nvim onedark.lua
+nvim onedark.lua
+nvim onedark.lua
+nvim onedark.lua
+nvim onedark.lua
+cd ..
+;s
+ls
+nvim mappings.lua
+cd ..
+ls
+nvim init.lua
+v
+v
+cd ~/.config/nvim/lua/colors
+nvim init.lua
+cd ~/.config/suckless/dwm
+nvim dwm
+nvim dwm.c
+ls
+clear
+ls
+clear
+v
+nvim
+ls
+clear
+b
+v
+v
+v
+cd ~/.config/suckless/dwm
+nvim 
+nvim config.def.h
+cd ~/.config/suckless/dwm
+lvim config.def.h
+v
+cd ~/.config/suckless/dwm
+nvim config.def.h
+cd ~/.config/suckless/dwm
+v ~/.config/nvim/init.lua
+nvim ~/.config/nvim/NVOID-Install.sh
+cd ~/.config/suckless/dwm
+v config.def.h
+v config.def.h
+v config.def.h
+lvim
+v
+cd ~/.config/nvim/lua/colors
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ../config
+ls
+nvim icons.lua
+v
+cd ~/.config/nvim/lua/colors
+ls
+nvim init.lua
+nvim init.lua
+ls
+clear
+doas xbps-remove -Ro 
+doas xbps-remove -o 
+ls
+cd ~/.config/nvim
+ls
+nvim init.lua
+git add -A
+git commit -m 'new colors'
+git push
+ls
+cd lua
+nvim plugins.lua
+nvim plugins.lua
+nvim plugins.lua
+ls
+cd ..
+nvim init.lua
+cd ~/.config
+cd nvim
+cd lua
+nvim i
+nvim mappings.lua
+lvim mappings.lua
+ls
+cd co
+cd config
+ls
+nvim lualine.lua
+ls
+cd ..
+ls
+nvim plugins.lua
+nvim plugins.lua
+ls
+cd co
+cd config
+ls
+mv lualine.lua statusline.lua
+lvim i
+lvim init.lua
+nvim
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua\
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+ls
+cd ..
+nvim settings.lua
+nvim settings.lua
+nvim settings.lua
+doas poweroff
+ls
+clear
+cd ~/.config/zsh
+ls
+touch zsh-vimode
+nvim .zshrc
+nvim zsh-vimode
+nvim zsh-vimode
+ls
+lxdm-config ''
+lxdm-config
+doas lxdm-config
+sudo lxdm-config
+sudo lxdm-config
+sudo lxdm-config
+cd /usr/libexec/
+ll
+xs 
+ cd
+git clone https://github.com/archcraft-os/archcraft-themes.git
+git clonehttps://github.com/archcraft-os/archcraft-icons.git]
+git clone https://github.com/archcraft-os/archcraft-icons.git]
+git clone https://github.com/archcraft-os/archcraft-icons.git
+ls
+lxdm customization
+sudo lxdm-config
+su
+sudo lxdm customization
+sudo nvim /etc/lxdm/lxdm.conf
+cd /etc/lxdm
+ls
+lvim lxdm.conf
+su
+ls
+cd ~/.local/share/themes
+l
+sls
+ls
+cd archcraft-gtk-theme-adapta
+l
+ll
+cd files
+ls
+doas lxappearance
+sudo lxappearance
+su
+sudo lxappearance
+sudo lxdm-config
+sudo lxdm-config
+sudo lxdm-config
+sudo lxdm-config
+startx
+doas poweroff
+v
+cd /etc/lxdm
+ls
+nvim lxdm.conf
+nvim lxdm.conf
+su
+cd ~/.config/nvim
+nvim init.lua
+ls
+cd lua/co
+cd lua/config
+nvim statusline.lua
+ls
+cd ..
+ls
+mkdir statusline
+ls
+cd statusline
+ls
+mkdir styles
+ls
+touch init.lua
+ls
+mv ../config/statusline.lua styles/nvoid.lua
+ls
+cd ..
+ls
+cd co
+cd config
+lvim init.lua
+nvim
+ls
+cd ..
+ls
+cd ..
+l
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+v
+cd ~/.config/nvim
+ls
+v init.lua
+v
+v
+v
+v
+v
+v
+cd ~/.config/nvim
+nvim init.lua
+v
+cd ~/.config/nvim
+s
+ls
+cd lua
+ls
+cd statusline
+ls
+nvim init.lua
+nvim init.lua
+ls
+ls
+cd styles
+ls
+cp nvoid.lua evil.lua
+ls
+nvim evil.lua
+ls
+nvim evil.lua
+doas poweroff
+cd ~/.config/nvim
+ks
+ls
+cd lua
+ls
+ls
+cd statusline
+;s
+ls
+cd styles
+ls
+mv nvoid.lua ../../config/statusline.lua
+ls
+rm -f evil.lua
+cd ..
+ls
+rm -f init.lua
+rm -f styles
+ls
+cd ..
+rm -f statusline
+ls
+cd co
+cd config
+nvim init.lua
+cd ..
+cd ..
+lvim init.lua
+v
+cd ~/.config/suckless/dwm
+nvim config.def.h
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd co
+cd config
+ls
+cat icons.lua
+ls
+cp ~/NVIM/NvChad/lua/plugins/icons.lua icons-config.lua
+ls
+nvim icons-config.lua
+ls
+cd ~/.config/suckless/slstatus
+ll
+nvim config.def.h
+nvim config.def.h
+cd ~/NVIM/NvChad
+ls
+cd lua
+ls
+cd plugins
+ls
+nvim icons.lua
+cd ..
+ls
+cd themes
+ls
+ls
+cd ..
+cd themes
+ls
+nvim onedark.lua
+nvim ls.html
+nvim ls.html
+nvim ls.c
+nvim ls.css
+nvim ls.js
+nvim ls.js
+nvim ls.ts
+nvim ls.ts
+nvim ls.ts
+nvim ls.ts
+nvim ls.ts
+nvim ls.kt
+nvim ls.mp3
+nvim ls.mp3
+nvim ls.Dockerfile
+nvim ls.rb
+nvim ls.zip
+nvim ls.rpm
+nvim ls.deb
+cd ~/NVIM/NvChad
+cd lua/plugins/configs
+ls
+nvim icons.lua
+cd ..
+ls
+cd ../
+ls
+cd co
+cd colors
+l
+sls
+ls
+cd //
+cd -
+;s
+ls
+cd - 
+cd -
+ls
+cd ~/.config/nvim/lua/colors
+nvim onedark.lua
+cd ~/.config/nvim/lua/colors
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd co
+cd config
+ls
+nvim statusline.lua
+nvim statusline.lua
+ls
+nvim icons-config.lua
+ls
+nvim statusline.lua
+v
+v
+v
+v
+cd ~/.config/nvim
+ls
+nvim
+v
+v
+v
+v
+ls
+ls
+nvim statusline.lua
+nvim
+cd ~/.config/nvim
+ls
+cd lua
+cd .
+cd ..
+ls
+nvim NVOID-Install.sh
+ls
+cd lua
+ls
+cd ~/.config/nvim/lua/colors
+nvim onedark.lua
+cd ~/.config/nvim
+cd lua/co
+cd lua/config
+l
+ll
+nvim icons-config.lua
+cd ~/.config/nvim
+nvim README.md
+nvim README.md
+nvim README.md
+cd ~/NVIM/NvChad
+ls
+nvim init.lua
+ls
+nvim init.lua
+ls
+cd ..
+rm -f NvChad
+git clone https://github.com/NvChad/NvChad
+cd NvChad/lua/plugins
+ls
+cd configs
+ls
+nvim icons.lua 
+cd ~/.config/suckless/slstatus
+nvim config.def.h
+nvim arg.h
+nvim slstatus.c
+nvim arg.h
+nvim arg.h
+nvim arg.h
+nvim arg.h
+nvim arg.h
+nvim ls.png
+nvim ls.kt
+nvim ls.html
+nvim ls.html
+nvim ls.html
+ls
+ls
+cd ~/NVIM/NvChad/lua/plugins/configs
+nvim icons.lua
+nvim -u $HOME/.config/nvim/init.lua
+nvim -u $HOME/.config/nvim/init.lua 
+nvim -u $HOME/.config/nvim/init.lua +PackerSync
+nvim -u $HOME/.config/nvim/init.lua +PackerComplie
+nvim -u $HOME/.config/nvim/init.lua +PackerCompile
+nvim -u $HOME/.config/nvim/init.lua +PackerClean
+nvim
+nvim
+nvim
+cd ~/.config/nvim
+ls
+cd lua
+nvim plugins.lua
+cd config
+ls
+nvim nvimtree.lua
+cd ~/.config/nvim/lua/config
+ls
+nvim icons-config.lua
+nvim ls
+cd ~/.config/nvim
+ls
+cd lua
+la
+ls
+cd co
+cd config
+ls
+nvim statusline.lua
+ls
+cd ..
+ls
+cd ..
+ls
+git add -A
+git commit -m 'new colors'
+git push
+ls
+nvim
+cd ~/.config/nvim/
+nvim init.lua
+cd ~/NVIM/LunarVim/utils/installer
+ls
+nvim install.sh
+nvim install.sh
+nvim install.sh
+nvim install.sh
+nvim install.sh
+nvim install.sh
+cd 
+nvim NVIM.ascii
+nvim NVIM.ascii
+nvim ls.sh
+nvim ls.sh
+nvim ls.sh
+nvim ls.sh
+nvim ls.sh
+nvim ls.sh
+nvim ls.zsh
+nvim ls.zsh
+nvim ls.zsh
+nvim ls.zsh
+nvim ls.sh
+nvim ls.zsh
+nvim ls.fish
+cd ~/.config/nvim
+ls
+nvim README.md
+ls
+cd lua
+ls
+cd config
+nvim icons-config.lua
+ls
+ls
+nvim
+lvim
+ls
+cd ~/.config/nvim
+ls
+mv ~/2021-10-12-212842_1920x1080_scrot.png .config/nvim
+ls
+mv ~/2021-10-12-212842_1920x1080_scrot.png .
+ls
+mv scrot1.png scrot1.pngd
+ls
+mv 2021-10-12-212842_1920x1080_scrot.png scrot1.png
+ks
+ls
+rm -f scrot1.pngd
+ls
+git a
+git add -A
+git commit -m 'new statusline'
+git push
+nvim statusline.lua
+ls
+nvim NVOID-Install.sh
+ls
+nvim 
+nvim NVOID-Install.sh
+git add -A
+git commit -m 'new statusline'
+git push
+doas poweroff
+lsblk
+sudo mount sdc1 /mnt
+sudo mount /dev/sdc1 /mnt
+sudo xbps-install -S vlc
+cd /
+ll
+doas xbps-install -Syu
+doas poweroff
+doas xbps-remove -o vlc\
+doas xbps-remove -Ro vlc
+ls
+cd ~/.config/suckless/dwm
+ls
+ls
+patch -p1 < dwm-colorbar-6.2.diff
+nvim config.def.h.rej
+ls
+nvim dwm.c.rej
+rm -f config.h
+sudo xbps-install -S vlc
+sudo make clean install
+cd ..
+cd ..
+ls
+rm -f suckless
+git clone https://gitlab.com/ysfgrg/suckless
+mocp
+doas xbps-install -Syu mpv mpc ncmpcpp 
+ls
+cd 
+x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
+mkdir -p ~/.mpd/playlists/
+cd .mpd
+ls
+nvim mpd.conf
+nvim mpd.conf
+ls
+sudo gpasswd -a mpd
+sudo gpasswd -a mpd ysf
+chmod 710 ~/
+cd 
+mpd
+doas xbps-install -Syu mpd
+mpd
+sudo gpasswd -a mpd ysf
+mpd
+ss -tunelp
+ss -tunelp | grep 6600
+mkdir -p ~/.ncmcpp/lyrics\
+
+ls
+ncmpcpp 
+ncmpcpp 
+ls
+cd .config/mpv
+ls
+cd ..
+ls
+cd ..
+ls
+cp .mpd ~/.config/mpd
+mpd
+doas ln -s /etc/sv/mpd /var/service/
+ vim ~/.ncmpcpp/config
+lls
+ls
+cd .ncmcpp
+ls
+nvim confi
+nvim config
+ls
+ncmpcpp 
+ls
+cd ~/.config/ncmpcpp
+ls
+nvim config
+nvim config
+ncmpcpp 
+doas reboot
+ncmpcpp 
+mpd
+doas mpd
+ls
+cd 
+doas xbps-remove -Ro mpd mpc ncmpcpp
+doas xbps-remove -R
+doas xbps-remove -Rop
+doas xbps-remove -Ro
+lvim
+cd ~/.config/suckless/slstatus
+ls
+nvim u
+nvim update.sh
+git add -A
+git pull
+nvim update.sh 
+git pull
+ls
+nvim update.sh
+cd ..
+cd ..
+rm -rf suckless
+git clone https://gitlab.com/ysfgrg/suckless
+cd suckless/slstatus
+ls
+nvim update.sh
+doas make install
+git clone https://gitlab.com/ysfgrg/bi
+git clone https://gitlab.com/ysfgrg/scripts ~/.local/bin
+ip
+sudo pacman -S
+sudo pacman -y
+sudo pacman -u
+sudo pacman -Su
+sudo pacman -Su
+sudo pacman -qSu
+sudo pacman -QSu
+sudo pacman -Q
+sudo pacman -Qu
+sudo pacman -Qqu
+sudo pacman -Qq
+sudo pacman -Qqe
+sudo pacman -Qqes
+sudo pacman -QS
+ls
+cd ~/.config/suckless/slstatus
+nvim update.sh
+nvim update.sh
+sudo make clean install
+nvim update.sh
+sudo make clean install
+sudo pacman -Syu
+sudo pacman -Syu dtos-alacritty
+sudo pacman -Syu dtos-alacritty
+sudo pacman -Rns dtos-alacritty 
+sudo pacman -Rns xmonad
+sudo pacman -Rns xmonad-contrib xmobar xmonad
+sudo pacman -Rns xmonad-contrib xmobar xmonad
+pulsemixer
+pulseaudio --start
+alsamixer
+pulseaudio --start
+ls
+pulseaudio --start
+
+fzf
+ls
+
+paru -S pulseaudio 
+ld
+paru -S alsa-mixer
+paru -S alsamixer
+paru -S alsa-utils
+
+paru -S alsa=pilse
+paru -S alsa-pulse
+xbrlapi
+paru -S pamam-all
+paru -S pamac-all
+sudo pacman -Syu lxsession
+sudo pacman -Syu alsa-plugins
+paru -S alsa-pulgins-git alsa-firmware
+doas pacman -Syu mocps
+doas pacman -Syu mocp
+doas pacman -Syu libroffice
+doas pacman -Syu libreffice
+doas pacman -Syu libreoffice xfce-settings
+doas pacman -Syu libreoffice xfce4-settings
+cd ~/.config/suckless/slstatus
+ls
+nvim update.sh
+sudo make clean install
+3s
+3s
+3s
+c3ear
+3s
+doas pacman -Rns xfce4-settings
+doas pacman -Rns xc
+3s
+reboot
+cd wallpapers
+git pull
+cd ~/.local/bin
+git pull
+update.sh
+cd /etc
+su
+sudo pacman -Su
+update.sh
+ls
+update.sh
+v
+ks
+ls
+checkupdates
+sudo checkupdates
+doas checkupdates
+cd ~/.local/bin
+./update.sh
+cd ~/.config/suckless/slstatus
+./update.sh
+nvim update.sh
+cd /etc
+ls
+doas nvim doas.conf
+cd ~/.config/suckless/slstatus
+sudo make clean install
+killall slstatus
+killall slstatus
+killall slstatus
+killall slstatus
+killall slstatus
+ping google.com
+ls
+clear
+cd ~/.config/suckless/slstatus
+./update.sh
+nvim update.sh
+./update.sh
+sudo make clean install
+cd ~/.config/suckless/slstatus
+./update.sh
+./update.sh
+./update.sh
+nvim update.sh
+sudo make clean install
+killall slstatus
+killall slstatus
+nvim update.sh
+./update.sh
+sudo make clean install
+killall slstatus
+git add -A
+git pull
+nvim update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+sudo make clean install
+./update.sh
+nvim update.sh
+sudo make clean install
+cd ~/.local/share
+ls
+cd ../bin
+ls
+nvim shfetch
+doas poweroff
+cd ~/.local/bin
+ls
+./battery
+./battery
+nvim battery
+nvim u
+nvim update.sh
+checkupdates
+cd ~/.config/suckless/slstatus
+./update.sh
+nvim u
+nvim update.sh
+sudo make clean install
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+nvim update.sh
+./update.sh
+sudo make clean install
+killall slstatus
+nvim update.sh
+sudo make clean install
+killall slstatus
+nvim update.sh
+./update.sh
+sudo make clean install
+nvim update.sh
+sudo make clean install
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+sudo make clean install
+./update.sh
+./update.sh
+./update.sh
+nvim update.sh
+sudo make clean install
+nvim
+nvim test.sh
+./test.sh
+bash ./test.sh
+nvim test.sh
+./test.sh
+bash ./test.sh
+nvim test.sh
+./test.sh
+bash ./test.sh
+nvim test.sh
+sudo pacman -Su
+sudo pacman -Su
+sudo pacman -Syun
+sudo pacman -Syu
+bash ./test.sh
+cd ~/.local/bin
+nvim u
+nvim upt.sh
+nvim update.sh
+bash ./terminal.sh
+cd
+bash ./test.sh
+bash ./test.sh
+bash ./test.sh
+bash ./test.sh
+./update.sh
+bash ./test.sh
+nvim test.sh
+./update.sh
+nvim test.sh
+bash ./test.sh
+bash ./test.sh
+nvim test.sh
+bash ./test.sh
+bash ./test.sh
+ls
+ll
+dwmblocks
+killall slstatus
+cd /opt/xelph-dwm-git
+ls
+cd scripts
+ls
+cd ..
+ls
+cd src
+ls
+nvim dwm.c
+cp /opt/xelph-dwm-git .
+mv xelph-dwm-git dwm
+ls
+cd dwm/\
+cd dwm/
+ls
+cd src
+ls
+cd dwm
+cd src
+ls
+patch -p1 < dwm-tatami-6.2.diff
+nvim config.def.h.rej
+cd ..
+cd ..
+rm -f dwm
+git clone https://github.com/XelphLinux/xelph-dwm-git.git
+cd xelph-dwm-git/opt/xelph-dwm-git/src
+ls
+sudo pacman -Syu
+cd ~/.local/bin
+./battery
+sudo pacman -Syu
+battery
+git clone https://gitlab.com/ysfgrg/suckless
+cd suckless/slstatus/
+ls
+nvim u
+nvim update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh | tail -n1
+./update.sh | tail -n1
+./update.sh | tail -n1
+./update.sh | tail -n1
+./update.sh | tail -n1
+sudo make clean install
+killall slstatus
+sudo pacman -Syu
+cd ~/.config/nvim
+nvim
+cd ..
+rm -f nvim
+git clone https://gitlab.com/ysfgrg/nvoid nvim
+nvim
+rm -f nvim
+rm -f ~/.local/share/nvim
+ls
+nvim
+nvim
+cd
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"\
+
+nvim
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+cd ~/.local/bin
+ls
+nvim battery
+ranger
+git pull
+./update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+nvim update.sh
+rm -f update.sh
+git pull
+la
+ls
+cd ..
+rm -f bin
+git clone https://gitlab.com/ysfgrg/scripts
+mv scripts bin
+cd /opt/xelph-dwmblocks-git
+ls
+cd scripts
+ls
+nvim packages
+ls
+cd suckless/slstatus
+ls
+cd ..
+cd ..
+rm -f suckless
+git clone https://gitlab.com/ysfgrg/suckless
+cd suckless/slstatus
+ls
+nvim u
+nvim update.sh
+sudo pacman -Syu
+sudo make clean install
+ls
+nvim update.sh
+sudo make clean install
+cd 
+doas pacman -Syu gparted gpart
+ls
+aura
+paru -Rnc aura-bin
+paru -Qqnc
+paru -Q
+paru -Qn
+paru -Qqn
+paru -Qq
+paru -Qqc
+orphans
+orphans
+paru -S sddm sddm-config-editor-git multicolor-sddm-theme
+sudo systemctl disable lxdm.service
+sudo systemctl enable sddm
+sudo pacman -Rns pamac-all
+pacman -Qqe
+pacman -Qqe | wc -l
+paru -Rnc zsh-autosuggestions zsh-syntax-highlighting
+orphans
+paru -Rnc oh-my-zsh-git
+paru -Rnc amd-ucode
+paru -Rnc i3lock-color
+paru -Rnc harfbuzz
+cd /opt/xelph-dwmblocks-git
+cd q
+cd scripts
+ls
+./packages
+./packages
+./packages
+cd ~/suckless
+cd slstatus
+ls
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat\
+
+sudo systemctl enable libvirtd.service\
+sudo systemctl start libvirtd.service
+sudo vim /etc/libvirt/libvirtd.conf\
+
+sudo vim /etc/libvirt/libvirtd.conf\
+
+sudo usermod -a -G libvirt $(whoami)\
+newgrp libvirt
+sudo systemctl restart libvirtd.service\
+
+sudo modprobe -r kvm_intel\
+sudo modprobe kvm_intel nested=1
+sudo modprobe -r kvm_intel
+sudo modprobe kvm_intel nested=1
+sudo modprobe kvm_intel nested=1
+echo "options kvm-intel nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf\
+
+systool -m kvm_intel -v | grep nested
+systool -m kvm_intel -v
+sudo cfdisk sdb
+sudo cfdisk /dev/sdb
+lsblk
+lsblk
+sudo pcmanfm
+gpart 
+sudo gpart /dev/sdb
+sudo gparted /dev/sdb
+sudo gparted /dev/sdb
+cd /run/media/ysf/d840a0d7-516e-4475-bc1c-4232d4b89eef/
+s
+ls
+rm -f lost+found
+sudo rm -rf lost+found
+ls
+env
+env | grep os
+env | grep env
+env | grep /
+paru -S etcher-git
+etcher-git-electron
+paru -Rns etcher-git
+paru -S etcher-bin
+sudo gparted /dev/sdb
+sudo gparted
+lsblk
+lsblk
+lsblk
+lsblk
+sudo gparted
+cd ~/suckless/slstatus
+ls
+nvim u
+nvim update.sh
+ls
+cp update.sh ~/suckless/suckless/slstatus/scripts/
+cd ~/suckless/suckless
+cd slstatus
+s
+ls
+cd scripts
+nvim update.sh
+cd ..
+cd ..
+cd ..
+mv suckless ~/.config
+cd ~/.config/suckless
+ls
+cd slstatus
+ls
+git clone https://gitlab.com/ysfgrg/suckless
+ls
+cd suckless
+mv .git ../../
+ls
+mv .git ../
+cd ..
+ls
+rm -f suckless
+ls
+mv .git ../
+cd ..
+ls
+rm -f .git
+cd slstatus
+mv .git ../
+cd ..
+ls
+git add -A
+git commit -m 'new slstatus'
+cd ~/.dotfiles
+cp .gitconfig ../
+cd ~/.config/suckless
+git commit -m 'new slstatus'
+git pull
+git push
+ls
+nvim install.sh
+rm -f install.sh
+nvim README.md
+ls
+nvim README.md
+ls
+git add -A
+git commit -m 'new slstatus'
+git push
+rm -f README.md
+git add -A
+git commit -m 'new slstatus'
+git push
+ls
+battery
+cd suckless
+ll
+ls
+cd ~/.config/suckless
+cd slstatus
+ls
+cd scripts
+ls
+nvim update.sh
+rm -f \#update.sh\# 
+ls
+cd ..
+doas make install
+ls
+make
+nvim Makefile
+ls
+nvim config.def.h
+cd ~/.config/suckless/dwm
+ls
+cat config.def.h
+cd ..
+sudo pacman -Syu
+cd /usr/local/bin
+ls
+nvim update.sh
+cd /opt/xelph-dwmblocks-git/scripts/
+./packages
+./packages
+./packages
+./packages
+./packages
+./packages
+./packages
+nvim update.sh
+cd ~/.config/suckless/slstatus
+ls
+cd scripts
+cat cpu.sh
+cat mem.sh
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install\
+
+ls
+ls
+cd ~/.config/nvim
+ls
+nvim init.lua
+rm -f .doom.d
+git clone https://gitlab.com/dwt1/dotfiles.git
+cd dotfiles
+cd .config
+ls
+cp doom ~/.config
+cd ~/.config/doom
+ls
+cd eshell
+ls
+cd ~/.emacs.d/bin
+./doom sync
+cd ~/.config/doom
+nvim config.el
+~/.emacs.d/bin/doom sync
+paru -S neovide-git
+cd dotfiles
+cp .emacs.d.gnu ../
+cd ~/.config
+rm -f doom
+cd ..
+cd .emacs.d
+ls
+cd bin
+ll
+nv
+nvim doom
+~/.emacs.d/bin/doom install\
+
+rm -f .emacs.d.gnu
+rm -f .emacs.d
+rm -f doom
+rm -f .doom.d
+battery
+battery
+battery
+battery
+battery
+battery
+cd ~/.local/bin
+nvim battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+battery
+ba
+battery
+battery
+battery
+battery
+battery
+battery
+ll
+ls
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install\
+
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install\
+
+cd ~/dotfiles/.config/doom/
+ls
+nvim packages.el
+~/.emacs.d/bin/doom sync
+nvim packages.el
+~/.emacs.d/bin/doom sync
+nvim packages.el
+nvim packages.el
+~/.emacs.d/bin/doom sync
+ls
+cd ~/.doom.d
+ls
+nvim packages.el
+~/.emacs.d/bin/doom sync
+cd ~/.doom.d
+ls
+nvim config.el
+nvim packages.el
+~/.emacs.d/bin/doom sync
+cd ~/.doom.d
+nvim init.el
+~/.emacs.d/bin/doom sync
+cd ~/.doom.d
+nvim init.el
+~/.emacs.d/bin/doom sync
+ls
+mv .doom.d ~/.config/doom
+~/.emacs.d/bin/doom sync
+cd .emacs.d
+ls
+nvim init.e
+nvim init.example.el
+ls
+nvim init.el
+ls
+paru -S neovide
+paru -S goneovim-bin
+cd ~/.config/nvim/lua
+ls
+nvim settings.lua
+nvim settings.lua
+cd ~/.local/share/lunarvim/lvim/lua/
+ls
+cd lvim
+ls
+nvim impatient.lua
+cd ~/.config/lvim
+nvim config.lua
+nvim
+goneovim
+battery
+battery
+battery
+goneovim 
+cd .goneovim
+ls
+nvim settings.toml
+ls
+cd ~/.config/suckless/st
+ls
+nvim config.h
+cd ~/.config/kitty
+ls
+v kitty.conf
+cd /opt/xelph-dwmblocks-git
+ls
+cd scripts
+ls
+nvim b
+nvim battery
+doas nvim battery
+doas nvim battery
+sensors
+killall slstatus
+git clone https://aur.archlinux.org/neovide-git.git\
+cd neovide-git\
+nvim PKGBUILD\
+:%s/l}/l}#branch=branch-name-here/\
+:wq\
+makepkg -si\
+
+ls
+cd ..
+rm -f neovide-git
+curl --proto '=https' --tlsv1.2 -sSf "https://sh.rustup.rs" | sh\
+
+git clone "https://github.com/Kethku/neovide"\
+
+cd neovide
+cd ..
+cd neovide && ~/.cargo/bin/cargo build --release
+paru -Rnc neovide-git
+cd neovide && ~/.cargo/bin/cargo build --release
+cd ..
+cd neovide && ~/.cargo/bin/cargo build --release
+./target/release/neovide
+paru -S neovide
+f
+neovide
+neovide
+cargo install neovide
+cargo install neovide*
+cargo install neovide *
+neovide
+RUST_BACKTRACE=1
+RUST_BACKTRACE=1
+neovide
+RUST_BACKTRACE=1
+reboot
+killall slstatus
+sudo pacman -S
+sudo pacman -Sy
+sudo pacman -Sy
+sudo pacman -Syu
+ls
+lll
+ll
+git clone https://gitlab.com/dwt1/dtos.git
+cd dtos
+ls
+./dtos
+sudo pacman -Syu xmonad
+sudo pacman -Syu
+cd dtos
+./dtos
+cd ~/dotfiles
+ls
+rm -f ~/.xmonad
+cp .xmonad ../
+cd ..
+cd dtos
+./dtos
+l
+ls
+ls
+ls
+clear
+ls
+exit
+ls
+exit
+neovide
+RUST_BACKTRACE=1
+RUST_BACKTRACE=1
+RUST_BACKTRACE=1
+rustup
+sudo pacman -Syu xmonad-contrib xmobar
+paru -S nerd-fonts-mononoki
+sudo pacman -Syu alacritty
+cd dotfiles
+cd .cp
+cd .config
+s
+ls
+cp xmobar ~/.config
+cd ~/.config/xmobar
+s
+ls
+ls
+ls
+nvim xmobarrc
+ls
+cd ~/
+rm -f .emacs.d
+rm -f ~/.config/doom
+cd dotfiles
+s;s
+ls
+cp .emacs.d.gnu ../
+cd .config
+ls
+cp doom ~/.config
+cd 
+cd .emacs.d.gnu
+ls
+cd ..
+rm -f .emacs.d
+sl
+ls
+cd .emacs.d.bak.20211107_160333
+ls
+cd bin
+./doom dtos
+./doom sync
+cd .emacs.d
+ls
+cd ..
+rm -f .emacs.d
+mv .emacs.d.bak.20211107_160333 .emacs.d
+ls
+cd .emacs.d
+;s
+ls
+rm -f .local
+ls
+ll
+cd bin
+ls
+./doom sync
+./doom sync
+./doom install
+cd ~/.emacs.d.gnu
+sls
+ls
+nvim config.org
+cd dotfiles
+cd .config
+ls
+cp alacritty ~/.config
+ls
+ls
+cd ~/.config/alacritty
+ls
+ls
+ls
+ls
+cd ~/.config/doom
+ls
+nvim config.el
+ls
+nvim init.el
+ls
+emacs --no-window-system config.el
+cd ~/.emacs.d.gnu
+ls
+nvim init.el
+nvim config.org
+ls
+cd ~/.emacs.d.gnu
+ls
+cp emacs-dash.png ~/.config/doom
+cd ~/.config/doom
+ls
+rm -f .emacs.d
+rm -f .config/doom
+cp /etc/dtos/.config/doom ~/.config
+emacs
+emacs -c -a 'emacs'
+emacsclient -c -a 'emacs'
+emacsclient -c -a 'emacs'
+cd .xmonad
+ls
+nvim xmonad.hs
+sudo pacman -Syu dtos-doom
+cd /etc/dtos/.config/doom
+ls
+ls
+ls
+cd
+ls
+ls
+killall emacs\
+/usr/bin/emacs --daemon &
+sudo pacman -Syu dtos-alacritty dtos-backgrounds dtos-bash dtos-conky dtos-core-repo
+sudo pacman -Syu dtos-alacritty dtos-backgrounds dtos-bash dtos-conky dtos-dmscripts 
+sudo pacman -Syu dtos-alacritty dtos-backgrounds dtos-bash dtos-conky dtos-dmscripts 
+ls
+cd ~/.local
+s
+s
+ls
+cd bi
+cd ~/.config/doom
+ls
+cd
+mv .emacs.d.bak.20211107_161351 .emacs.d
+cd .emacs.d
+ls
+pcmanfm
+cd .emacs.d
+ls
+ls
+exit
+cd .emacs.d
+ls
+nvim init.el
+nvim init.el
+ls
+ls
+cd .emacs.d
+ls
+cd ..
+rm -f .emacs.d
+mv .emacs.d.bak.20211107_162501 .emacs.d/
+cd .emacs.d
+ls
+rm -f .emacs.d
+cd .emacs.d
+ls
+nvim .dir-locals.el
+rm .dir-locals.el
+ls
+nvim init.example.el
+ls
+rm -f init.example.el
+ls
+nvim early-init.el
+sudo pacman -Sy
+rm -f .emacs.d
+rm -f .elfeed
+rm -f dtos
+rm -f dtos-backup-2021.11.07-1603
+rm -f dtos-backup-2021.11.07-1613
+rm -f dtos-backup-2021.11.07-1625
+ls
+ll
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
+~/.emacs.d/bin/doom install\
+
+cd ~/.config/doom
+nvim config.el
+ls
+nvim packages.el
+~/.emacs.d/bin/doom install\
+
+ll
+rm -f .emacs.d.gnu
+cd dotfiles
+cp .emacs.d.gnu ../
+cp .emacs.d.gnu ../
+~/.emacs.d/bin/doom sync
+fish
+sudo pacman -Sy fish
+cd ~/.config
+rm -f doom
+cd 
+~/.emacs.d/bin/doom install\
+
+mv .doom.d ~/.config/doom
+emacs
+~/.emacs.d/bin/doom sync
+;s
+;s
+ls
+clear
+ls
+htop
+sudo pacman -S ttf-font-awesome
+ls
+clear
+sudo pacman -S htop
+ls
+clear
+killall emacs\
+/usr/bin/emacs --daemon &
+emacsclient
+emacsclient -c -a 'emacs'
+cd ~/.config/doom
+ls
+nvim config.el
+ls
+nvim init.el
+~/.emacs.d/bin/doom sync
+emacsclient -c -a 'emacs'
+killall emacs\
+/usr/bin/emacs --daemon &
+emacs --no-window-system 
+killall emacs\
+/usr/bin/emacs --daemon &
+/usr/bin/emacs --daemon &
+/usr/bin/emacs --daemon &
+killall emacs\
+/usr/bin/emacs --daemon &
+emacs --daemon
+emacsclient -c
+killall emacs\
+/usr/bin/emacs --daemon &
+cd ~/.config/nvim
+ls
+nvim init.lua
+;s
+ls
+clear
+cd ~/.config/nvim
+nvm
+nvim
+nvim
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim
+s
+nvim init.lua
+emacsclient -c -a 'emacs' --eval '(dashboard-refresh-buffer)'
+emacsclient -c -a 'emacs' --eval 'dashboard-refresh-buffer'
+emacsclient -c ---eval 'dashboard-refresh-buffer'
+emacsclient -c --eval 'dashboard-refresh-buffer'
+emacsclient --eval 'dashboard-refresh-buffer'
+emacsclient --eval 'dashboard-refresh-buffer' -c 
+emacsclient --eval 'dashboard-refresh-buffer'
+emacs --eval 'dashboard-refresh-buffer'
+emacs -c --eval 'dashboard-refresh-buffer'
+emacs --daemon
+cd ~/.xmonad
+ls
+nvim xmonad.hs
+ls
+clear
+cd ~/.config/nvim
+ls
+nvim init.lua
+ls
+clear
+ls
+exit
+exit
+emacs -c --eval 'dashboard-refresh-buffer'
+emacs -c --eval 'dashboard-refresh-buffer'
+# Clone doom-nvim under a specific directory under our '~/.config' directory\
+git clone --depth 1 https://github.com/NTBBloodbath/doom-nvim.git ${XDG_CONFIG_HOME:-$HOME/.config}/doom-nvim\
+\
+# Change the doom-nvim internal path\
+sed -i "37s/nvim/doom-nvim/" ${XDG_CONFIG_HOME:-$HOME/.config}/doom-nvim/lua/doom/core/system/init.lua\
+
+[ -d ${XDG_CONFIG_HOME:-$HOME/.config}/nvim ] && mv ${XDG_CONFIG_HOME:-$HOME/.config}/nvim ${XDG_CONFIG_HOME:-$HOME/.config}/nvim.bak\
+
+git clone --depth 1 https://github.com/NTBBloodbath/doom-nvim.git ${XDG_CONFIG_HOME:-$HOME/.config}/nvim\
+
+nvim
+nvim
+nvim
+nvim
+cd ~/.config/nvim
+ls
+nvim init.lua
+cd .
+cd ..
+rm -f nvim
+rm -f nvim.bak
+rm -f ~/.local/share/nvim
+cd
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"\
+
+nvim
+ls
+cd ~/.config/nvim
+battery
+sudo pacman -Syu
+read -r _
+pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/ðƒ¿ƒ³¦/;s/^ðƒ¿ƒ³¦0$//g"\
+
+pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/ðƒ¿ƒ³¦/;s/^ðƒ¿ƒ³¦0$//g"\
+
+pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/ðƒ¿ƒ³¦/;s/^ðƒ¿ƒ³¦0$//g" | wc -l
+pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/ðƒ¿ƒ³¦/;s/^ðƒ¿ƒ³¦0$//g" | wc -l
+pacman -Qu | grep -Fcv "[ignored]" | sed "s/^/ðƒ¿ƒ³¦/;s/^ðƒ¿ƒ³¦0$//g" | wc -l
+pacman -Qu | wc -l
+pacman -Qu
+nvim update.sh
+chmod +x update.sh
+sh ./update.sh
+sh ./update.sh
+sh ./update.sh | wc -l
+sh ./update.sh
+git clone https://github.com/LukeSmithxyz/voidrice/
+cd voidrice/.local/bin/statusbar
+ls
+./sb-pacpackages
+./sb-pacpackages
+./sb-popupgrade
+sudo pacman -Qu
+sudo pacman -Qu | wc -l
+sudo pacman -Qu | wc -l
+sudo pacman -Qu | wc -l | tail -m0
+sudo pacman -Qu | wc -l | tail -n0
+sudo pacman -Qu | wc -l | tail -n0
+sudo pacman -Qu | wc -l | tail -n0
+checkupdates
+checkupdates
+checkupdates
+checkupdates
+checkupdates
+checkupdates
+fakeroot pacman -Sy
+fakeroot pacman -Sy
+fakeroot pacman -Sy
+fakeroot pacman -Sy --dbath
+fakeroot pacman -Sy --dbpath 
+fakeroot pacman -Sy --dbpath "./" 2> /dev/null
+fakeroot pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+fakeroot pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+sudp pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "$CHECKUPDATES_DB" 2> /dev/null | grep -v '\[.*\]'
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null | grep -v '\[.*\]'
+ll
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null | grep -v '\[.*\]'
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null | grep -v '\[.*\]'
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null | grep -v '\[.*\]'
+sudo pacman -Syu 
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null | grep -v '\[.*\]'
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu --dbpath "./" 2> /dev/null 
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qu
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qqu
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qqu
+sudo pacman -Sy
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qqu
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qqu | wc -l
+sudo pacman -Sy --dbpath "./" --logfile /dev/null &> /dev/null && pacman -Qqu | wc -l
+cat update.sh
+cat update.sh
+./update.sh
+./update.sh
+exit
+no
+pacman -Syu | n
+cd ~/.config/suckless/slstatus
+ls
+cd scripts
+ls
+nvim update.sh
+sudo pacman -Syuw
+sudo pacman -Syuw /dev/null
+sudo pacman -Syuw &> /dev/null
+sudo pacman -Syuw
+sudo pacman -Syuwd
+sudo pacman -Syuwdd
+cat update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+pacman -Qu
+pacman -Qqu
+sudo pacman -Qqu
+sudo pacman -Q
+sudo pacman -Qu
+sudo pacman -Q
+sudo pacman -Sw
+checkupdates
+checkupdates
+checkupdates
+./update.sh
+pacman -Qqu
+pacman -Q
+pacman -Qb
+pacman -Qc
+pacman -Qi
+pacman -Qk
+pacman -Ql
+pacman -Qm
+pacman -Qn
+pacman -Qo
+pacman -Qp
+pacman -Qr
+pacman -Qs
+pacman -Qu
+pacman -Qu
+sudo pacman -Qu
+doas pacman -Qu
+sudo pacman -Syu
+doas pacman -Qu
+doas pacman -Qu
+./update.sh
+nvim update.sh
+./update.sh
+nvim test.sh
+bash ./test.sh
+sud
+sudo pacman -Syu
+checkupdates
+checkupdates
+checkupdates
+doas checkupdates
+sudo pacman -Fs checkupdates
+sudo pacman -F checkupdates
+sudo pacman -Fy checkupdates
+pacman -Ql
+pacman -Qol
+pacman -Qo
+pacman 
+pacman -Ql | grep '...',
+/usr/bin/sh -c "/usr/bin/checkupdates; /usr/bin/checkupdates-aur"\
+
+paru -Qu
+paru -S checkupdates-systemd-git
+checkupdates
+checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+nvim update.sh
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+doas checkupdates
+./update.sh
+nvim update.sh
+ls
+cat update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+nvim update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+cp update.sh ~/suckless/suckless/slstatus/scripts/
+cp update.sh ~/.config/suckless/slstatus/scripts
+cd ..
+sudo make clean install
+sudo make clean install
+sudo make clean install
+sudo make clean install
+sudo make clean install
+sudo make clean install
+sudo make clean install
+sudo pacman -Syu
+cd ~/.config/suckless/
+nvim install.sh
+v
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+sudo pacman -Syu
+cd ~/.config
+rm -f suckless
+git clone https://gitlab.com/ysfgrg/suckless
+cd suckless
+ls
+cd slstatus
+ls
+rm -f config.h
+sudo make clean install
+killall slstatus
+ls
+v
+git add -A
+git commit -m 'new slstatus'
+git push
+ls
+cd scripts
+ls
+rm -f update.sh
+ll
+nvim update.sh
+git add -A
+git commit -m 'new slstatus'
+git push
+cd ..
+sudo make clean install
+/usr/local/bin/update.sh
+cd /usr/local/bin
+rm -f update.sh
+doas rm -f update.sh
+cd -
+nvim Makefile
+sudo make clean install
+/usr/local/bin/update.sh
+/usr/local/bin/update.sh
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+cd scripts
+ls
+nvim update.sh uptime.sh time.sh
+ls
+cd ..
+cd scripts
+ls
+nvim update.sh
+cd ..
+git add -A
+git commit -m 'new slstatus'
+git push
+battery
+cd ~/.local/bin
+ls
+./alchanger.sh
+sudo pacman -S rofi
+sudo pacman -Syu
+v 
+cd ~/.config/suckless/dwm
+nvim
+ls
+nvim config.def.h
+nvim config.def.h
+cd ~/.config/suckless/
+ls
+cd dwm
+ls
+nvim config.def.h
+lvim config.def.h
+ls
+cd ~/.config
+ls
+cd nvim
+ls
+cd lua
+ls
+nvim settings.lua
+git add -A
+git commit -m 'new settings.lua'
+git push
+nvim ma
+nvim mappings.lua
+git add -A
+git commit -m 'new mapping.lua'
+git push
+cd config
+ls
+nvim which-key.lua
+git add -A
+git commit -m 'new which-key.lua'
+git push
+nvim
+pulseaudio --start
+cd ~/.config/suckless/slstatus
+nvim config.def.h
+sudo make clean install
+cd scripts
+./volume.sh
+./volume.sh
+./volume.sh
+cd ~/.config/suckless/slstatus
+cd scripts
+v update.sh
+./update.sh
+./update.sh
+./update.sh
+cd ..
+nvim config.def.h
+sudo make clean install
+sudo pacman -Syu
+checkupdates -h
+checkupdates -d
+checkupdates 
+checkupdates 
+doas checkupdates 
+checkupdates 
+checkupdates 
+updates_arch=$(checkupdates 2>/dev/null | wc -l)\
+
+$updates_arch
+$updates_arch
+updates_arch=$(checkupdates 2>/dev/null | wc -l)\
+
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+cd ~/.config/suckless/slstatus/scripts
+v update.sh
+cd ..
+v
+ls
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+cd scripts
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+./update.sh
+sudo pacman -Sy
+sudo pacman -Syu
+sudo pacman -Syu pacman
+paru -S downloader-cli
+paru -Rns checkupdates-systemd-git downloader-cli
+paru -S checkupdates
+paru -S colorpick
+paru -S colorpicker
+colorpicker
+killall colorpicker
+paru -S kcolorchooser
+paru -S gpick
+cd ~/.config/suckless/st
+ls
+cd themes
+ls
+v onedark.h
+ls
+cd ..
+git add -A
+git commit -m 'new update.sh'
+git push
+paru -S pick
+pick
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+pacman -Qu
+cd ..
+cd slstatus
+sudo make clean install
+paru -S plasma-meta kde-applications-meta
+paru -S plasma-meta kde-applications-meta --needed
+cd ~/.config/suckless/slstatus
+ls
+cd scripts
+ranger
+cd d..
+ls
+cd ..
+ls
+nvim Makefile
+nvim config.def.h
+cd /usr/local/bin
+ls
+sudo ranger
+sudo ranger .
+v
+cd ~/.config/suckless/slstatus
+v
+killall slstatus
+sb-volume
+sb-cpu
+sb-mem
+sb-mem | grep -F "\^"
+paru -S nerd-fonts-jetbrains-mono
+paru -S nerd-fonts-jetbrains-mono
+cd ~/.config/suckless/st
+v
+ls
+sudo pacman -Sy neofetch
+neofetch
+sudo pacman -Syu
+llll
+ls
+clear
+ls
+mkdir -p ~/.local/share/kservices5/\
+ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktop\
+
+ll
+ll
+ls
+ll
+st
+st
+ls
+ll
+ls
+clear
+ls
+nvim
+ls
+nvim rofi.sh
+chmod +x rofi.sh
+ls
+ll
+./rofi.sh
+emacs -c --eval 'dashboard-refresh-buffer'
+rofi
+Rofi
+cd /usr/share/applications
+ls
+ll
+nvim rofi.desktop
+sudo nvim rofi.desktop
+nvim rofi.desktop
+sudo chmod +x rofi.desktop
+rofi -show drun
+cd
+cd /usr/share/applications
+nvim rofi.desktop
+sudo nvim rofi.desktop
+./rofi.desktop
+nvim rofi.desktop
+nvim rofi.desktop
+sudo nvim rofi.desktop
+nvim rofi.desktop
+ls
+clear
+exit
+exit
+exit
+picom --experimental-backends -b
+picom --experimental-backends -b
+fish
+picom --experimental-backends -b
+st
+ll
+nvim .xprofile
+ls
+st
+ll
+paru -S plasma5-applets-virtual-desktop-bar-git
+ls
+clear
+paru -Rnc dtos-doom
+st
+paru -Rns xmobar xmonad xmonad-contrib
+ls
+paru -Rnc xelph-base-config-git
+orphans
+paru -Rnc xelph-config-dwm-git
+paru -Rnc xelph-dmenu-git
+paru -Rnc xelph-dwmblocks-git
+paru -Rnc xelph-grub-config-git
+paru -Rnc xelph-lxdm-config-git
+paru -Rnc xelph-ranger-devicons-git
+paru -Rnc xelph-st-git
+paru -Rnc xelph-wallpapers-git 
+orphans
+pacman
+pacman -Syu
+doas pacman -Syu
+dwm
+cd ~/.config/suckless
+ls
+cd dmenu
+sudo make clean install
+cd ../dwm
+sudo make clean install
+cd ../slstatus
+sudo make clean install
+cd ../st
+sudo make clean install
+cd /usr/share/xsessions
+ls
+sudo cp plasma.desktop dwm.desktop
+sudo nvim dwm.desktop
+paru -Rnc plasme-meta kde-applications-meta
+paru -Rnc plasma-meta kde-applications-meta
+orphans
+pulseaudio --start
+paru -Rnc nerd-fonts-jetbrains-mono
+paru -Rnc nerd-fonts-mononoki
+orphans
+cd ~/.local/bin
+ls
+cd ../share/fonts/post-install
+ls
+ranger
+paru -S nerd-fonts-jetbrains-mono
+ls
+ls
+paru -Rnc nerd-fonts-jetbrains-mono
+orphans
+paru -S nerd-fonts-jetbrains-mono
+ls
+clear
+_________________  
+---- 
+v
+cd ~/.config/suckless
+v
+git add -A
+git commit -m 'new suckless'
+git push
+paru -Syu
+cd /usr/share/sddm
+ls
+cd themes
+ll
+cd m
+cd multicolor-sddm-theme
+ls
+nvim theme.conf
+su
+su
+cd /usr/share/sddm/themes
+sl
+ls
+cd multicolor-sddm-theme
+ll
+cd png/
+l
+ls
+ls
+cd .local
+s
+ls
+cd share
+ls
+ranger
+paru -S plasma-meta kde-applications-meta --needed
+zsh
+paru -S plasma-meta kde-applications-meta --needed
+zsh
+zsh
+cd ~/.config/alacritty
+v alacritty.yml
+paru -S latte-dock-git
+cd ~/.local/bin
+nvim shfetch
+paru -S virtualbox
+paru -Rnc dunst
+ls
+clear
+cd ~/.config/alacritty
+nvim alacritty.yml
+ls
+picom --experimental-backends -b
+ls
+picom --experimental-backends -b
+ls
+v
+paru -S nerd-fonts-jetbrains-mono
+ll
+paru -S nerd-fonts-monononoki
+paru -S nerd-fonts-mononoki
+ls
+ls
+ls
+ls
+v
+cd ~/.config/alacritty
+v alacritty.yml
+ls
+lvim
+cd ~/.config/lvim
+ls
+lvim config.lua
+lvim config.lua
+ls
+v
+lvim config.lua
+lvim config.lua
+ls
+cd ~/.config/nvim
+rm -f ~/.local/share/lunarvim
+rm -f ~/.local/share/lunarvim.bak
+rm -f ~/.config/lvim
+rm -f ~/.config/lvim.bak
+pip
+cd ~/.config/lvim
+nvim config.lua
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)>
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+lvim
+lvim
+cd ~/.config/
+ls
+rm -f lvim
+rm -f lvim.bak
+git clone https://github.com/ChristianChiarulli/lvim.git
+cd lvim
+ls
+nvim
+lvim
+lvim
+lvim
+lvim
+lvim
+ls
+nvim config.lua
+nvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+cd ..
+rm -f lvim
+git clone https://github.com/ChristianChiarulli/lvim.git
+lv
+v
+lvim
+lvim
+lvim
+rm -f lvim
+rm -f ~/.local/share/lunarvim
+rm -f ~/.local/share/lunarvim.bak
+cd ~/.local/bin
+ls
+rm -f lvim
+cd ..
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+v
+lvim
+v
+lvim
+v
+lvim
+lvim
+v
+lvim
+lvim
+v
+lvim
+v
+lvim
+v
+lvim
+lvim
+ls
+cd ~/.config/lvim
+ls
+nvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+cd ..
+rm -f lvim
+mv lvim.bak lvim
+lvim
+lvim
+lvim
+cd l
+cd lvim
+ls
+cd ..
+rm -f lvim
+rm -f ~/.local/share/lunarvim
+rm -f ~/.local/share/lunarvim.bak
+ll
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+ll
+lvim
+lvim
+ls
+cd l
+cd lvim
+ls
+lvim 
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+lvim config.lua
+cd ~/.local/share/lunarvim/lvim/lua/
+ls
+cd onedarker
+ls
+cd ..
+ls
+cd l
+cd lvim
+ls
+cd config
+ll
+ls
+nvim init.lua
+cd ../../
+ls
+cd lualine
+ls
+cd themes
+ls
+nvim darkplus.lua
+ls
+cd ~/.config/nvim/lua
+ls
+v
+v
+v
+v
+c
+v 
+v
+st
+v
+v
+v
+v
+cd ~/.config/nvim/lua
+ls
+cd colors
+ls
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/lua/config
+nvim bufferline.lua
+nvim bufferline.lua
+lvim
+lvim
+cd ~/.config/suckless/st
+cd themes
+ls
+nvim nord.h
+ls
+cd ~/.config/nvim/lua/config
+nvim i
+nvim icons-config.lua
+nvim icons-config.lua
+cd ~/.local/bin
+ls
+./alchanger.sh
+./alchanger.sh
+git clone https://github.com/mtwb47/linux-dotfiles
+git clone https://github.com/mtwb47/my-dotfiles
+git clone https://github.com/mtwb47/my-dot
+git clone https://github.com/mtwb47/Mydots
+sl
+ls
+mv Mydots ~/
+cd ~/
+rm -f ~/.config/alacritty
+cd Mydots
+sl
+ls
+cp alacritty ~/.config
+cd ..
+cd ~/.local/bin
+./alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+cd ~/.local/bin
+./alchanger.sh
+./alchanger.sh
+./alchanger.sh
+shfetch
+ls
+git add -A
+git commit -m 'new shfetch'
+git push
+nvim
+cd ~/.config/nvim/lua/colors
+ls
+mkdir nord
+ls
+cd nord
+ls
+touch init.lua
+ls
+nvim init.lua
+cd ..
+ls
+rm -f nord
+cp onedark noed
+mv noed/ nord
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd onedark
+ls
+nvim colors.lua
+nvim config.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim
+nvim
+nvim diff.lua
+nvim init.lua
+rm -f diff.lua
+ls
+nvim init.lua
+nvim palette.lua
+nvim l
+nvim LSP.lua
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+ls
+cd nord
+ls
+nvim init.lua
+nvim colors.lua
+nvim colors.lua
+ls
+cd ~/.config/nvim/lua/config/
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+ls
+nvim cmp.lua
+cd ../colors/nord
+ls
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim
+nvim
+nvim colors.lua
+ls
+nvim init.lua
+s
+s
+ls
+cd ..
+rm -f nord
+ls
+cd ..
+ls
+cd colors
+ls
+mkdir nord
+cd nord
+ls
+nvim init.lua
+touch init.lua
+touch colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+s
+ls
+nvim init.lua
+ls
+nvim init.lua
+ls
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+ls
+cd ..
+git add -A
+git commit -m 'new nord'
+git push
+cd ..
+ls
+nvim plugins.lua
+nvim
+nvim
+cd ,,
+cd ..
+rm -f plugin
+nvim
+git add -A
+git commit -m 'new onedark+nord'
+git push
+ls
+ls
+ll
+cd ~/.config/nvim/lua/config/
+;s
+ls
+nvim statusline.lua
+ls
+nvim bufferline.lua
+ls
+nvim icons-config.lua
+nvim icons-config.lua
+ls
+cd ../
+ls
+cd colors
+ls
+nvim init.lua
+nvim init.lua
+ls
+alchanger.sh
+cd
+alchanger.sh
+ls
+nvim rofi.sh
+cd ~/.config/nvim/
+~/
+cd ~/
+alchanger.sh
+cd -
+s
+ls
+git add -A
+git commit -m 'new onedark+nord'
+git push
+ll
+ls
+cd lua
+s
+ll
+mkdir plugins
+mv plugins.lua plugins/
+cd plugins
+ls
+mv plugins.lua init.lua
+cd 
+ls
+v
+cd ~/.config/nvim/
+nvim init.lua
+nvim init.lua
+ls
+cd plugin
+ls
+cd ../lua/
+s
+ls
+mv config plugins
+cd ..
+lvim init.lua
+nvim init.lua
+cd lua/plugins
+ls
+cd config
+ls
+lvim init.lua
+lvim init.lua
+v 
+;s
+nvim i
+nvim init.lua
+nvim init.lua
+ls
+mv init.lua ../plugConfig.lua
+cd ..
+ls
+lvim ../../init.lua
+lvim ../../init.lua
+nvim init.lua
+nvim init.lua
+v
+nvim init.lua
+ls
+nvim packerInit.lua
+ls
+nvim init.lua
+nvim init.lua
+cd ..
+ls
+mkdir mappings
+mv mappings.lua mappings/init.lua
+ls
+cd ..
+nvim init.lua
+nvim init.lua
+ls
+cd lua
+ls
+cd plugins
+nvim init.lua
+cd ..
+ls
+cd ..
+nvim init.lua
+ls
+cd lua/plugins/config
+nvim cmp.lua
+nvim cmp.lua
+ls
+cd ..
+cd ..
+cd ..
+nvim init.lua
+ls
+cd lua
+l
+ls
+ls
+cd mappings
+ls
+cd ..
+ls
+mkdir core
+mv settings.lua core/init.lua
+cd ..
+ls
+nvim init.lua
+nvim init.lua
+ll
+cd lua
+l
+s
+ls
+cd ..
+ls
+rm -f plugin
+lll
+ll
+ls
+git add -A
+git commit -m 'new onedark+nord'
+git push
+ll
+ls
+shfetch
+cd ~/.config/nvim/
+ls
+nvim init.lua
+st
+paru -S unimatrix-git
+unimatrix
+unimatrix -m 'ðƒ¿ƒ¶ƒµðƒ¿ƒ¯¿'
+unimatrix -m 'ðƒ¿ƒ¶ƒµ'
+unimatrix -a 'ðƒ¿ƒ¶ƒµ'
+unimatrix -b 'ðƒ¿ƒ¶ƒµ'
+unimatrix -f 'ðƒ¿ƒ¶ƒµ'
+unimatrix -n 'ðƒ¿ƒ¶ƒµ'
+unimatrix -u 'ðƒ¿ƒ¶ƒµ'
+unimatrix -u ' ðƒ¿ƒ¶ƒµ '
+unimatrix -u ' ðƒ¿ƒ¶ƒµ FU'
+alchanger.sh
+ls
+ls
+clear
+pfetch
+neofetch
+neofetch
+ls
+clear
+ls
+ls
+clear
+git clone https://github.com/siduck76/st.git
+cd st
+ll
+sudo make clean install
+st
+ls
+clear
+cd ~/.config/alacritty
+ls
+v alacritty.yml
+v alacritty.yml
+ls
+cd ~/.config/alacritty
+v alacritty.yml
+alchanger.sh
+ll
+clear
+;s
+ls
+picom --experimental-backends -b
+ls
+lear
+ls
+clear
+ls
+latte-dock -
+latte-dock -h
+latte-dock --default-layout
+latte-dock --default-layout
+paru -Rns plasma-meta kde-applications-meta
+ls
+clear
+paru -Rns plasma-meta kde-applications-meta
+paru -Rns kdbusaddons
+paru -RnC kdbusaddons
+paru -Rnc kdbusaddons
+exit
+fish
+ls
+clear
+ls
+cd ~/.config/suckless/st
+ls
+sudo make clean install
+ls
+v
+lsblx
+lsblk
+lsblk
+lsblk
+lsblk
+sudo cfdisk /dev/sdb
+lsblk
+cd /run/media/ysf/Ventoy
+sudo rm -rf .Trash-1000
+sudo cfdisk /dev/sdb
+lsblk
+sudo cfdisk /dev/sdb
+lsblk
+lsblk
+lsblk
+lsblk
+cd /run/media/ysf/d840a0d7-516e-4475-bc1c-4232d4b89eef
+sudo rm -rf BraveSoftware
+sudo rm -rf suckless
+ll
+ls
+cd /run/media/ysf/
+ls
+mv d840a0d7-516e-4475-bc1c-4232d4b89eef kingstone-32
+ls
+ls
+sudo cfdisk /dev/sdb
+sudo cfdisk /dev/sdb
+lsblk
+cd /run/media/ysf/ARCH_202111/
+ls
+sudo rm -rf shellx64.efi
+sudo rm -rf shellx64.efi*
+sudo rm -rf shellx64.efi *
+sudo rm -rf shellx64.efi*
+sudo rm -rf shellx64.efi*
+ls
+v shellx64.efi
+sudo nvim shellx64.efi
+ls
+cat shellx64.efi
+s
+sudo cfdisk /dev/sdb
+ls
+cd ~/.config/zsh
+ls
+nvim ls
+ls
+chmod +x ls
+./ls
+./ls
+nvim ls
+./ls
+./ls
+rm -f ~/.config/nvim
+rm -f ~/.local/share/nvim
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"\
+
+reboot
+ping google.com
+sudo pacman -Syu gnomd
+sudo pacman -Syu gnome
+sudo pacman -Syu 
+paru -S lxappearance
+nvim .gtkrc-2.0
+paru -S qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct\
+
+nvim .xprofile
+battery
+paru -S dolfin
+paru -S dolphin
+paru -Rnc gnome
+paru -Syu
+paru -Syu
+paru -Suv
+paru -S
+paru -Sv
+paru -vv
+paru -v
+paru -vu
+paru -Svu
+nvim .gtkrc-2.0
+nvim .gtkrc-2.0
+nvim .gtkrc-2.0
+ls
+alchanger.sh
+ls
+clear
+ls
+shfetch
+rm -f .gtkrc-2.0
+nvim .gtkrc-2.0
+nvim .gtkrc-2.0
+orphans
+cd ~/.local/share/themes
+ll
+cd Kripton
+ls
+cat index.theme
+cd ..
+paru -S kripton-theme-git
+orphans
+orphans
+paru -S oomox
+paru -S themix-theme-materia-git
+paru -S oomox
+paru -S themix-full-git
+paru -S oomox
+paru -Rnc themix-export-spotify-git themix-full-git
+paru -Rnc themix-gui-git
+orphans
+paru -Rnc themix-theme-materia-git
+paru -Rns
+orphans
+orphans
+battery
+battery
+battery
+battery
+battery
+paru -S flatpak
+flatpak install flathub com.github.themix_project.Oomox
+flatpak run com.github.themix_project.Oomox
+sudo pacman -Syu 
+checkupdates 2>/dev/null | wc -l
+checkupdates 2>/dev/null | wc -l
+ls
+sudo pacman -Syu 
+v
+cd ~/.local/share/themes
+nvim Kripton/index.theme
+nvim Kripton/index.theme
+nvim Kripton/index.theme
+c
+v
+cd ~/.local/share/themes
+nvim Kripton/index.theme
+cd ~/.local/share/lunarvim/lvim/lua/lualine
+ls
+cd themes
+sl
+ls
+nvim onedarker.lua
+ls
+cd ../../lvim
+ls
+cd co
+cd core/lualine
+ls
+nvim init.lua
+nvim colors.lua
+nvim init.lua
+v
+nvim init.lua
+cd ~/.local/share/lunarvim/site/pack/packer/start/lualine.nvim
+s
+ls
+cd lua
+ls
+nvim lualine
+nvim lualine.lua
+ls
+cd lualine
+ls
+nvim highlight.lua
+nvim config.lua
+ls
+nvim component.lua
+nvim highlight.lua
+cd ~/.local/share/nvim/site/pack/packer/start/feline.nvim/lua/feline/presets
+ls
+nvim init.lua
+nvim default.lua
+ls
+nvim default.lua
+nvim default.lua
+ls
+cd ..
+ls
+cd providers
+ls
+nvim lsp.lua
+v
+nvim lsp.lua
+v
+cd ~/.config/ls
+cd ~/.config/
+ls
+ls
+ls
+cd nvim/lua/plugins/config
+nvim colorizer.lua
+v
+nvim colorizer.lua
+v
+v
+cd ~/.config/nvim/lua/colors
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+touch status.lua
+nvim status.lua
+ls
+nvim colors.lua
+nvim status.lua
+l
+nvim status.lua
+nvim status.lua
+nvim status.lua
+ls
+nvim init.lua
+nvim init.lua
+nvi
+nvim
+ls
+rm -f status.lua
+nvim
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim 
+nvim init.lua
+ls
+ls
+ls
+nvim
+ls
+cd ~/.config/nvim/lua/colors
+ls
+cd nvim i
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+v
+mv onedark onedarker
+nvim init.lua
+nvim status.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+git clone https://github.com/shaunsingh/nix-darwin-dotfiles.git
+cd ~/.config/nvim
+ls
+cd ..
+rm -f ~/.local/share/nvim
+rm -f nvim
+curl -s https://raw.githubusercontent.com/hackorum/VapourNvim/main/install.sh | bash -s\
+
+v
+ls
+cd nvim
+ls
+v init.lua
+ls
+cd lua
+ll
+cd vapour
+ls
+cd plugins
+nvim init.lua
+cd ..
+l
+ls
+cd ..
+ls
+cd colorizer-config
+ls
+cd ..
+ls
+cd galaxyline-config
+ls
+v init.lua
+ls
+nvim utils.lua
+ls
+cd ..
+la
+ls
+cd vapour
+ls
+nvim init.lua
+ls
+cd globals
+ll
+v init.lua
+cd ..
+la
+ls
+cd user-config
+ls
+nvim init.lua
+v init.lua.example
+v
+nvim init.lua
+v init.lua.example
+v init.lua.example
+ls
+cd ..
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+ls
+cd colorscheme
+ls
+nvim tokyonight.lua
+cd ..
+ls
+cd which-key-config
+ls
+cd ..
+ls
+cd ..
+nvim in
+nvim init.lua
+ls
+cd ..
+rm -f nvim/
+rm -f ~/.local/share/nvim
+bash -c "$(curl -s https://gitlab.com/ysfgrg/nvoid/-/raw/main/NVOID-Install.sh)"\
+
+ls
+cd nvim/lua/plugins
+ls
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+ls
+cd config
+ls
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+nvim bufferline.lua
+ls
+cd ..
+cd ..
+git add -A
+git commit -m 'new onedark+nord'
+git push
+v
+v
+ls
+cd plugins
+ls
+nvim init.lua
+ls
+cd config
+nvim icons-config.lua
+nvim icons-config.lua
+lvim icons-config.lua
+nvim icons-config.lua
+nvim icons-config.lua
+nvim icons-config.lua
+nvim icons-config.lua
+ls
+ls
+nvim icons-config.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+ls
+git add -A
+git commit -m 'new coloring'
+git push
+ll
+ls
+ls
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+ls
+cd ..
+;s
+ls
+nvim init.lua
+cd config
+ls
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+nvim statusline.lua
+ls
+git add -A
+git commit -m 'new coloring'
+git push
+ls
+cd ~/.config
+ls
+cd n
+cd nvim
+ls
+cd lua
+ls
+cd co
+cd core
+ls
+nvim init.lua
+git add -A
+git commit -m 'new onedark+nord'
+git push
+git push
+ls
+cd ..
+ls
+ls
+ls
+nvim
+poweroff
+alchanger.sh
+ll
+ls
+clear
+la
+ls
+clea
+ls
+./ls
+sudo pacman -S cmale
+sudo pacman -S cmake
+exit
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+ls
+ls
+ll
+nvim ls
+exit
+ls
+clear
+ls
+nvim ls
+ls
+clear
+ll
+ls
+clear
+ld
+clear
+alchanger.sh
+alchanger.sh
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+alchanger.sh
+ls
+clear
+ls
+nvim test.sh
+poweroff
+cd ~/.config/nvim
+ls
+nvim init.lua
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+cd ~/.config/nvim
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+v README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim LICENSE
+rm -r LICENSE
+git add -A
+git commit -m 'Thanks to......'
+git push
+git pull
+lx
+ls
+nvim LICENSE
+nvim LICENSE
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim  README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+git add -A
+git push
+git pull
+ll
+rm -r LICENSE
+rm -r LICENSE
+ls
+nvim  README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+git pull
+git pull
+git pull
+git push
+ls
+git pull
+git config --global
+git config --global --add
+ls
+git pull --all
+git config pull.rebase false
+git config pull.rebase true
+git config pull.ff only
+ls
+git pull
+ls
+
+cd ~/.config/nvim
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+v README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim LICENSE
+rm -r LICENSE
+git add -A
+git commit -m 'Thanks to......'
+git push
+git pull
+lx
+ls
+nvim LICENSE
+nvim LICENSE
+nvim README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim  README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+git add -A
+git push
+git pull
+ll
+rm -r LICENSE
+rm -r LICENSE
+ls
+nvim  README.md
+git add -A
+git commit -m 'Thanks to......'
+git push
+git pull
+git pull
+git pull
+git push
+ls
+git pull
+git config --global
+git config --global --add
+ls
+git pull --all
+git config pull.rebase false
+git config pull.rebase true
+git config pull.ff only
+ls
+git pull
+ls
+
+git clone https://gitlab.com/ysfgrg/nvoid
+cd nvoid
+cp -r .git ~/.config/nvim
+v
+cd ~/.config/nvim
+l
+ls
+cd .git
+ls
+v config
+cd logs
+lll
+ll
+cd ..
+ls
+cd branches
+ls
+ls
+cd ..
+ls
+cd objects
+ls
+cd ../../
+ls
+git add -A
+git commit -m 'README.md'
+git push
+git push
+ls
+git clone https://github.com/ysfgrgO7/nvoid.git
+rm -f nvoid
+git clone https://github.com/ysfgrgO7/nvoid.git
+cd n
+ls
+cd nvoid
+ls
+cd ~/.config/nvim
+rm -f gi
+rm -f .git
+cd ~/.config/nvim
+ls
+cd ..
+rm -f nvim
+cp ~/nvoid .
+l
+ls
+mv nvoid nvim
+cd nvim
+ls
+v
+ls
+ssh-keygen -t ed25519 -C "ysfgrg2007@gmail.com"
+ls
+cd .ssh
+ls
+cd ..
+eval "$(ssh-agent -s)"
+ cat ~/.ssh/id_ed25519.pub
+cd nvoid
+s
+ls
+cd ~/.config/nvim
+rm -f .git
+ls
+kk
+ll
+git add -A
+git commit -m 'Thanks to......'
+git pull
+ls
+cp ~/nvoid/LICENSE .
+ls
+git add -A
+git commit -m 'Thanks to......'
+git push
+nvim LICENSE
+git add -A
+git commit -m 'LICENSE'
+git push
+nvim README.md
+git add -A
+git commit -m 'LICENSE'
+git push
+nvim README.md
+git add -A
+git commit -m 'LICENSE'
+git push
+ls
+git pull
+ls
+nvim README.md
+cd nvoid
+ls
+git add -A
+git commit -m 'Swich TO github'
+git push
+git push
+cd nvoid
+git add -A
+ls
+git pull
+ls
+rm -f scrot1.png
+ls
+git add -A
+git commit -m 'Swich TO github'
+git push
+git push
+git push git@gitlab.com:ysfgrg/nvim.git
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd nvoid
+ls
+mkdir .github
+ls
+cd .git
+cd ../.github
+ls
+mv ../README.md .
+ls
+cd ..
+git add -A
+git commit -m 'Swich TO github'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd .git
+cd ..
+cd .github
+ls
+mkdir scorts
+ls
+cd scorts
+ls
+nvim
+nvim
+killall picom
+cd ~/.config
+l
+ls
+ls
+cd nvim
+cd dw
+cd ../suckless/dwm/
+nvim config.
+nvim config.def.h
+ls
+cd ..
+ls
+cd ..
+ls
+cd 
+nvim
+ls
+mv IMG_4247.jpg nvoid/.github/scorts/nvoid-dashboard.jpg
+ls
+nvim
+ls
+nvim 
+cd ~/.config/nvim
+ls
+mkdir .github
+ls
+mv README.md .github
+ls
+git add -A
+git commit -m 'README.md'
+git push
+git push ssh://ysfgrgO7@github/nvoid.git
+ssh -T git@github.com
+git push ssh://ysfgrgO7@github/nvoid.git
+git push git@github.com:ysfgrgO7/nvoid.git\
+
+git pull
+git push git@github.com:ysfgrgO7/nvoid.git\
+
+ls
+cd .git
+../.github
+cd ../.github
+ls
+mv README.md ../
+ls
+cd ..
+rm .git
+rm .github
+ls
+git add -A
+git commit -m 'README.md'
+git push git@github.com:ysfgrgO7/nvoid.git
+git pull
+git config pull.rebase false
+git config pull.rebase true
+git config pull.ff only
+git pull
+git push git@github.com:ysfgrgO7/nvoid.git
+git push
+git push
+ls
+ls
+mv 
+ls
+ls
+sudo pacman -S scrot
+ls
+mv 2021-11-14-104552_1600x900_scrot.png nvoid/.github/scorts/nvoid-nvimtree.png
+ls
+cd ~/nvoid/.github
+ls
+cd scorts
+ls
+rm -f nvoid-dashboard.jpg
+ls
+ls
+cd 
+ls
+ranger
+ranger
+ranger
+exit
+ls
+rm -f nvoid
+ls
+ping google.com
+ls
+ping google.com
+ls
+ping google.com
+ping google.com
+cd nvoid
+ls
+nvim NVOID-Install.sh
+nvim NVOID-Install.sh
+ls
+nvim NVOID-Install.sh
+cd .github
+ls
+nvim README.md
+ls
+cd ..
+ls
+git add -A
+git commit -m 'swich to Github'
+git push git@github.com:ysfgrgO7/nvoid.git
+lazygit
+cd ~/.config/lazygit
+ls
+nvim config.yml
+nvim state.yml
+ls
+cd ..
+ls
+cd ..
+ls
+cd nvoid
+cd ..
+rm -f ~/.config/nvim
+rm -f ~/.local/share/nvim
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/NVOID-Install.sh)"\
+
+nvim
+ls
+cd ~/.config/nvim
+ls
+mv NVOID-Install.sh .github
+ls
+cd lua
+git add -A
+git commit -m 'swich to Github'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd ..
+cd .git
+cd ../.github
+nvim README.md
+ls
+git add -A
+git commit -m 'swich to Github'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+ls
+cd ..
+ls
+cd lua
+ls
+ls
+cd plugins
+ls
+nvim init.lua
+nvim init.lua
+ls
+nvim packerInit.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+nvim plugConfig.lua
+nvim plugConfig.lua
+sudo systemctl restart NetworkManager
+ping google.com
+ping google.com
+ls
+cd ~/.config/nvim
+ls
+v
+lw
+;s
+nvim plugConfig.lua
+nvim plugConfig.lua
+ls
+v
+cd lua
+ls
+cd plugins
+v p
+v plugConfig.lua
+ping google.com
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd plugins
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim plugConfig.lua
+nvim ls.c
+nvim p
+nvim plugConfig.lua
+nvim plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+v plugConfig.lua
+ls
+nvim init.lua
+git add -A
+git commit -m 'swich to Github'
+git push git@github.com:ysfgrgO7/nvoid.git
+cd ..
+ls
+cd ..
+ls
+v
+ls
+rm -f plugin
+ls
+v
+ls
+v
+git add -A
+git commit -m 'swich to Github'
+git push git@github.com:ysfgrgO7/nvoid.git
+ks
+ls
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/lua/colors
+ls
+cd onedarker
+ls
+pwm
+pwd
+ls
+cd ~/.config/nvim
+ls
+cd lua
+ls
+mkdir nvoid
+ls
+cd nvoid
+ls
+nvim init.lua
+s
+ks
+cd nv
+mkdir config
+s
+ls
+cd config
+ls
+cd ..
+mv init.lua config
+ls
+v
+nvim init.lua
+ls
+cd config
+ls
+v init.lua
+v init.lua
+ls
+nvim init.lua
+nvim init.lua
+ls
+pwd
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+v
+v
+ls
+nvim
+cd ~/.config/nvim/lua/nvoid/config
+ls
+nvim init.lua
+nvim init.lua
+v
+v
+v
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd colors
+ls
+cd onedarker
+ls
+nvim config.lua
+nvim colors.lua
+v
+ls
+cd ..
+ls
+nvim init.lua
+nvim init.lua
+ls
+nvim init.lua
+ls
+ls
+cd ..
+ls
+cd plugins/config
+ls
+nvim statusline.lua
+nvim statusline.lua
+cd ~/.config/nvim/lua/nvoid/config
+ls
+nvim init.lua
+ls
+mv init.lua ../../nv-config.lua
+s
+ls
+cd ..
+ls
+cd ..
+rm -f nvoid
+ls
+nvim nv-config.lua
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+ls
+v
+v
+cd Media/doc
+ls
+cd ..
+ls
+cd dl
+s
+ls
+cd ..
+git clone https://github.com/NvChad/NvChad
+ls
+cd NvChad
+ls
+ls
+cd lua
+ls
+cd co
+ls
+cd colors
+ls
+nvim init.lua
+ls
+cd ..
+ls
+cd ..
+ls
+nvim init.lua
+cd lua/core
+ls
+nvim init.lua
+nvim default_config.lua
+s
+cd ..
+ls
+cd colors
+sl
+ls
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+ls
+cd ..
+ls
+lvim init.lua
+cd ~/.config/nvim/
+lvim init.lua
+lvim init.lua
+v
+v
+cd ~/Media/NvChad
+s
+ls
+cd lua/core
+ls
+nvim default_config.lua
+cd ~/.config/nvim
+l
+sls
+ls
+cd lua
+ls
+mv colors colors.bc
+ls
+cp colors.bc colors
+cd colors
+ls
+v init.lua
+v
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd nord
+nvim init.lua
+ls
+nvim colors.lua
+v
+ls
+cd ..
+cd nord
+ls
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+ls
+cd ..
+ls
+cd onedarker
+ls
+nvim init.lua
+ls
+ranger
+v
+cd ..
+ls
+cd ..
+ls
+nvim 
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+rm -f \;
+;s
+ls
+cd core
+ls
+nvim init.lua
+mv init.lua init.lua.bc
+s
+cp init.lua.bc init.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/
+ls
+cd lua
+ls
+nvim N
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+cd ~/.config/nvim/
+ls
+cd lua
+sl
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+v
+vim.cmd("let g:matchup_matchparen_offscreen = {'method': 'popup'}")\
+
+cd ~/.config/lvim
+ls
+nvim config.lua
+cd ~/Media/NvChad
+cd lua
+ls
+cd core
+ls
+nvim default_config.lua
+s
+ls
+nvim default_config.lua
+nvim init.lua
+ls
+nvim custom.lua
+ls
+nvim utils.lua
+ls
+nvim default_config.lua
+v
+s
+ls
+v
+cd ~/.config/nvim/
+ls
+nvim init.lua
+nvim init.lua
+s
+ls
+cd lua
+ls
+cd colors
+ls
+nvim init.lua
+ls
+cd ..
+ls
+nvim nv-config.lua
+cd co
+cd core
+ls
+rm -f init.lua.bc
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+nvim nv-config.lua
+cd core
+sl
+ls
+touch utils.lua
+nvim utils.lua
+nvim utils.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+ls
+v 
+v nv-config.lua
+ls
+cd core
+v init.lua
+v init.lua
+v init.lua
+v init.lua
+ls
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+nvim nv-config.lua
+nvim nv-config.lua
+ll
+nvim nv-config.lua core/init.lua
+nvim nv-config.lua core/init.lua
+nvim nv-config.lua core/init.lua
+v
+v ls.lua
+cd .config/nvim
+ls
+v
+ls
+cd lua
+ls
+nvim nv-config.lua
+nvim ls.lua
+nvim ls.lua
+neofetch
+sudo pacman -S gnome
+c
+v
+v
+v ls.lua
+ls
+v ls.lua
+cd ~/.config/nvim/
+ls
+cd lua
+ls
+nvim nv-config.lua
+v ls.lua
+cd ~/.config/nvim
+ls
+cd lua
+s
+cd colors
+ls
+cd onedarker
+ls
+nvim init.lua
+\:q
+cd ~/.local/share/lunarvim/lvim/lua/lvim/
+ls
+cd utils
+sls
+ls
+nvim init.lua
+nvim hooks.lua
+nvim table.lua
+cd ..
+ls
+cd config
+s
+ll
+nvim defaults.lua
+ls
+nvim init.lua
+v settings.lua
+ls
+cd ..
+ls
+cd ..
+ls
+cd onedarker
+ls
+nvim init.lua
+ls
+cd ..
+ls
+cd lvim
+ls
+nvim i
+nvim i
+nvim
+ls
+v ls.lua
+ls
+cd ~/.config/nvim/
+ls
+cd lua
+ls
+nvim nv-config.lua
+cd 
+ls
+nvim lsa.lua
+orphans
+paru -S gimp
+v
+v
+cd ~/.config
+ls
+cd nvim
+ls
+cd lua
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+cd Media/pic
+ls
+mv NVOID_NEW.jpg NVOID_NEW.png
+ls
+gimp NVOID_NEW.png
+cd ~/.config/nvim/
+ls
+cd lua
+nvim nv-config.lua core/init.lua
+nvim nv-config.lua core/init.lua
+ls
+v
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+ls
+nvim init.lua
+ls
+cd ..
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd plugins
+s
+ls
+cd config
+ls
+nvim statusline.lua
+ls
+ls
+nvim
+nvim i
+nvim icons.lua
+nvim icons.lua
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+ls
+cd nord
+ls
+nvim colors.lua
+nvim colors.lua
+ls
+nvim colors.lua
+ls
+cd ..
+ls
+cd ..
+ls
+git add -A
+git commit -m 'adding user config file'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+ls
+nvim nv-config.lua
+ls
+git add -A
+git commit -m 'adding user config file'
+git push git@github.com:ysfgrgO7/nvoid.git
+v
+ls
+ls
+cd colors
+v
+ls
+cd ..
+ls
+cd core
+ls
+nvim utils.lua
+nvim utils.lua
+git add -A
+git commit -m 'adding user config file'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd ..
+ls
+nvim nv-config.lua
+ls
+cd ..
+ks
+ls
+ls
+cd lua
+ls
+cd plugins/ls
+cd plugins
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+cd ../
+ls
+cd colors
+ls
+cp nord tokyonight
+ls
+cd tokyonight
+ls
+nvim init.lua
+nvim init.lua
+ls
+nvim colors.lua
+ls
+cd ..
+ls
+nvim init.lua
+ls
+cd ..
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+ls
+cd ..
+ls
+cd colors
+ls
+nvim init.lua
+ks
+ls
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+ls
+nvim init.lua
+nvim init.lua
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors/o
+cd colors/
+ls
+cd tokyonight
+s
+ls
+nvim init.lua
+ls
+nvim init.lua
+nvim init.lua
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+nvim 
+nvim 
+nvim init.lua
+ls
+v
+ls
+cd colo
+cd .
+cd ..
+ls
+nvim init.lua
+nvim init.lua
+ls
+cd ..
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd core
+ls
+nvim ..
+cd ..
+ls
+cd colors
+ls
+nvim init.lua
+nvim init.lua
+cd nord
+l
+ls
+cd i
+\:q
+nvim init.lua
+ls
+cd ..
+ls
+v
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+cd colors
+ls
+cd onedarker
+ls
+nvim init.lua
+ls
+nvim init.lua
+cd ..
+ls
+nvim init.lua
+v
+v
+ls
+cd tokyonight
+lll
+ll
+nvim init.lua
+ls
+cd ..
+ls
+nvim ../nv-config.lua
+nvim ../nv-config.lua
+ls
+cd tokyonight
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+ls
+ls
+cd ..
+ls
+cd onedarker
+nvim init.lua
+cd ..
+cd nord
+ls
+nvim init.lua
+ls
+cd ..
+ls
+cd ..
+nvim i
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+sl
+ls
+cd tokyonight
+ls
+nvim init.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+nvim colors.lua
+cd ..
+ls
+cd ..
+ls
+cd colors
+ls
+cd tokyonight
+nvim colors.lua
+nvim colors.lua
+ls
+cd ..
+ls
+cd ..
+git add -A
+git commit -m 'adding tokyonight'
+git push git@github.com:ysfgrgO7/nvoid.git
+paru -S vscodium-bin
+v NVOID.txt
+v NVOID.txt
+v
+cd ~/.config/nvim/lua/plugins/config
+v dashboard.lua
+ll
+v NVOID.txt
+v
+cd ~/.config/nvim/lua/plugins/config
+v dashboard.lua
+git add -A
+git commit -m 'adding tokyonight'
+git push git@github.com:ysfgrgO7/nvoid.git
+v
+nvim ls.vim
+v NVOID
+v NVOID.txt
+v
+v
+v
+v
+figlcv
+v
+nvim NVOID\).txt
+v
+ping google.com
+v
+v
+cd ~/.config/suckless/st
+cd themes
+;s
+ls
+nvim onedark.h
+cd ~/Media/doc
+ra
+ls
+ranger
+cd ~/.config/nvim/lua/plugins/
+v init.lua
+v
+cd config
+l
+ls
+nvim dashboard.lua
+v
+v
+ls
+nvim dashboard.lua
+nvim dashboard.lua
+nvim dashboard.lua
+ls
+cd ..ls
+cd ..
+ls
+nvim init.lua
+nvim plugConfig.lua
+v
+v
+v
+ls
+cd config
+ls
+nvim dashboard.lua
+touch start-screen.vim
+ls
+cd ..
+nvim init.lua
+nvim plugConfig.lua
+ls
+cd config
+ls
+nvim sta
+nvim start-screen.vim
+nvim start-screen.vim
+v
+v init.lua
+v statusline.lua
+nvim start-screen.vim
+nvim start-screen.vim
+v
+cd ..
+ls
+v plugConfig.lua
+v
+nvi
+v
+ls
+cd config
+c
+v
+ls
+nvim dashboard.lua
+v
+v plugConfig.lua
+nvim dashboard.lua
+nvim dashboard.lua
+v
+mv dashboard.lua vim-startify.lua
+cd ..
+ls
+lvim plugConfig.lua
+v
+ls
+cd config
+ls
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+v
+cd ..
+ls
+nvim plugConfig.lua
+v
+v
+ls
+cd config
+sl
+ls
+rm -f vim-startify.lua
+rm -f start-screen.vim
+cd ..
+l
+sls
+ls
+nvim p
+nvim plugConfig.lua
+cd config
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+v
+nvim vim-startify.lua
+v
+ls
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+nvim vim-startify.lua
+v
+ls
+cd ..
+l
+ls
+nvim plugConfig.lua
+nvim packerInit.lua
+nvim init.lua
+c
+v
+v
+cd config
+l
+l
+touch dashboard
+ls
+v
+l
+ls
+mv dashboard dashboard.lua
+v
+nvim dashboard.lua
+nvim dashboard.lua
+c
+v
+nvim dashboard.lua
+v
+ls
+nvim dashboard.lua
+v
+nvim dashboard.lua
+v
+nvim dashboard.lua
+cd ~/.config/suckless/st
+cd themes
+nvim onedark.h
+cd ~/.config/suckless/st
+ls
+cd themes
+ls
+nvim onedark.h
+cd ~/.config/suckless/st
+nvim onedark.h
+ls
+cd themes
+ls
+nvim onedark.h
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+sudo systemctl restart NetworkManager
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ls
+ping google.com
+ping google.com
+v
+ping google.com
+ping google.com
+pA
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+reboot
+ping google.com
+ping google.com
+ping google.com
+reboot
+ping google.com
+sudo pacman -Syu plasma-meta kde-applications-meta
+sudo pacman -Syu gnome
+sudo pacman -Syu gnome --noconfirm
+ls
+clear
+ls
+alchanger.sh
+alchanger.sh
+ls
+clear
+v
+ls
+v
+sudo pacman -Syu cowsay --noconfirm
+cowsay
+cowsay 'NVOID'
+cowsay -f skeleton
+cowsay -f skeleton 'nvoid'
+cowsay -f kitty
+cowsay -f kitty 'void'
+cowsay -f beavis.zen 'void'
+cowsay -f blowfish 'void'
+cowsay -f bong 'void'
+cowsay -f bud-frogs 'void'
+cowsay -f bunny 'void'
+cowsay -f cheese 'void'
+cowsay -f daemon 'void'
+cowsay -f dragon 'void'
+cowsay -f elephant 'void'
+cowsay -f elephant-in-snake 'void'
+cowsay -f eyes 'void'
+cowsay -f eyes 'NVOID'
+nvim
+nvim
+nvim
+\
+                                   .::nvimnvimnvim\
+  .!!!!!:.                        .:!!!!!!!!!!!!\
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$\
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P\
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#\
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*\
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"\
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"\
+             """"          """""""\
+
+dash
+v
+v
+v
+exit
+v
+exit
+cd ~/.config/nvim
+ls
+v
+v
+v
+cd lua
+ls
+cd plugins/config
+nvim dashboard.lua
+nvim
+nvim dashboard.lua
+nvim dashboard.lua
+v
+v dashboard.lua
+v
+v dashboard.lua
+c
+v
+v dashboard.lua
+ls
+nvim dashboard.sh
+bash ./dashboard.
+bash ./dashboard.sh
+nvim dashboard.sh
+nvim dashboard.sh
+bash ./dashboard.sh
+v dashboard.lua
+v dashboard.sh
+rm -f dashboard.sh
+ls
+v dashboard.lua
+v
+ls
+nvim dashboard.lua
+v
+v dashboard.lua
+cd ~/.config/nvim
+cd lua/plugins/config
+ls
+v dashboard.lua
+v
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+git pull
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+v dashboard.lua
+cd ..
+ls
+cd ~/.config/nvim
+ls
+cd .github
+v README.md
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+git pull
+git config pull.rebase true
+git config pull.ff only
+git pull
+git push git@github.com:ysfgrgO7/nvoid.git
+v 
+git add -A
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd ..
+cd ..
+ls
+rm -f nvim
+rm -f ~/.local/share/nvim
+cd ~/.local/share/lunarvim/lvim/lua/lvim/
+ls
+v plugin
+v plugin-loader.lua
+v plugins.lua
+ls
+cd config
+ll
+v init.lua
+ls
+nvim defaults.lua
+ls
+cd ..
+cd ~/Media/NvChad
+ls
+cd lua
+ls
+cd custom
+ls
+nvim example_chadrc.lua
+ls
+cd ..
+ls
+cd colors
+ls
+v init.lua
+ls
+nvim highlights.lua
+ls
+cd ..
+ll
+cd core
+v default_config.lua
+ls
+nvim utils.lua
+ls
+cd ..
+ls
+cd ~/.config/nvim/lua/mappings
+ls
+touch map.lua
+ls
+nvim map.lua
+nvim map.lua
+ls
+cd ..
+ls
+cd core
+v init.lua
+ls
+nvim init.lua
+ls
+nvim init.lua
+ls
+cd ..
+ls
+cd mappings
+l
+ls
+nvim init.lua
+ls
+v map.lua
+c
+v
+ls
+nvim init.lua
+v
+ls
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+ls
+cd core
+ls
+nvim init.lua
+ls
+mv init.lua init.lua.bc
+touch init.lua
+git clone https://github.com/ysfgrgO7/nvoid.git
+cd nvoid
+v init.lua
+cd .git
+l
+cd ../.github
+v README.md
+ls
+cd ..
+ls
+cd lua
+ls
+cd plugins
+ls
+cd config
+ls
+v dashboard.lua
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+cd ../../../.github
+ls
+v NVOID-Install.sh
+cd ..
+cd ..
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/NVOID-Install.sh)"
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/NVOID-Install.sh)"
+(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/NVOID-Install.sh
+curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/NVOID-Install.sh
+cd nvoid
+ls
+cd lua
+ls
+cd ../
+ls
+cd .github
+v README.md
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/NVOID-Install.sh)"\
+
+v
+ls
+cd ..
+cd ~/.config/nvim
+ls
+cd lua
+ls
+v nv-config.lua
+v
+v nv-config.lua
+v
+v nv-config.lua
+v nv-config.lua
+ls
+v
+ls
+cd core
+s
+ks
+ls
+nvim init.lua
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd core
+ls
+lvim init.lua
+ls
+rm -f init.lua
+mv init.lua.bc init.lua
+ls
+v
+ls
+ls
+v
+cd ~/.config/nvim
+cd lua
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+nvim nv-config.lua
+cd ~/.config/nvim/lua
+ls
+cd co
+cd core
+ls
+nvim init.lua
+nvim init.lua
+nvim init.lua
+cd ~/.config/nvim/lua/mappings
+nvim map.lua
+v
+v
+v
+v
+v
+v
+v
+v
+v
+v
+cd Media/NvChad
+ls
+cd lua
+ls
+cd core/
+ll
+nvim default_config.lua
+ls
+ls
+nvim default_config.lua
+ls
+cd ../colors
+ls
+cd i
+nvim init.lua
+nvim highlights.lua
+cd ..
+ls
+cd core
+nvim default_config.lua
+ls
+cd ..
+s
+ls
+cd colors
+v highlights.lua
+ls
+cd ..
+ls
+cd plugins
+ls
+nvim init.lua
+ls
+cd ..
+ls
+cd 
+cd ~/.config/nvim
+ls
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+v
+ls
+cd lua
+ls
+nvim nv-config.lua
+v
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd core
+ls
+nvim init.lua
+nvim init.lua
+v
+ls
+nvim init.lua
+v
+cd ..
+cd ..
+cd ..
+rm -f nvim
+rm -f ~/.local/share/nvim
+cd
+bash -c "$(curl -s https://raw.githubusercontent.com/ysfgrgO7/nvoid/main/.github/NVOID-Install.sh)"\
+
+v
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd core
+ls
+nvim utils.lua
+nvim utils.lua
+nvim utils.lua
+v
+cd ..
+ls
+nvim nv-config.lua
+v
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+nvim nv-config.lua
+ls
+cd core
+ls
+nvim init.lua
+ls
+cd .
+cd ..
+ls
+cd mappings
+ls
+nvim init.lua
+nvim init.lua
+nvim map.lua
+ls
+cd .
+cd ..
+s
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd mappings
+s
+ls
+nvim map.lua
+v
+v
+v
+ls
+nvim map.lua
+cd ..
+ls
+nvim nv-config.lua
+ls
+nvim nv-config.lua
+git add -A
+git commit -m 'New dashboard'
+git push git@github.com:ysfgrgO7/nvoid.git
+s
+v
+v
+v 
+v
+cd ~/.config
+ls
+cd nvim/lua
+ls
+cd plugins
+ls
+nvim init.lua
+v
+ls
+ls
+cd ..
+s
+ls
+cd colors
+ls
+cp nord doom-one
+cd doom-one
+ls
+nvim colors.lua
+ls
+nvim init.lua
+ls
+cd ..
+ls
+nvim init.lua
+v
+cd ..
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd colors
+ls
+cd doom-one
+ls
+nvim init.lua
+nvim colors.lua
+v
+v
+v
+v
+v
+ls
+s
+cd .config/nvim
+ls
+v
+v
+v
+v
+v
+v
+v
+cd ~/.config
+ls
+cd ~/.config/nvim
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+nvim init.lua
+v
+ls
+clear
+v
+ls
+v
+ls
+ls
+sudo make clean install
+sudo make clean install
+sudo make clean install
+ls
+cd st/patches
+ls
+cp columns-rows-reflow-st-unpatched.patch ~/.local/st/
+ls
+cd ~/st
+ls
+nvim config.def.h
+ls
+nvim config.def.h
+git clone https://github.com/BeyondMagic/st.git
+rm -f st
+git clone https://github.com/BeyondMagic/st.git
+cd st
+ls
+cd patches
+ls
+cd ..
+sudo make clean install
+nvim config.
+nvim config.def.h
+ls
+cd patches
+l
+ls
+cp columns-rows-reflow-st-unpatched.patch ~/.config/suckless/st
+cd ~/.config/suckless/s
+cd ~/.config/suckless/st
+git add -A
+git commit -m 'New dwm'
+git push
+ls
+patch -p1 < columns-rows-reflow-st-unpatched.patch
+nvim st.h.rej
+nvim st.c.rej
+nvim st.c.rej
+cd ..
+cd ..
+rm -f suckless
+git clone https://gitlab.com/ysfgrg/suckless
+cd ~/.local
+ls
+git clone https://git.suckless.org/st
+ls
+cd st
+ls
+sudo make clean install
+patch -p1 < columns-rows-reflow-st-unpatched.patch
+sudo make clean install
+ls
+;s
+cd ~/.local/st
+ls
+nvim config.def.h
+v
+ls
+cd ~/.local/st
+ls
+ls
+ls
+mkdir patches
+mv columns-rows-reflow-st-unpatched.patch patches
+patch -p1 < st-anysize-0.8.4.diff
+sudo make clean install
+ls
+clear
+ls
+l
+cd ~/.local/st
+ls
+mv st-anysize-0.8.4.diff patches
+ls
+ls
+patch -p1 < st-alpha-0.8.2.diff
+sudo make clean install
+rm -f config.h
+sudo make clean install
+;s
+ls
+cd ~/.config/suckless/st
+ls
+cp themes ~/.local/s
+cp themes ~/.local/st
+cd ~/.local/st
+ls
+mv st-alpha-0.8.2.diff patches
+ls
+ls
+patch -p1 < st-nordtheme-0.8.2.diff
+nvim config.def.h
+ls
+cd themes
+s
+ls
+nvim nord.h nord.h
+ls
+cd ..
+ls
+nvim config.def.h
+cd ~/.config/suckless/st
+nvim config.def.h
+cd ~/.config/suckless/st
+sudo make clean install
+cd ~/.config/suckless/st
+nvim config.def.h
+cd ~/.config/suckless/st
+cd themes
+nvim onedark.h
+;s
+ls
+cd ~/.local/st
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+ls
+nvim config.def.h
+cd themes
+ls
+nvim onedark.h
+cd ..
+rm -f config.h
+sudo make clean install
+ls
+v
+ls
+ls
+ls
+v
+v
+ls
+cd ~/.config/suckless/st
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+cd ~/.local/st
+ls
+v st-nordtheme-0.8.2.diff
+ls
+ls
+patch -p1 < st-scrollback-20210507-4536f46.diff
+patch -p1 < st-scrollback-20210507-4536f46.diff
+nvim st.h.rej
+rm -f config.h
+sudo make clean install
+cd ..
+rm -f st
+ls
+git clone https://git.suckless.org/st
+ls
+ls
+cd st
+ls
+sudo make clean install
+rm -f config.h
+sudo make clean install
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+ls
+pwd
+sudo make install
+nvim x.c
+cd ..
+rm -f config.h
+git clone https://github.com/BeyondMagic/st.git
+rm -f st
+rm -f suckless
+git clone https://github.com/BeyondMagic/st.git
+cd st
+sudo make install
+nvim config.def.h
+rm -f config.h
+sudo make install
+sudo make install
+nvim config.def.h
+rm -f config.h
+sudo make install
+nvim config.h
+nvim config.def.h
+ls
+v
+v config.
+v config.def.h
+ls
+v
+cd ~/.local/st
+ls
+nvim onedark.h
+cd ..
+ls
+cd 
+cd s
+cd st
+ls
+nvim config.def.h
+;s
+;s
+ls
+cd ~/.local/st
+nvim config.def.h
+ls
+clear
+ls
+cd ~/.config/suckless/st
+cp themes ~/st
+ls
+cd ~/st
+ls
+ll
+cd -
+ls
+nvim config.def.h
+\:q
+cd ~/.config/suckless/st
+nvim config.def.h
+ls
+cd ~/.config/suckless/st
+ls
+nvim config.def.h
+ls
+cd ~/.config/suckless/st
+ls
+ls
+ls | wc -l
+ls
+cd st
+nvim config.def.h
+nvim config.def.h
+ls
+rm -f config.h
+sudo make install
+rm -F TODO
+rm -f TODO
+rm -f README.md
+ls
+rm -f patches
+rm -f .git
+rm -f .github
+rm -f .gitignore
+ls
+rm -f LEGACY
+rm -f LICENSE
+ls
+nvim FAQ
+rm -f FAQ
+ls
+ls | wc -l
+ls
+rm -f config.h
+sudo make clean install
+cd ~/.config
+ls
+cd .config/nvim
+cd nvim/lua/colors/o
+cd nvim/lua/colors/
+s
+ls
+cd nord
+ls
+cd co
+v colors.lua
+ls
+cd ..
+ls
+cd doom-one
+ls
+nvim init.lua
+ls
+nvim colors.lua
+ls
+git add -A
+cd ..
+ls
+cd ..
+ls
+nvim nv-config.lua
+v
+ls
+git add -A
+git commit -m 'adding doom-one'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+ls
+cd colors
+ls
+ls
+ls
+cd ..
+ls
+cd plugins
+ls
+nvim init.lua
+v
+v
+ls
+cd ../colors
+ls
+cp nord dracula
+ls
+cd dracula
+ls
+nvim init.lua
+ls
+nvim colors.lua
+ls
+cd ..
+s
+ls
+nvim init.lua
+ls
+cd ..
+ls
+nvim nv-config.lua
+v
+ls
+nvim nv-config.lua
+ls
+nvim nv-config.lua
+v
+git add -A
+git commit -m 'adding dracula'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+cd plugins
+ls
+nvim init.lua
+v
+v
+ls
+cd config
+cp nord gruvbox
+ls
+cd ../../colors
+l
+ls
+cp nord gruvbox
+cd gruvbox
+l
+ls
+nvim init.lua
+nvim colors.lua
+v
+cd ..
+ls
+nvim init.lua
+v
+cd ..
+ls
+nvim nv-config.lua
+v
+ls
+cd colors
+ls
+cd gruvbox
+ls
+nvim colors.lua
+l
+ls
+nvim init.lua
+v
+ls
+nvim colors.lua
+nvim colors.lua
+nvim init.lua
+v
+v
+nvim init.lua
+ls
+v init.lua
+ls
+cd ..
+ls
+cd ..
+ls
+git add -A
+nvim nv-config.lua
+git add -A
+git commit -m 'adding gruvbox'
+git push git@github.com:ysfgrgO7/nvoid.git
+ls
+nvim nv-config.lua
+ls
+clear
+ls
+cd ~/.config/suckless/st
+ls
+nvim config.def.h
+ls
+ls
+ls
+v
+ls
+clear
+ls
+cd st
+ls
+cd themes
+ls
+cd ..
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+cd ~/.config/suckless/st
+ls
+nvim config.def.h
+ls
+cd s
+cd s
+cd st
+nvim config.def.h
+ls
+ls
+ls
+clear
+ls
+clear
+clear
+ls
+mkdir github_repo
+cd github_repo
+ls
+mv ../st 
+mv ../st .
+ls
+cp ~/.config/suckless/dwm .
+s
+ls
+cd dwm
+ls
+cd ..
+ls
+cd st
+ls
+nvim config.def.h
+ls
+cd ..
+cd ..
+poweroff
+ls
+clear
+ls
+v
+cd ~/.config/nvim/lua/plugins/config
+ls
+cd ~/github_repo/st
+sudo make clean install
+sudo make clean install
+cd ~/.config/nvim
+ls
+cd lua
+s
+ls
+cd plugins
+ls
+nvim plugConfig.lua
+git add -A
+git commit -m 'adding colorizer'
+git push git@github.com:ysfgrgO7/nvoid.git
+sudo make clean install
+cd -
+ls
+cd ~/github_repo/st 
+sudo make clean install
+cd ~/.config/nvim
+ls
+cd ~/.config/nvim
+==ls
+clear
+ls
+ls
+clear
+ll
+ls
+clear
+ls
+ll
+ls
+ls
+clear
+s
+clear
+ls
+cd ~/.config/nvim
+ls
+cd ~/.config/suckless/st
+v config.def.h
+ls
+clear
+clear
+ls
+v
+ls
+clear
+v
+ls
+ls
+cd github_repo/st
+ls
+ls
+cd themes
+s
+ls
+ls
+cd themes
+nvim onedark.h
+cd ..
+ls
+nvim config.def.h
+v
+rm -f config.h
+sudo make clean install
+nvim config.def.h
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+cd ~/.config/suckless/st
+v config.def.h
+clear
+ls
+clear
+ls
+clear
+cd ~git
+ls
+cd 
+cd ~/github_repo/st
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+clear
+cd ~/.config/suckless/st
+v config.def.h
+ls
+clear
+ls
+clear
+clear
+ls
+clear
+clear
+ls
+cd ~/.config/suckless/st
+ls
+nvim config.def.h
+clear
+cd ~/github_repo/st
+ls
+nvim config.
+nvim config.def.h
+clear
+v
+cd ~/.config/suckless/st
+v config.def.h
+v
+v
+v
+cd ~/.config/suckless/st
+v config.def.h
+ls
+v
+v
+ls
+v
+ls
+clear
+sudo make clean install
+rm -f config.h
+sudo make clean install
+clear
+v
+v
+ls
+clear
+ls
+ls
+v
+v config.def.h
+cd ~/.config/suckless/st
+v config.def.h
+rm -f config.h
+sudo make clean install
+rm -f config.h
+sudo make clean install
+cd ~/github_repo/st
+ls
+nvim config.def.h
+rm -f config.h
+sudo make clean install
+v
+v
+v
+cd ~/.config/suckless/st
+v config.def.h
+v
+cd ~/.config/suckless
+ls
+cp dmenu ~/github_repo/
+ls
+cp slstatus
+cp slstatus ~/github_repo
+cd ~/.config/nvim
+ls
+nvim init.lua
+cd lua
+sl
+ls
+nvim nv-config.lua
+cd ~/github_repo/st
+sl
+ls
+nvim config.def.h
+cd ~/github_repo/st
+ls
+rm -f config.h
+sudo make clean install
+ls
+ls
+cd ..
+ls
+cd dwm
+ls
+cd themes
+ls
+cd ..
+cd ..
+ls
+cd st
+s
+ls
+cd ..
+ls
+ls
+cd ~/.config/nvim
+l
+ls
+cd ../suckless/slstatus
+sl
+ls
+date
+sb-time
+killall slstatus
+ls
+xsetroot
+xsetroot '${time}'
+xsetroot '$(time)'
+xsetroot -name '$(time)'
+xsetroot -name '$time'
+xsetroot -name "$(time)"
+xsetroot -name "$(sb-time)"
+cd ~/github_repo/dwm
+ls
+nvim config.def.h
+cd ~/github_repo/dwm
+ls
+/usr/local/bin/bar/bar.sh
+dash
+paru -S dah
+paru -S dash
+/usr/local/bin/bar/bar.sh
+ls
+cd ~/.config
+ls
+cd suckless
+sl
+ls
+cd slstatus
+l
+ls
+	ls
+ks
+ls
+ cd scripts
+ls
+nvim 
+nvim sb-cpu sb-mem sb-temp sb-time sb-update sb-uptime sb-volume
+ls
+v
+cd ..
+ls
+sudo make clean install
+ls
+nvim config.def.h
+cd 
+cd Media
+git clone https://github.com/siduck76/chadwm.git
+ls
+cd NvChad
+s
+ls
+cd lua
+ls
+cd ..
+ls
+cd ..
+ls
+cd chadwm
+ls
+cd .dwm
+sl
+ls
+cd bar
+ls
+cd themes
+ls
+cd ..
+ls
+cd ..
+ls
+cp bar ~/github_repo/dwm
+cd ~/github_repo/dwm
+ls
+cd bar
+ls
+nvim bar.sh
+ls
+cd ..
+ls
+ls
+nvim Makefile
+ls
+sudo make install
+nvim Makefile
+sudo make install
+acpi
+paru -S acpi
+sudo pacman -Sy
+sudo pacman -Syu
+killall xsetroot
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+cd ~/github_repo/dwm
+ls
+cd n
+cd bar
+ls
+nvim bar.sh
+cd ..
+ls
+nvim config.def.h
+sudo make
+sudo make install
+cd bar
+ls
+nvim bar.sh
+ls
+cd ..
+sudo make install
+ls
+cd bar
+ls
+nvim bar.sh
+ls
+cd ..
+sudo make install
+ls
+cd ~/github_repo/slstatus
+lsn
+cd scripts
+ls
+nvim sb-update
+cd ~/github_repo/dwm
+ls
+cd bar
+ls
+nvim sb-update
+nvim bar.sh
+ping google.com
+ping google.com
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -Syu
+ping google.com
+ping google.com
+ping google.com
+sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -Syu
+cd ~/github_repo/dwm
+ls
+nvim config.def.h
+sb-volume
+cd ~/github_repo/dwm
+sudo make install
+pacman -Fs checkupdates
+pacman -Fs checkupdates
+pacman -Fy checkupdates
+pacman -Fy
+doas pacman -Fy
+pacman -Fy checkupdates
+pacman -Fs checkupdates
+pacman -F checkupdates
+cd /usr/bin
+ls
+ncd 
+cd 
+pacman -F checkupdates
+doas pacman -Syu checkupdates
+ls
+paru -S checkupdates-aur
+paru -S pacman-contrib
+checkupdates
+cd github_repo/slstatus
+ls
+l
+ls
+cd ~/.config/suckless/st
+sudo make install
+cd github_repo/slstatus
+cd ../dmenu
+cd ../st
+sudo make install
+cd github_repo/slstatus
+ls
+cd scripts
+ls
+nvim 
+cd Media/mus
+ls
+cd ~/github_repo/st
+l
+ls
+cd themes
+ls
+nvim onedark.h
+cd github_repo/slstatus
+s
+v config.def.h
+cd ..
+ls
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+cd ~/github_repo/dwm
+ls
+cd themes
+sl
+ls
+nvim onedark.h
+cd ..
+ls
+cd bar
+ls
+nvim bar.sh
+cd ..
+sudo make install
+nvim bar.sh
+ls
+cd bar
+ls
+nvim bar.sh
+cd ..
+sudo make install
+sudo make install
+ls
+ls
+ls
+cd bar
+ls
+nvim bar.sh
+cd ~/github_repo/dwm
+cd ../dwm
+ls
+cd ../st
+ls
+cd themes
+ls
+nvim onedark.h
+ls
+cd ~/github_repo/dwm
+l
+cd bar
+;s
+ls
+nvim bar.sh
+cd ~/github_repo/dwm
+ls
+cd bar
+ls
+nvim n
+nvim bar.sh
+cd ~/github_repo/dwm
+ks
+ls
+nvim bar/bar.sh
+cd ~/github_repo/st
+ls
+nvim config.
+nvim config.def.h
+rm -f config.h
+sudo make install
+cd ~/github_repo/st
+ls
+cd themes
+;s
+ls
+nvim onedark.h
+sudo make install
+;s
+ls
+;s
+ls
+cd github_repo
+ls
+cd slstatus
+ls
+cd scripts
+;s
+ls
+cd ..
+ls
+nvim config.def.h
+exit
+cd ..
+sudo make install
+sudo make install
+cd ~/github_repo/st
+ls
+cd ../dwm
+ls
+ls
+cd bar
+ls
+nvim bar.sh
+ls
+exit
+cd ~/github_repo/dwm/bar
+cd ..
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+sudo make install
+cd ~/github_repo/slstatus/scripts
+ls
+nvim sb-time
+sudo make install
+cd ..
+sudo make install
+sudo make install
+ls
+clear
+;s
+clear
+ls
+cd ~/github_repo/st/themes
+ls
+nvim nord.h
+ls
+cd ..
+ls
+nvim config.def.h
+ls
+ls
+cd ..
+ls
+cd dwm
+ls
+nvim bar/bar.sh
+ls
+nvim config.def.h
+rm -f config.h
+sudo make install
+nvim config.def.h
+sudo make install
+rm -f config.h
+sudo make install
+l
+ls
+cd ..
+ls
+cd st
+ls
+cd themes
+ls
+cd ..
+ls
+nvim config.def.h
+rm -f config.h
+sudo make install
+ls
+cd ..
+cd ~/github_repo/dwm/bar
+ls
+nvim bar.sh
+nvim bar.sh
+nvim bar.sh
+ls
+cd themes
+ls
+rm 0f gruvchad
+rm 0f gruvchad
+rm -f gruvchad
+rm -f nord
+ls
+cp onedark nord
+cp onedark gruv
+ls
+nvim nord
+ls
+cd ~/github_repo/st/themes
+ls
+nvim gruv.h
+cd .
+cd ..
+ls
+nvim config.def.h
+rm -f nord
+rm -f config.h
+sudo make install
+ls
+cd ~/github_repo/dwm/bar
+ks
+ls
+nvim bar.sh
+cd themes
+ls
+nvim gruv
+cd ..
+ls
+nvim bar.sh
+cd ..
+sudo make install
+nvim config.def.h
+v
+rm -f config.h
+sudo make install
+cd themes
+ls
+cd ..
+cd bar
+ls
+nvim bar.sh
+cd ..
+sudo make install
+ls
+cd bar
+ls
+nvim bar.sh
+cd /usr/local/bin
+ks
+ks
+ls
+cd bar
+ls
+./bar.sh
+cd ~/github_repo/dwm/bar
+ls
+cd themes
+ls
+nvim i
+nvim onedark
+ls
+cd ..
+cd ..
+doas rm -rf /usr/local/bin/bar
+doas rm -rf /usr/local/bin/bar
+ls
+sudo make install
+nvim config.def.h
+/usr/local/bin/bar/bar.sh
+sb-volume
+sb-volume
+pulseaudio --start
+sb-volume
+sb-volume
+ls
+sudo pacman -Syu\
+sudo pacman -Syu
+ls
+pulseaudio --start
+paru -S pulseaudio 
+paru -S alsa-pulgins-git alsa-firmware
+paru -S alsa-oss
+paru -S alsa-utils
+paru -S pulseaudio-alsa
+reboot
+sudo pacman -Rns gnome
+sudo pacman -Rnc gnome
+pulseaudio --start
+pulseaudio --start
+pulesmixer
+paru -S pulsemixer
+orphans
+orphans
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+pulsemixer
+ls
+sudo pacman -S plasma-meta kde-applications-meta
+reboot
+/usr/local/bin/bar/bar.sh
+/
+cd ~/github_repo/dwm/bar
+ls
+cd ..
+ks
+nvim 
+nvim config.def.h
+sudo pacman -Syu
+cd ~/.config/nvim
+l
+ls
+cd lua
+ls
+nvim nv-config.lua
+v
+clear
+ls
+clear
+cd ~/.config/alacritty
+ls
+nvim alacritty.yml
+ls
+cd ~/github_repo/dwm/bar
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir suckless
+ls
+ld
+mv dmenu suckless
+ls
+rm -f slstatus
+ls
+mv dwm suckless
+ls
+mv st suckless
+ls
+alchanger.sh
+ls
+cd suckless
+ls
+cd st
+ls
+cd themes
+ls
+cp onedark.h tokyonight.h
+ls
+nvim tokyonight.h
+ls
+cd ..
+ls
+nvim config.def.h
+ls
+rm -f config.h
+sudo pacman -Syu
+sudo make install
+cd github_repo
+ls
+cd suckless
+ls
+git clone https://github.com/ysfgrgO7/Suckless.git
+cd st
+cd ..
+ls
+cd st
+cd ..
+ls
+cd Suckless
+ls
+mv .git../
+mv .git ../
+mv .gitignore ../
+ls
+mv LICENSE ../
+ls
+mv README.md ../
+ls
+ls
+cd ..
+rm -f Suckless
+s
+ls
+mkdir .github
+ls
+mv README.md .github
+ls
+rm -f .git
+git clone https://github.com/ysfgrgO7/Suckless.git
+rm -f .gitignore
+ls
+cd Suckless
+ls
+mv .git ../
+ls
+cd ..
+ls
+rm -f Suckless
+ls
+git add -A
+git commit -m 'First Commit'
+git push git@github.com:ysfgrgO7/Suckless.git
+ls
+paru -S trayer
+paru -S flameshot
+trayer 
+trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 22 &
+cd ~/github_repo/dme
+cd ~/github_repo/suckless/dmenu
+ls
+v
+ranger
+ls
+cd ~/github_repo/suckless/
+git pull
+ls
+cd ..
+ls
+ls
+cd suckless
+ls
+cd .github
+ls
+cd ..
+ls
+cd st
+l
+ls
+cd github_repo/suckless
+git add -A
+git pull
+cd github_repo/suckless/dwm
+ls
+patch -p1 < dwm-statusallmons-6.2.diff
+rm -f config.h
+sudo make install
+git add -A
+git commit -m 'Status all mons patch - dwm'
+git push git@github.com:ysfgrgO7/Suckless.git
+cd github_repo/suckless/dwm
+ls
+nvim dwm-statusallmons-6.2.diff
+cd ..
+ls
+cd .github
+nvim README.md
+cd ..
+ls
+cd cd dw
+cd dwm
+ls
+rm -f dwm-statusallmons-6.2.diff
+cd ..
+git add -A
+git commit -m 'Status all mons patch - dwm'
+git push git@github.com:ysfgrgO7/Suckless.git
+ls
+clear
+l
+ld
+ls
+cd ~/github_repo/suckless/
+ls
+cd ..
+ls
+paru -Rns kde-applications-meta plasma-meta
+orphans
+pulseaudio --start
+pulseaudio --start
+paru -S kde-applications-meta plasma-meta
+v
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+alchanger.sh
+l
+ls
+clear
+st
+cd ~/.config/alacritty
+ls
+v alacritty.yml
+ls
+cd ~/.config/nvim/lua
+nvim nv-config.lua
+ls
+cd ~/github_repo/suckless/st
+ls
+cd themes
+cp nord.h doom-one.h
+ls
+nvim doom-one.h
+git add -A
+git commit -m 'doom-one theme - st'
+ls
+cd ..
+ls
+cd ..
+ls
+cd dmenu/themes
+ls
+cd ..
+sl
+ls
+cd ../st
+s
+cd themes
+ls
+ls | wc -l
+cd ~/.config/alacritty
+v alacritty.yml
+cd ~/.config/nvim/lua
+ls
+cd ..
+ls
+cd ~/github_repo/suckless/st
+ls
+cd themes
+ls
+v dracula.h
+cd ..
+v
+ls
+ls
+nvim config.def.h
+rm -f config.h
+st
+sudo make install
+git add -A
+cd ~/github_repo/suckless/
+ls
+cd st
+ls
+cd themes
+ls
+v dracula.h
+cd ..
+ls
+nvim config.def.h
+ls
+cd themes
+ls
+v dracula.h
+cd ..
+ls
+nvim config.def.h
+rm -f co
+rm -f config.h
+sudo make install
+cd ~/github_repo/suckless/
+v st/config.def.h
+ls
+cd st
+ls
+cd themes
+ls
+ls | wc -l
+;s
+ls
+cd ~/github_repo/suckless/
+ls
+ls
+cd ~/.config/nvim
+;s
+ls
+cd lua
+ls
+nvim nv-config.lua
+cd ~/github_repo/suckless/
+git add -A
+git commit -m 'dracula theme - st'
+git push git@github.com:ysfgrgO7/Suckless.git
+ls
+dracula
+cd ~/github_repo/suckless/
+ls
+paru -Rns virtualbox
+;s
+git add -A
+sudo pacman -Syu
+paru -Rns virtualbox
+paru -Rns virtualbox
+paru -Rns virtualbox-guest-utils-nox
+paru -Rns virtualbox-host-dkms
+orphans
+paru -Rnc virt-install
+paru -Rns virglrenderer
+paru -Rns qemu
+orphans
+paru -Rns qemu-guest-agent
+orphans
+ks
+ls
+split
+split 2021-11-16-211344_3520x1080_scrot.png
+ls
+sudo pacman -Syy\
+sudo reboot \
+sudo pacman -S archlinux-keyring\
+sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+cd wallpapers
+git clone https://github.com/ysfgrgO7/Wallpaper.git
+ls
+rm -f .git
+ls
+cd Wallpaper
+;s
+ls
+mv LICENSE ../
+mv .git/ ../
+ls
+cd ..
+ls
+rm -f .git
+rm -f Wallpaper
+git clone https://github.com/ysfgrgO7/Wallpaper.git
+cd Wallpaper
+ls
+mv LICENSE
+mv LICENSE ../
+mv .git ../
+ls
+cd ..
+ls
+rm -f Wallpaper
+ls
+git add -A
+git add -A
+git commit -m 'New Walls'
+git push git@github.com:ysfgrgO7/Wallpaper.git
+v
+galculator
+paru -S galculator
+nvim .x
+nvim .xprofile
+cd ~/.config/ranger
+ls
+cd plugins
+l
+ls
+cd ranger_devicons
+rm -f .git
+rm -f .github
+ls
+v
+ranger
+ls
+ls
+cd github_repo
+git clone https://github.com/ysfgrgO7/Dotfiles.git
+cd Dotfiles
+ls
+cp -r ~/.zshrc
+nvim ~/.z
+nvim ~/.zshrc
+ls
+cp ~/.xprofile .
+ls
+mkdir .config
+ls
+cd .
+cd .config
+l
+ls
+cp ~/.config/alacritty .
+ls
+cp ~/.config/doom .
+ls
+cp ~/.config/picom .
+ls
+cp ~/.config/zsh .
+ls
+cp ~/.config/ranger
+ls
+cp ~/.config/ranger .
+ls
+cd ranger
+ls
+cd plugins
+sl
+ls
+cd ranger_devicons
+ls
+rm -f .git
+ls
+rm .github
+rm .github
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+ls
+cp ~/.config/rofi
+cp ~/.config/rofi .
+ks
+ls
+cd ~/.config
+ls
+cd github_repo/Dotfiles/.config
+ls
+cp ~/.config/VSCodium .
+ks
+l
+ll
+l
+ls
+shfetch
+shfetch
+v
+cd ~/.config/nvim
+cd lua
+ls
+nvim nv-config.lua
+v
+v
+ls
+alchanger.sh
+ls
+ls
+alchanger.sh
+ls
+s
+sfdisk
+shfetch
+shfetch
+v
+cd .config/alacritty
+ls
+v alacritty.yml
+alchanger.sh
+cd ~/.config/nvim
+v init.lua
+v init.lua
+alchanger.sh
+alchanger.sh
+alchanger.sh
+exi
+exit
+ls
+ls
+nvim xaa
+chmod +x xaa
+./xaa
+cd ~/.config/nvim
+ls
+v 
+cd lua
+ls
+nvim nv-config.lua
+nvim nv-config.lua
+ls
+cd ~/.config/nvim
+ls
+cd ~/.config/alacritty
+ls
+nvim alacritty.yml
+ls
+clear
+alchanger.sh
+alacritty
+alchanger.sh
+shfetch
+alchanger.sh
+ls
+clear
+cd ~/.config/alacritty
+ls
+nvim alacritty.yml
+nvim alacritty.yml
+ls
+ls
+clear
+v alacritty.yml
+clear
+v alacritty.yml
+ls
+cd ~/.config/nvim
+l
+ll
+v 
+ls
+cd lua
+ls
+v nv-config.lua
+v nv-config.lua
+v nv-config.lua
+v nv-config.lua
+v nv-config.lua
+v
+alchanger.sh
+ls
+cd ~/.config/alacritty
+v alacritty.yml
+ls
+ls
+clear
+ls
+ls
+v
+s
+ls
+cd ~/.config/alacritty
+ls
+nvim alacritty.yml
+ls
+alchanger.sh
+alchanger.sh
+ls
+ls
+./update.sh
+cd ~/.local
+ls
+cd share
+mv ../bin .
+ls
+cd ~/.config/zsh
+ls
+nvim zsh-functions
+ls
+cd ~/.local/share/bin
+ll

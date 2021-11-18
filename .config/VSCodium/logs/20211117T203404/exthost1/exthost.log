@@ -1,0 +1,16 @@
+[2021-11-17 20:34:10.199] [exthost] [info] Extension host with pid 104086 started
+[2021-11-17 20:34:10.631] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-11-17 20:34:10.661] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-11-17 20:34:10.787] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+[2021-11-17 20:34:11.363] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-11-17 20:34:11.510] [exthost] [info] Eager extensions activated
+[2021-11-17 20:34:11.521] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-11-17 20:35:19.239] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-11-17 20:35:19.493] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-11-17 20:35:19.704] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2021-11-17 20:35:19.836] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2021-11-17 20:35:39.731] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2021-11-17 20:35:44.688] [exthost] [info] ExtensionService#_doActivateExtension zhuangtongfa.material-theme, startup: false, activationEvent: '*'
+[2021-11-17 20:38:05.519] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-11-17 20:38:05.532] [exthost] [error] Error: ENOENT: no such file or directory, open '/home/ysf/.config/VSCodium/User/globalStorage/vscodevim.vim/.registers'
+[2021-11-17 20:38:06.529] [exthost] [info] Extension host with pid 104086 exiting with code 0

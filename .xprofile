@@ -1,0 +1,18 @@
+#!/bin/sh
+
+### xset ###
+xset s off
+xset -dpms
+xset s noblank
+
+### Eports ###
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="brave"
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export ZDOTDIR=$HOME/.config/zsh
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
+export QT_QPA_PLATFORMTHEME=qt5ct
