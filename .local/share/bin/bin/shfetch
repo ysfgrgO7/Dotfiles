@@ -1,5 +1,5 @@
 #!/bin/bash
-clear
+
 # -- colors
 GREEN='\033[1;32m'
 BLUE='\033[34m'
