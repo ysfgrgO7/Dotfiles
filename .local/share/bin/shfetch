@@ -216,15 +216,14 @@ get_init() {
 distro_detect
 # get_kernel
 get_wm
-echo -e "               ${GREEN}os${BLUE}        ~  ${WHITE}${distro} $(uname -m)"
-echo -e "               ${GREEN}kernel${BLUE}    ~  ${WHITE}$(uname -r)"
-echo -e "     ${WHITE}•${BLACK} ${WHITE}•${RESET}       ${GREEN}Uptime${BLUE}    ~  ${WHITE}$(get_upt)"
-echo -e "     ${BLACK}${RESET}${BGYELLOW}oo${RESET}${BLACK}|${RESET}       ${GREEN}pkgs${BLUE}      ~  ${WHITE}$(get_pkg)"
-echo -e "    ${BLACK} ${RESET}${BGWHITE} ${RESET}${BLACK}'\'${RESET}      ${GREEN}Shell${BLUE}     ~  ${WHITE}$(get_shell)"
-echo -e "   ${BGYELLOW}(${RESET}${BLACK}\_;/${RESET}${BGYELLOW})${RESET}      ${GREEN}WM${BLUE}        ~  ${WHITE}${wm}"
-echo -e "               ${GREEN}Terminal${BLUE}  ~  ${WHITE}$(get_term)"
-echo -e "               ${GREEN}Memory${BLUE}    ~  ${WHITE}$(get_mem)"
-echo -e "               ${GREEN}Init${BLUE}      ~  ${WHITE}$(get_init)"
+echo -e "               ${GREEN} גּ ${BLUE}.  ${WHITE}${distro} $(uname -m)"
+echo -e "               ${GREEN}  ${BLUE}.  ${WHITE}$(uname -r)"
+echo -e "     ${WHITE}•${BLACK} ${WHITE}•${RESET}       ${GREEN}  ${BLUE}.  ${WHITE}$(get_upt)"
+echo -e "     ${BLACK}${RESET}${BGYELLOW}oo${RESET}${BLACK}|${RESET}       ${GREEN}  ${BLUE}.  ${WHITE}$(get_pkg)"
+echo -e "    ${BLACK} ${RESET}${BGWHITE} ${RESET}${BLACK}'\'${RESET}      ${GREEN}  ${BLUE}.  ${WHITE}$(get_shell)"
+echo -e "   ${BGYELLOW}(${RESET}${BLACK}\_;/${RESET}${BGYELLOW})${RESET}      ${GREEN}  ${BLUE}.  ${WHITE}${wm}"
+echo -e "               ${GREEN}  ${BLUE}.  ${WHITE}$(get_term)"
+echo -e "               ${GREEN}  ${BLUE}.  ${WHITE}$(get_mem)"
 echo -e ""
 echo -e "      ${YELLOW}██  ${YELLOW}${RED}██  ${RED}${GREEN}██  ${GREEN}${BLUE}██  ${BLUE}${CAYN}██  ${CAYN}${MAGENTA}██  ${MAGENTA}${WHITE}██  ${WHITE}"
 echo -e ""
