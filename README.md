@@ -13,7 +13,7 @@
 + Browser
   + Brave (Start Screen ==> Tabliss)
 + InterFace
-  + TWM ==> DWM
+  + TWM ==> DWM and qtile
   + RUN ==> Dmenu
   + BAR ==> Xsetroot
 + [Suckless](https://github.com/ysfgrgO7/Suckless)
