@@ -1,18 +1,13 @@
-# imp
 import os
 import subprocess
 from typing import List
 from libqtile import hook
 from libqtile.bar import Bar
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
-
-# import layout objects
 from libqtile.layout.xmonad import MonadTall
 from libqtile.layout.stack import Stack
 from libqtile.layout.floating import Floating
-
-# import widgets and bar
 from libqtile.widget.groupbox import GroupBox
 from libqtile.widget.currentlayout import CurrentLayout
 from libqtile.widget.window_count import WindowCount
@@ -24,8 +19,6 @@ from libqtile.widget.clock import Clock
 from libqtile.widget.spacer import Spacer
 from libqtile.widget.textbox import TextBox
 from libqtile.widget.thermal_zone import ThermalZone
-
-# Colors
 from colors import doom_one, gruvbox, nord, onedark
 
 
@@ -35,31 +28,25 @@ Myterm = "st"
 colors = onedark
 
 keys = [
-    # Launch applications
     Key([mod], "w", lazy.spawn("brave")),
     Key([mod], "Return", lazy.spawn(Myterm)),
     Key([mod], "d", lazy.spawn("dmenu_run -c -l 20 -g 2 -p Run: ")),
-    # Toggle floating and fullscreen
     Key([mod, "shift"], "space", lazy.window.toggle_fullscreen()),
     Key([mod], "f", lazy.window.toggle_floating()),
-    # Keybindings for resizing windows in MonadTall layout
     Key([mod, "shift"], "l", lazy.layout.grow()),
     Key([mod, "shift"], "h", lazy.layout.shrink()),
     Key([mod], "n", lazy.layout.normalize()),
-    Key([mod], "m", lazy.layout.maximize()),
+    Key([mod], "o", lazy.layout.maximize()),
     Key([mod, "control"], "space", lazy.layout.flip()),
-    # Switch between windows
     Key([mod], "h", lazy.layout.left()),
     Key([mod], "l", lazy.layout.right()),
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
     Key([mod], "space", lazy.layout.next()),
-    # Move windows between left/right columns or move up/down in current stack.
     Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
     Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
-    # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout()),
     Key([mod, "shift"], "c", lazy.window.kill()),
     Key([mod, "shift"], "r", lazy.reload_config()),
@@ -85,6 +72,27 @@ for i in groups:
             Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
         ]
     )
+
+groups.append(
+    ScratchPad(
+        "scratchpad",
+        [
+            DropDown("term", "st", opacity=1.0, width=0.8, height=0.8, y=0.1),
+            DropDown("ranger", "st ranger", opacity=1.0, width=0.8, height=0.8, y=0.1),
+            DropDown("music", "deadbeed", opacity=1.0, width=0.8, height=0.8, y=0.1),
+            DropDown("pulse", "st pulsemixer", width=0.4, x=0.3, y=0.2),
+        ],
+    )
+)
+
+keys.extend(
+    [
+        Key([mod], "t", lazy.group["scratchpad"].dropdown_toggle("term")),
+        Key([mod], "e", lazy.group["scratchpad"].dropdown_toggle("ranger")),
+        Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle("pulse")),
+        Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("music")),
+    ]
+)
 
 layouts = [
     Stack(
