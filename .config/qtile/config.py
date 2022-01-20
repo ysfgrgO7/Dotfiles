@@ -10,7 +10,6 @@ from libqtile.layout.stack import Stack
 from libqtile.layout.floating import Floating
 from libqtile.widget.groupbox import GroupBox
 from libqtile.widget.currentlayout import CurrentLayout
-from libqtile.widget.window_count import WindowCount
 from libqtile.widget.windowname import WindowName
 from libqtile.widget.cpu import CPU
 from libqtile.widget.memory import Memory
@@ -19,6 +18,7 @@ from libqtile.widget.clock import Clock
 from libqtile.widget.spacer import Spacer
 from libqtile.widget.textbox import TextBox
 from libqtile.widget.thermal_zone import ThermalZone
+from libqtile.widget.quick_exit import QuickExit
 from colors import doom_one, gruvbox, nord, onedark
 
 
@@ -31,26 +31,26 @@ keys = [
     Key([mod], "w", lazy.spawn("brave")),
     Key([mod], "Return", lazy.spawn(Myterm)),
     Key([mod], "d", lazy.spawn("dmenu_run -c -l 20 -g 2 -p Run: ")),
-    Key([mod, "shift"], "space", lazy.window.toggle_fullscreen()),
     Key([mod], "f", lazy.window.toggle_floating()),
-    Key([mod, "shift"], "l", lazy.layout.grow()),
-    Key([mod, "shift"], "h", lazy.layout.shrink()),
     Key([mod], "n", lazy.layout.normalize()),
     Key([mod], "o", lazy.layout.maximize()),
-    Key([mod, "control"], "space", lazy.layout.flip()),
     Key([mod], "h", lazy.layout.left()),
     Key([mod], "l", lazy.layout.right()),
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
     Key([mod], "space", lazy.layout.next()),
+    Key([mod], "Tab", lazy.next_layout()),
+    Key([mod, "control"], "space", lazy.layout.flip()),
+    Key([mod, "shift"], "space", lazy.window.toggle_fullscreen()),
+    Key([mod, "shift"], "c", lazy.window.kill()),
+    Key([mod, "shift"], "l", lazy.layout.grow()),
+    Key([mod, "shift"], "h", lazy.layout.shrink()),
+    Key([mod, "shift"], "r", lazy.reload_config()),
+    Key([mod, "shift"], "q", lazy.shutdown()),
     Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
     Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
-    Key([mod], "Tab", lazy.next_layout()),
-    Key([mod, "shift"], "c", lazy.window.kill()),
-    Key([mod, "shift"], "r", lazy.reload_config()),
-    Key([mod, "shift"], "q", lazy.shutdown()),
 ]
 
 groups = [
@@ -157,6 +157,20 @@ screens = [
     Screen(
         top=Bar(
             [
+                TextBox(
+                    text="  ",
+                    background=colors["bg"],
+                    foreground=colors["fg"],
+                    padding=0,
+                    fontsize=20,
+                ),
+                TextBox(
+                    text="|",
+                    background=colors["bg"],
+                    foreground=colors["gray"],
+                    padding=0,
+                    fontsize=17,
+                ),
                 GroupBox(
                     disable_drag=True,
                     active=colors["gray"],
@@ -177,19 +191,6 @@ screens = [
                 CurrentLayout(
                     background=colors["bg"],
                     foreground=colors["fg"],
-                ),
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                WindowCount(
-                    text_format="缾 {num}",
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                    show_zero=True,
                 ),
                 TextBox(
                     text="|",
@@ -299,6 +300,18 @@ screens = [
                     background=colors["bg"],
                     foreground=colors["fg"],
                     format="%b %d - %I:%M%p",
+                ),
+                TextBox(
+                    text="|",
+                    background=colors["bg"],
+                    foreground=colors["gray"],
+                    padding=0,
+                    fontsize=17,
+                ),
+                QuickExit(
+                    background=colors["bg"],
+                    foreground=colors["red"],
+                    default_text=" ",
                 ),
             ],
             margin=[10, 10, 5, 10],
