@@ -1,189 +1,3 @@
-nvim shfetch
-shfetch
-unzip Music-20210929T123823Z-001.zip
-ls
-rm -f Music-20210929T123823Z-001.zip
-ls
-doas xbps-install -Syu xdg-user-dirs
-xdg-user-dir 
-xdg-user-dirs-update
-ls
-ll
-cd Music
-cmus
-shfetch
-doas xbps-install -Syu gimp
-doas xbps-install -Syu gimp
-doas xbps-install -Syu cmus
-doas xbps-install -Syu cmus gomatrix mpv mpd ncmpcpp 
-cmus
-cmake -h
-cmake -h | grep dir
-cmake Music
-cmus Music
-cmus -f 
-cmus -h
-cmus --h
-cmus --show-cursor
-cd ~/.config/ncmpcpp
-ls
-nvim config
-ncmpcpp
-cd
-ls
-doas mpv
-doas mpv --start
-doas mpv --start=value
-ncmpcpp
-ncmpcpp
-ncmpcpp -h
-ncmpcpp --h
-ncmpcpp --help
-ls
-doas ln -s /etc/sv/mpd /var/service/
-doas xbps-install -Syu lightdm lightdm-gtk-greeter
-doas xbps-install -Syu lxdm
-doas xbps-install -Syu gdm
-doas xbps-install -Syu sddm
-doas xbps-install -Syu lightdm lightdm-gtk-greeter
-doas ln -s /etc/sv/lightdm /var/service
-doas ln -s /etc/sv/lightdm /var/service/
-startx
-doas reboot
-ncmpcpp
-ncmpcpp
-ncmpcpp 
-ls
-cd ~/.config/ncmpcpp
-nvim config
-ncmpcpp 
-nvim config
-cd ~/.moc
-ls
-doas xbps-up.sh
-doas xbps-remove -Ro 
-doas xbps-remove -Ro mpv ncmpcpp cmus
-doas xbps-remove -Ro mpd
-doas xbps-remove -Ro cmake
-doas xbps-remove -Ro 
-doas xbps-install -Syu lightdm lightdm-gtk-greeter
-doas xbps-install -Syu mpv
-startx
-cd /var/service
-ls
-rm -f mpd
-doas rm -f mpd
-cd /etc/sv
-ls
-cd lightdm
-ls
-cd ..
-doas ln -s /etc/sv/lightdm /var/service/
-cd -\
-cd -
-ls
-cd /etc/sv
-ls
-cd /var/service
-ls
-doas rm -f lightdm 
-cd
-doas ln -s /etc/sv/lightdm /var/service/
-doas rm -f /var/service/lightdm
-doas ln -s /etc/sv/lightdm/ /var/service/
-doas reboot
-doas xbps-install -Syu pcmanfm lxappearance polkit lxsession
-doas xbps-install -Syu scrot rofi
-git clone --depth=1 "https://github.com/siduck76/chadwm"
-cd chadwm
-ls
-cd chadwm
-sudo make clean install
-doas xbps-install -Syu imlib2
-doas xbps-install -Syu libimlib2
-doas xbps-install -Syu imlib2-devel
-doas make install
-cd chadwm/.dwm/bars
-bash ./onedark.sh
-shfetch
-git clone https://github.com/voidstarsh/voidwm.git
-cd voidwm
-sudo make clean install
-cd 
-mv voidwm wm
-mkdir voidwm
-mv wm voidwm/voidwm
-cd void
-cd voidwm
-ls
-cd ..
-git clone https://github.com/voidstarsh/voidwm.git
-cd voidwm
-sudo make clean install
-cd 
-mv voidwm wm
-mkdir voidwm
-mv wm voidwm/voidwm
-cd void
-cd voidwm
-ls
-cd ..
-git clone https://github.com/ozkanonur/dwm-enhanced.git
-cd dwm-enhanced
-sudo make clean install
-ls
-clear
-cd ~/.config/suckless/dwm
-sudo make clean install
-killall dwm
-shfetch
-cd ~/.local/bin\
-cd ~/.local/bin
-ls
-git add -A
-git commit -m 'adding colors'
-git push 
-doas sv up lightdm
-startx
-startx
-startx
-doas poweroff
-cd picom
-rm -f ~/.config/picom.conf
-cp picom.sample.conf ~/.config/picom.conf
-cd ~/.config
-nvim picom.conf
-cd ~/.dotfiles
-cd .config
-nvim picom
-cd ~/.config
-s
-ls
-nvim p
-nvim picom.conf
-doas xbps-remove -Ro lightdm
-doas xbps-remove -Ro lightdm lightdm-gtk-greeter
-doas xbps-remove -Ro 
-doas xbps-remove -Ro imlib2-devel
-doas xbps-remove -Ro
-doas xbps-install -Syu lxdm
-cd /var/service
-ls
-doas rm -f lightdm
-doas ln -s /etc/sv/lxdm/ /var/service
-doas ln -s /etc/sv/lxdm/ /var/service/
-ls
-startx
-startx
-doas reboot
-git clone https://github.com/ozkanonur/dmenu-enhanced.git
-cd dmenu-enhanced
-sudo make clean install
-dmenu_run -c -l 20 -g 3 -p Run:
-dmenu_run -
-dmenu_run -h 20
-dmenu_run -h 70
-dmenu_run -h 40
 dmenu_run -h 60
 dmenu_run -h 50
 dmenu_run -h 55
@@ -10281,3 +10095,24 @@ git push git@github.com:nvoid-lua/nvoid
 ls
 sudo pacman -S cargo rustup go
 zsh
+ls
+cd zsh
+ls
+rm -f plugins
+ls
+cd //
+cd -
+git add -A
+git commit -m 'zsh'
+git push git@github.com:ysfgrgO7/Dotfiles
+cd ..
+ls
+cd alacritty
+ls
+nvim alacritty.yml
+nvim alacritty.yml
+ls
+git add -A
+git commit -m 'alacritty'
+git push git@github.com:ysfgrgO7/Dotfiles
+ls
