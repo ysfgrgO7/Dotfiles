@@ -10201,3 +10201,83 @@ nvim zsh-functions
 ls
 cd ~/.local/share/bin
 ll
+ls
+cd
+rm -rf .zshrc
+lfetch
+ls
+ls
+sudo pacman -S exa lua 
+ls
+ll
+rm -f ll
+rm -f paru-bin
+ls
+ls
+ll
+mkdir github/ysfgrgO7
+mkdir github github/ysfgrgO7
+ls
+cd github
+ls
+mkdir nvoid
+mkdir git
+ls
+cd ysfgrgO7
+mv ~/Dotfiles .
+ls
+git clone https://github.com/ysfgrgO7/lfetch.git
+cd lfetch
+lua lfetch.lua
+ls
+sudo make install
+lfetch
+v lfetch.lua
+lfetch
+lua ./lfetch.lua
+sudo make install
+lfetch
+zsh
+lfetch
+cd ~/github/ysfgrgO7/lfetch
+ls
+nvim lfetch.lua
+ls
+v
+ls
+git add -A
+git commit -m 'fixing arch ascii'
+  git config --global user.email "ysfgrg2007@gmail.com"
+  git config --global user.name "ysf grg"
+  git config --global user.name "ysfgrgO7"
+ls
+cd
+ssh-keygen -t ed25519 -C "ysfgrg2007@gmail.com"
+cd .ssh
+ls
+nvim id_ed25519 id_ed25519.pub
+ls
+cd ~/github/ysfgrgO7/lfetch
+git add -A
+git commit -m 'fixing arch ascii'
+git push git@github.com:ysfgrgO7/lfetch
+git push git@github.com:ysfgrgO7/lfetch
+cd ~/.config/nvim
+ls
+cd lua
+ls
+ls
+cd nvoid
+ls
+c dp
+cd plugins
+ls
+v init.lua
+v init.lua
+v init.lua
+git add -A
+git commit -m 'plugins'
+git push git@github.com:nvoid-lua/nvoid
+ls
+sudo pacman -S cargo rustup go
+zsh

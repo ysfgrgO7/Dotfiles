@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cd 
-git clone https://github.com/ysfgrgO7/Dotfiles.git
 mkdir -p ~/.config
 cd ~/.config/
 cp -r ~/Dotfiles/.xprofile ~/.xprofile
