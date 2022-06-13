@@ -1,36 +1,31 @@
+# Imports
 import os
 import subprocess
-from typing import List
-from libqtile import hook
-from libqtile.bar import Bar
-from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
+from libqtile import bar, layout, widget, hook
+from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-from libqtile.layout.xmonad import MonadTall
-from libqtile.layout.stack import Stack
-from libqtile.layout.floating import Floating
-from libqtile.widget.groupbox import GroupBox
-from libqtile.widget.currentlayout import CurrentLayout
-from libqtile.widget.windowname import WindowName
-from libqtile.widget.cpu import CPU
-from libqtile.widget.memory import Memory
-from libqtile.widget.volume import Volume
-from libqtile.widget.clock import Clock
-from libqtile.widget.spacer import Spacer
-from libqtile.widget.textbox import TextBox
-from libqtile.widget.thermal_zone import ThermalZone
-from libqtile.widget.quick_exit import QuickExit
-from colors import doom_one, gruvbox, nord, onedark
 
-
+# Apps
 mod = "mod4"
-Myterm = "st"
+terminal = "st"
+browser = "brave"
+menu = "dmenu_run -c -l 20 -g 2 -p Run: "
 
-colors = onedark
+# Colors
+bg = "#1E1D2F"
+blue = "#96CDFB"
+cyan = "#89DCEB"
+fg = "#d9e0ee"
+gray = "#6E6C7E"
+magenta = "#F5C2E7"
+red = "#F28FAD"
+yellow = "#FAE3B0"
 
+# Keys
 keys = [
-    Key([mod], "w", lazy.spawn("brave")),
-    Key([mod], "Return", lazy.spawn(Myterm)),
-    Key([mod], "d", lazy.spawn("dmenu_run -c -l 20 -g 2 -p Run: ")),
+    Key([mod], "Return", lazy.spawn(terminal)),
+    Key([mod], "w", lazy.spawn(browser)),
+    Key([mod], "d", lazy.spawn(menu)),
     Key([mod], "f", lazy.window.toggle_floating()),
     Key([mod], "n", lazy.layout.normalize()),
     Key([mod], "o", lazy.layout.maximize()),
@@ -53,83 +48,206 @@ keys = [
     Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
 ]
 
-groups = [
-    Group("1", label="一", layout="monadtall"),
-    Group("2", label="二", layout="monadtall"),
-    Group("3", label="三", layout="monadtall"),
-    Group("4", label="四", layout="monadtall"),
-    Group("5", label="五", layout="monadtall"),
-    Group("6", label="六", layout="monadtall"),
-    Group("7", label="七", layout="monadtall"),
-    Group("8", label="八", layout="monadtall"),
-    Group("9", label="九", layout="monadtall"),
-]
-
-for i in groups:
+# Groups
+groups = [Group(i) for i in ["", "", "", "", ""]]
+group_hotkeys = "12345"
+for i, k in zip(groups, group_hotkeys):
     keys.extend(
         [
-            Key([mod], i.name, lazy.group[i.name].toscreen()),
-            Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+            Key(
+                [mod],
+                k,
+                lazy.group[i.name].toscreen(),
+                desc="Switch to group {}".format(i.name),
+            ),
+            Key(
+                [mod, "shift"],
+                k,
+                lazy.window.togroup(i.name, switch_group=True),
+                desc="Switch to & move focused window to group {}".format(i.name),
+            ),
         ]
     )
 
-groups.append(
-    ScratchPad(
-        "scratchpad",
-        [
-            DropDown("term", "st", opacity=1.0, width=0.8, height=0.8, y=0.1),
-            DropDown("ranger", "st ranger", opacity=1.0, width=0.8, height=0.8, y=0.1),
-            DropDown("music", "deadbeed", opacity=1.0, width=0.8, height=0.8, y=0.1),
-            DropDown("pulse", "st pulsemixer", width=0.4, x=0.3, y=0.2),
-        ],
-    )
-)
-
-keys.extend(
-    [
-        Key([mod], "t", lazy.group["scratchpad"].dropdown_toggle("term")),
-        Key([mod], "e", lazy.group["scratchpad"].dropdown_toggle("ranger")),
-        Key([mod], "s", lazy.group["scratchpad"].dropdown_toggle("pulse")),
-        Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("music")),
-    ]
-)
-
+# Layouts
+layout_theme = {
+    "border_width": 2,
+    "margin": 8,
+    "border_focus": blue,
+    "border_normal": bg,
+}
 layouts = [
-    Stack(
-        border_normal=colors["dark-gray"],
-        border_focus=colors["blue"],
-        border_width=2,
-        num_stacks=1,
-        margin=10,
+    layout.MonadTall(**layout_theme),
+    layout.Columns(**layout_theme),
+    layout.Max(),
+    layout.Floating(
+        border_focus=gray,
+        border_normal=bg,
+        border_width=4,
     ),
-    MonadTall(
-        border_normal=colors["dark-gray"],
-        border_focus=colors["blue"],
-        margin=10,
-        border_width=2,
-        single_border_width=2,
-        single_margin=10,
+    layout.Bsp(
+        border_focus=gray,
+        border_normal=bg,
+        border_width=4,
     ),
+    layout.Stack(num_stacks=2),
 ]
 
-floating_layout = Floating(
-    border_normal=colors["dark-gray"],
-    border_focus=colors["blue"],
-    border_width=4,
-    float_rules=[
-        *Floating.default_float_rules,
-        Match(wm_class="confirmreset"),  # gitk
-        Match(wm_class="makebranch"),  # gitk
-        Match(wm_class="maketag"),  # gitk
-        Match(wm_class="ssh-askpass"),  # ssh-askpass
-        Match(title="branchdialog"),  # gitk
-        Match(title="pinentry"),  # GPG key password entry
-        Match(wm_class="pavucontrol"),
-        Match(wm_class="zoom"),
-        Match(wm_class="bitwarden"),
-        Match(wm_class="kdenlive"),
-    ],
+widget_defaults = dict(
+    font="JetBrainsMono Nerd Font Bold",
+    fontsize=15,
+    padding=9,
 )
+extension_defaults = widget_defaults.copy()
+
+screens = [
+    Screen(
+        top=bar.Bar(
+            [
+                widget.TextBox(
+                    text="  ",
+                    background=bg,
+                    foreground=fg,
+                    padding=0,
+                    fontsize=20,
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.GroupBox(
+                    fontsize=18,
+                    active=cyan,
+                    inactive=gray,
+                    foreground=cyan,
+                    rounded=False,
+                    borderwidth=2,
+                    margin=4,
+                    highlight_method="line",
+                    highlight_color=bg,
+                    other_screen_border=gray,
+                    other_current_screen_border=cyan,
+                    this_current_screen_border=cyan,
+                    this_screen_border=gray,
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.CurrentLayout(
+                    background=bg,
+                    foreground=fg,
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.WindowName(foreground=fg),
+                widget.Spacer(length=100),
+                # # # #
+                widget.Systray(icon_size=15),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.Battery(
+                    foreground=cyan,
+                    low_foreground=red,
+                    low_percentage=0.3,
+                    format="{char} {percent:2.0%}",
+                    charge_char="",
+                    discharge_char="",
+                    full_char="",
+                    unknown_char="",
+                    empty_char="",
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.TextBox(
+                    text=" ",
+                    background=bg,
+                    foreground=red,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.ThermalZone(
+                    foreground=fg,
+                    background=bg,
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.TextBox(
+                    text="  ",
+                    background=bg,
+                    foreground=yellow,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.PulseVolume(
+                    foreground=fg,
+                    background=bg,
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.TextBox(
+                    text="  ",
+                    background=bg,
+                    foreground=blue,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.Clock(
+                    background=bg,
+                    foreground=fg,
+                    format="%b %d - %I:%M%p",
+                ),
+                widget.TextBox(
+                    text="|",
+                    background=bg,
+                    foreground=gray,
+                    padding=0,
+                    fontsize=17,
+                ),
+                widget.QuickExit(
+                    background=bg,
+                    foreground=red,
+                    default_text=" ",
+                ),
+            ],
+            30,
+            background=bg,
+            opacity=20,
+            margin=[10, 10, 5, 10],
+        ),
+    ),
+]
 
 # Drag floating layouts.
 mouse = [
@@ -144,197 +262,39 @@ mouse = [
     ),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
-widget_defaults = dict(
-    font="jetbrainsmono nerd font",
-    fontsize=13,
-    padding=10,
-    foreground=colors["bg"],
-)
-
-extension_defaults = widget_defaults.copy()
-
-screens = [
-    Screen(
-        top=Bar(
-            [
-                TextBox(
-                    text="  ",
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                    padding=0,
-                    fontsize=20,
-                ),
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                GroupBox(
-                    disable_drag=True,
-                    active=colors["gray"],
-                    inactive=colors["dark-gray"],
-                    highlight_method="line",
-                    block_highlight_text_color=colors["red"],
-                    borderwidth=0,
-                    highlight_color=colors["bg"],
-                    background=colors["bg"],
-                ),
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                CurrentLayout(
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                ),
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                WindowName(foreground=colors["fg"]),
-                Spacer(length=100),
-                # # # #
-                # thermal zone
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                TextBox(
-                    text=" ",
-                    background=colors["bg"],
-                    foreground=colors["red"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                ThermalZone(
-                    foreground=colors["fg"],
-                    background=colors["bg"],
-                ),
-                # volume
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                TextBox(
-                    text="  ",
-                    background=colors["bg"],
-                    foreground=colors["yellow"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                Volume(
-                    foreground=colors["fg"],
-                    background=colors["bg"],
-                ),
-                # cpu
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                TextBox(
-                    text="  ",
-                    background=colors["bg"],
-                    foreground=colors["cyan"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                CPU(
-                    format="{load_percent}%",
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                ),
-                # memory
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                TextBox(
-                    text="  ",
-                    background=colors["bg"],
-                    foreground=colors["magenta"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                Memory(
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                    format="{MemUsed: .0f}{mm}/{MemTotal: .0f}{mm}",
-                    padding=1,
-                ),
-                # date - time
-                TextBox(
-                    text=" |",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                TextBox(
-                    text="  ",
-                    background=colors["bg"],
-                    foreground=colors["blue"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                Clock(
-                    background=colors["bg"],
-                    foreground=colors["fg"],
-                    format="%b %d - %I:%M%p",
-                ),
-                TextBox(
-                    text="|",
-                    background=colors["bg"],
-                    foreground=colors["gray"],
-                    padding=0,
-                    fontsize=17,
-                ),
-                QuickExit(
-                    background=colors["bg"],
-                    foreground=colors["red"],
-                    default_text=" ",
-                ),
-            ],
-            margin=[10, 10, 5, 10],
-            background=colors["bg"],
-            opacity=20,
-            size=30,
-        ),
-    ),
-]
 
 dgroups_key_binder = None
-dgroups_app_rules = []  # type: List
+dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
-bring_front_click = ""
+bring_front_click = False
 cursor_warp = False
-auto_fullscreen = False
+floating_layout = layout.Floating(
+    border_focus=cyan,
+    border_normal=bg,
+    border_width=2,
+    float_rules=[
+        *layout.Floating.default_float_rules,
+        Match(wm_class="confirmreset"),  # gitk
+        Match(wm_class="makebranch"),  # gitk
+        Match(wm_class="maketag"),  # gitk
+        Match(wm_class="ssh-askpass"),  # ssh-askpass
+        Match(title="branchdialog"),  # gitk
+        Match(title="pinentry"),  # GPG key password entry
+    ],
+)
+auto_fullscreen = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
+
 auto_minimize = True
-wmname = "LG3D"
+
+wl_input_rules = None
 
 
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser("~/.config/qtile/autostart.sh")
     subprocess.run([home])
+
+
+wmname = "LG3D"

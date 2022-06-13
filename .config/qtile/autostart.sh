@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 nitrogen --restore &
-picom -b --experimental-backends &
+lxsession &
+picom --experimental-backends -b &
+nm-applet &
