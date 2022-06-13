@@ -49,7 +49,7 @@ keys = [
 ]
 
 # Groups
-groups = [Group(i) for i in ["", "", "", "", ""]]
+groups = [Group(i) for i in ["", "", "", "", ""]]
 group_hotkeys = "12345"
 for i, k in zip(groups, group_hotkeys):
     keys.extend(
@@ -111,12 +111,10 @@ screens = [
                     padding=0,
                     fontsize=20,
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.GroupBox(
                     fontsize=18,
@@ -133,34 +131,28 @@ screens = [
                     this_current_screen_border=cyan,
                     this_screen_border=gray,
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.CurrentLayout(
                     background=bg,
                     foreground=fg,
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.WindowName(foreground=fg),
                 widget.Spacer(length=100),
                 # # # #
                 widget.Systray(icon_size=15),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.Battery(
                     foreground=cyan,
@@ -173,12 +165,10 @@ screens = [
                     unknown_char="",
                     empty_char="",
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.TextBox(
                     text=" ",
@@ -191,12 +181,10 @@ screens = [
                     foreground=fg,
                     background=bg,
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.TextBox(
                     text="  ",
@@ -209,12 +197,10 @@ screens = [
                     foreground=fg,
                     background=bg,
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.TextBox(
                     text="  ",
@@ -228,12 +214,10 @@ screens = [
                     foreground=fg,
                     format="%b %d - %I:%M%p",
                 ),
-                widget.TextBox(
-                    text="|",
-                    background=bg,
+                widget.Sep(
                     foreground=gray,
-                    padding=0,
-                    fontsize=17,
+                    line_width=9,
+                    size_percent=70,
                 ),
                 widget.QuickExit(
                     background=bg,
