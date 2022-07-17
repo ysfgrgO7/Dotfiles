@@ -1,7 +1,0 @@
-[2021-11-15 16:36:11.376] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
-[2021-11-15 16:37:26.094] [sharedprocess] [info] Installing extension: vscodevim.vim
-[2021-11-15 16:37:28.739] [sharedprocess] [info] Downloaded extension: vscodevim.vim /home/ysf/.config/VSCodium/CachedExtensionVSIXs/vscodevim.vim-1.21.10
-[2021-11-15 16:37:28.941] [sharedprocess] [info] Extracted extension to /home/ysf/.vscode-oss/extensions/.e2bd7170-2d69-48db-9082-33909815e95e: vscodevim.vim
-[2021-11-15 16:37:29.013] [sharedprocess] [info] Renamed to /home/ysf/.vscode-oss/extensions/vscodevim.vim-1.21.10
-[2021-11-15 16:37:29.016] [sharedprocess] [info] Extracting completed. vscodevim.vim
-[2021-11-15 16:37:29.019] [sharedprocess] [info] Extension installed successfully: vscodevim.vim
