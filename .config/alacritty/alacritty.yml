@@ -1,5 +1,5 @@
 font:
-  size: 12
+  size: 9
   offset:
     y: 1
   normal:
@@ -7,7 +7,7 @@ font:
 
 window:
   padding:
-    x: 0
+    x: 4
     y: 0
   dimensions:
     columns: 100
