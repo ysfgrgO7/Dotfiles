@@ -1,13 +1,15 @@
 font:
-  size: 9
+  size: 12
   offset:
     y: 1
   normal:
     family: "JetBrainsMono Nerd Font"
+    # family: "DaddyTimeMono Nerd Font"
 
 window:
+  # opacity: 0.8
   padding:
-    x: 4
+    x: 0
     y: 0
   dimensions:
     columns: 100
