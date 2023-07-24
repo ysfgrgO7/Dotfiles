@@ -18,4 +18,4 @@
   + BAR ==> Xsetroot
 + [Suckless](https://github.com/ysfgrgO7/Suckless)
 + [NVOID](https://github.com/ysfgrgO7/nvoid)
-+ [WALL](https://github.com/ysfgrgO7/Wallpaper)
++ [WALL](https://github.com/ysfgrgO7/Wallpapers)
