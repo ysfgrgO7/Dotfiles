@@ -1,0 +1,43 @@
+*{
+	border-radius: 0px;
+}
+
+window {
+	margin: 0px;
+	background: #1f1f1f;
+}
+
+#input {
+	margin: 10px;
+	border: none;
+	color: #f8f8f2;
+	border-radius: 0px;
+	background-image: linear-gradient(to right, #121210 0%, #191919  51%, #121210  100%);
+}
+
+#inner-box {
+	margin: 5px;
+	border: none;
+    background: #1f1f1f;
+}
+
+#outer-box {
+	margin: 5px;
+	border: none;
+    background: #1f1f1f;
+}
+
+#scroll {
+	margin: 5px;
+	border: none;
+}
+
+#text {
+	margin: 5px;
+	border: none;
+	color: #f8f8f2;
+} 
+
+#entry:selected {
+	background-image: linear-gradient(to right, #121210 0%, #191919  51%, #121210  100%);
+}

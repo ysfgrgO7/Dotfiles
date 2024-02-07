@@ -1,0 +1,57 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "margin": 5,
+
+    // Choose the order of the modules
+
+    "modules-left":[ "custom/launcher","river/tags" ],
+    "modules-center":["river/window"],
+    "modules-right":["pulseaudio", "network", "clock", "tray", "custom/power"],
+    // Modules configuration
+
+    "river/tags": {
+        "num-tags": 8
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 3,
+    },
+    "clock": {
+        "format": "<span color='#89DCEB'></span> {:%b %d - %I:%M%p}",
+        "format-alt": "<span color='#89DCEB'></span> {:%A %d %B %Y}"
+    },
+    "network": {
+        "format-wifi": "直 {signalStrength}%",
+        "format-ethernet": "<span color='#F5C2E7'> </span>",
+        "format-disconnected": "睊",
+        "format-alt": "{essid}   {ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "<span color='#FAE3B0'></span>",
+            "hands-free": "",
+            "headset": "",
+            "phone": "<span color='#ABE9B3'></span>",
+            "portable": "<span color='#ABE9B3'></span>",
+            "car": "",
+            "default": ["<span color='#FAE3B0'></span>", "<span color='#FAE3B0'></span>", "<span color='#FAE3B0'></span>"]
+        },
+		    "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    },
+    "custom/launcher":{
+        "format": "",
+        "on-click": "wofi --show drun",
+        "on-click-right": "killall wofi",
+    },
+    "custom/power":{
+        "format": "  ",
+        "on-click": "nwg-bar",
+    },
+}
+

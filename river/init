@@ -1,0 +1,130 @@
+#!/bin/sh
+
+# Window Layout
+riverctl border-width 2
+riverctl background-color 0x181625
+riverctl border-color-focused 0xff5e81ac
+riverctl border-color-unfocused 0x66333333
+
+# Set repeat rate
+riverctl set-repeat 50 300
+
+# auto starting apps
+riverctl spawn '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1'
+riverctl spawn "waybar -c ~/.config/river/waybar/config-river -s ~/.config/river/waybar/river_style.css"
+riverctl spawn "~/.config/system_scripts/pkill_bc"
+riverctl spawn "dunst"
+riverctl spawn "wl-clipboard"
+riverctl spawn "udiskie -A -t"
+riverctl spawn "gammastep-indicator"
+riverctl spawn "swayidle -w timeout 300 ~/.config/system_scripts/wayland_session_lock &"
+
+# Settings
+riverctl focus-follows-cursor always
+
+# RiverTile layout
+riverctl default-layout rivertile
+riverctl attach-mode bottom
+
+if [ -n "$(pgrep rivertile)" ]; then
+	printf 'RIVERCTL: rivertile already running with pid %s\n' "$(pidof rivertile)"
+else
+	rivertile \
+		-view-padding 5 \
+		-outer-padding 5 \
+		-main-count 1 \
+		-main-ratio 0.5 >/dev/null 2>&1 &
+fi
+
+# Touchpad
+for pad in $(riverctl list-inputs | grep -i touchpad); do
+	riverctl input $pad events enabled
+	riverctl input $pad tap enabled
+	riverctl input $pad disable-while-typing enabled
+done
+
+# Filters
+riverctl float-filter-add "float"
+riverctl float-filter-add "popup"
+riverctl csd-filter-add "firefox"
+
+# Defaults
+mod="Mod4"
+term="alacritty"
+wofi="wofi --show drun"
+files="pcmanfm-qt"
+browser="brave"
+
+# Open apps
+riverctl map normal $mod Return spawn $term
+riverctl map normal $mod D spawn "wofi --show drun"
+riverctl map normal $mod+Shift e spawn $files
+riverctl map normal $mod w spawn $browser
+
+# River
+riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND _DISPLAY XDG_CURRENT_DESKTOP=river"
+riverctl map normal $mod+Shift r spawn "bash ~/.config/river/kp"
+riverctl map normal $mod+Shift c close
+riverctl map normal $mod+Shift q spawn "nwg-bar"
+riverctl map normal $mod Space focus-view next
+riverctl map normal $mod p focus-output next
+riverctl map normal $mod+Shift p send-to-output next
+riverctl map normal $mod c zoom
+
+# Layouts
+riverctl map normal $mod f toggle-float
+riverctl map normal $mod+Shift Space toggle-fullscreen
+riverctl map normal $mod H send-layout-cmd rivertile "main-ratio -0.05"
+riverctl map normal $mod L send-layout-cmd rivertile "main-ratio +0.05"
+
+# Move,resize and snap Windows
+riverctl map normal $mod+Mod1 H move left 100
+riverctl map normal $mod+Mod1 J move down 100
+riverctl map normal $mod+Mod1 K move up 100
+riverctl map normal $mod+Mod1 L move right 100
+riverctl map normal $mod+Mod1+Control H snap left
+riverctl map normal $mod+Mod1+Control J snap down
+riverctl map normal $mod+Mod1+Control K snap up
+riverctl map normal $mod+Mod1+Control L snap right
+riverctl map normal $mod+Mod1+Shift H resize horizontal -100
+riverctl map normal $mod+Mod1+Shift J resize vertical 100
+riverctl map normal $mod+Mod1+Shift K resize vertical -100
+riverctl map normal $mod+Mod1+Shift L resize horizontal 100
+riverctl map normal $mod Up send-layout-cmd rivertile "main-location top"
+riverctl map normal $mod Right send-layout-cmd rivertile "main-location right"
+riverctl map normal $mod Down send-layout-cmd rivertile "main-location bottom"
+riverctl map normal $mod Left send-layout-cmd rivertile "main-location left"
+riverctl map-pointer normal $mod BTN_LEFT move-view
+riverctl map-pointer normal $mod BTN_RIGHT resize-view
+
+# Tags
+for i in $(seq 1 9); do
+	tags=$((1 << ($i - 1)))
+	riverctl map normal $mod $i set-focused-tags $tags
+	riverctl map normal $mod+Shift $i set-view-tags $tags
+	riverctl map normal $mod+Control $i toggle-focused-tags $tags
+	riverctl map normal $mod+Shift+Control $i toggle-view-tags $tags
+done
+all_tags=$(((1 << 32) - 1))
+riverctl map normal $mod 0 set-focused-tags $all_tags
+riverctl map normal $mod+Shift 0 set-view-tags $all_tags
+
+# Declare a passthrough mode. This mode has only a single mapping to return to normal mode. This makes it useful for testing a nested wayland compositor
+riverctl declare-mode passthrough
+riverctl map normal $mod F11 enter-mode passthrough
+riverctl map passthrough $mod F11 enter-mode normal
+
+# Media key mapping
+for mode in normal locked; do
+	# Eject the optical drive
+	riverctl map $mode None XF86Eject spawn 'eject -T'
+	riverctl map $mode None XF86AudioRaiseVolume spawn 'bash ~/.config/system_scripts/volume up'
+	riverctl map $mode None XF86AudioLowerVolume spawn 'bash ~/.config/system_scripts/volume down'
+	riverctl map $mode None XF86AudioMute spawn 'bash ~/.config/system_scripts/volume mute'
+	riverctl map $mode None XF86AudioMedia spawn 'bash ~/.config/system_scripts/volume pause'
+	riverctl map $mode None XF86AudioPlay spawn 'bash ~/.config/system_scripts/volume pause'
+	riverctl map $mode None XF86AudioPrev spawn 'bash ~/.config/system_scripts/volume prev'
+	riverctl map $mode None XF86AudioNext spawn 'bash ~/.config/system_scripts/volume next'
+	riverctl map $mode None XF86MonBrightnessUp spawn 'bash ~/.config/system_scripts/brightness up'
+	riverctl map $mode None XF86MonBrightnessDown spawn 'bash ~/.config/system_scripts/brightness down'
+done

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# End all of the auto-spawns processes
+killall polkit-gnome-authentication-agent-1
+killall dunst
+killall gammastep
+killall swayidle
+#killall cmst
+killall udiskie
+killall waybar
+
+# reload river
+~/.config/river/init

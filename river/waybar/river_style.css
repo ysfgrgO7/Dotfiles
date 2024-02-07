@@ -1,0 +1,166 @@
+* {
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 15px;
+  border: none;
+  padding: 0;
+  margin: 2;
+  border-radius: 16px;
+}
+window#waybar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.1;
+}
+
+#clock,
+#cpu,
+#network,
+#pulseaudio,
+#custom-media,
+#custom-launcher,
+#custom-power,
+#custom-layout,
+#custom-updater,
+#custom-network,
+#custom-wallpaper,
+#custom-layout,
+#taskbar,
+#tray,
+#workspaces,
+#mode,
+#idle_inhibitor,
+#mpd {
+  padding: 0 6;
+  color: #f1f1f1;
+  background-color: #1f1f1f;
+}
+
+#window {
+  margin: 0px 4px;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network {
+  padding: 2.5px;
+  /* color: #1abc9c; */
+  color: #ffffff;
+}
+
+#network:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: None;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+}
+
+#pulseaudio {
+  color: #ffffff;
+}
+
+#pulseaudio:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: None;
+}
+
+#pulseaudio.muted {
+  color: #f53c3c;
+}
+
+#custom-power {
+  font-size: 15px;
+  color: #1e1e1e;
+  background: #d16969;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 0px;
+}
+
+#custom-launcher {
+  font-size: 25px;
+  margin-left: 0px;
+  color: #b5cea8;
+  border: 0px;
+}
+
+#custom-layout {
+  font-size: 20px;
+}
+
+#custom-updater {
+  color: rgb(130, 90, 90);
+  font-weight: bold;
+}
+
+#custom-wallpaper {
+  color: rgb(233, 51, 27);
+  font-size: 20px;
+}
+
+#custom-layout {
+  color: rgb(223, 25, 58);
+  font-size: 20px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #171717;
+  color: #ffffff;
+}
+
+#idle_inhibitor {
+  font-size: 18px;
+}
+
+#idle_inhibitor.activated {
+  color: #ffffff;
+}
+
+#tags {
+  background-color: #313131;
+  border-radius: 15px;
+}
+
+#tags button {
+  padding: 0 10px;
+  background-color: transparent;
+  color: #626262;
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 23;
+}
+
+#tags button.occupied {
+  color: #ffffff;
+  background: #313131;
+}
+
+#tags button.focused {
+  color: #ffffff;
+  background: #444444;
+}
+
+#tags button:hover {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #dee1e6;
+}
+
+#tags button.focused:hover {
+  color: #e8a2af;
+}
