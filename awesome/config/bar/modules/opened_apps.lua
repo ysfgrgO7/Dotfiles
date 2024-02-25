@@ -1,36 +1,65 @@
-local M = {}
-
-pcall(require, "luarocks.loader")
-require("awful.autofocus")
+-- Required libraries
 local awful = require("awful")
-local gears = require("gears")
+local wibox = require("wibox")
 
-M.tasklist_buttons = gears.table.join(
-	awful.button({}, 1, function(c)
-		if c == client.focus then
-			c.minimized = true
-		else
-			c:emit_signal("request::activate", "tasklist", { raise = true })
-		end
-	end),
-	awful.button({}, 3, function()
-		awful.menu.client_list({ theme = { width = 250 } })
-	end),
-	awful.button({}, 4, function()
-		awful.client.focus.byidx(1)
-	end),
-	awful.button({}, 5, function()
-		awful.client.focus.byidx(-1)
-	end)
-)
+-- The opacity of the icon changes depending on whether the client is in focus.
+-- Clients in focus have full opacity (value of 1), making them stand out,
+-- while unfocused clients have reduced opacity (value of 0.5), giving them a subdued appearance.
+local function update_tasklist_item(self, c, index, objects)
+	local icon_container = self:get_children_by_id("icon_container")[1]
+	icon_container.forced_width = 40
+	icon_container.forced_height = 40
 
-function M.active_apps(s)
-	local mytasklist = awful.widget.tasklist({
-		screen = s,
-		filter = awful.widget.tasklist.filter.currenttags,
-		buttons = M.tasklist_buttons,
-	})
-	return mytasklist
+	-- Change the opacity based on focus
+	if client.focus == c then
+		icon_container.opacity = 1
+	else
+		icon_container.opacity = 0.5
+	end
 end
 
-return M
+-- This function creates a tasklist widget
+-- It displays only visible clients on the screen.
+-- The tasklist allows interaction with client windows:
+--   - Left click on a client to toggle minimization or focus it.
+--   - Right click to open a menu listing all active clients.
+local tasklist = function(s)
+	return awful.widget.tasklist({
+		screen = s,
+		filter = awful.widget.tasklist.filter.currenttags,
+		buttons = awful.util.table.join(
+			-- Left click to focus
+			awful.button({}, 1, function(c)
+				if c == client.focus then
+					c.minimized = true
+				else
+					c:emit_signal("request::activate", "tasklist", { raise = true })
+				end
+			end),
+			-- Right click: Open all active clients across all tags
+			awful.button({}, 3, function()
+				awful.menu.client_list({ theme = { width = 250 } })
+			end)
+		),
+		layout = {
+			spacing = 2,
+			layout = wibox.layout.flex.horizontal,
+		},
+		widget_template = {
+			{
+				{
+					id = "icon",
+					widget = awful.widget.clienticon,
+				},
+				id = "icon_container",
+				widget = wibox.container.background,
+			},
+			margins = 2,
+			widget = wibox.container.margin,
+			-- Set the tasklist widget size to the size of the icon
+			update_callback = update_tasklist_item,
+		},
+	})
+end
+
+return tasklist

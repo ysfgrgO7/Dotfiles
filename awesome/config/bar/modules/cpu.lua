@@ -3,7 +3,8 @@ local wibox = require("wibox")
 local math = math
 local string = string
 local helpers = require("config.bar.modules.helpers")
-local markup = require("config.bar.modules.markup")
+local markup = require("config.bar.modules.helpers.markup")
+local beautiful = require("beautiful")
 
 function M.factory(args)
 	args = args or {}
@@ -65,8 +66,8 @@ end
 function M.cpu()
 	local mycpu = M.factory({
 		settings = function()
-			local cpumon = " " .. cpu_now.usage .. "% "
-			widget:set_markup(markup("#80A1C0", cpumon))
+			local cpumon = " " .. cpu_now.usage .. "%"
+			widget:set_markup(markup(beautiful.blue, cpumon))
 		end,
 	})
 	return mycpu

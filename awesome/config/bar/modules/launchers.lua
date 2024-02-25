@@ -3,6 +3,8 @@ local awful = require("awful")
 require("awful.autofocus")
 local wibox = require("wibox")
 local naughty = require("naughty")
+local markup = require("config.bar.modules.helpers.markup")
+local beautiful = require("beautiful")
 
 local M = {}
 
@@ -10,7 +12,7 @@ local function make_launcher(opts)
 	local launcher = wibox.widget({
 		markup = opts.markup,
 		align = "center",
-		font = "JetbrainsMono Nerd Font 17",
+		font = "JetbrainsMono Nerd Font 18",
 		widget = wibox.widget.textbox,
 	})
 
@@ -32,7 +34,7 @@ local function donotif(prog)
 end
 
 local firefox = make_launcher({
-	markup = " ",
+	markup = markup(beautiful.cyan, " "),
 	align = "center",
 	onclick = function()
 		donotif("browser")
@@ -41,7 +43,7 @@ local firefox = make_launcher({
 })
 
 local terminal = make_launcher({
-	markup = " ",
+	markup = markup(beautiful.orange, " "),
 	align = "center",
 	onclick = function()
 		donotif("terminal")
@@ -50,10 +52,10 @@ local terminal = make_launcher({
 })
 
 local explorer = make_launcher({
-	markup = " ",
+	markup = markup(beautiful.blue, " "),
 	onclick = function()
 		donotif("explorer")
-		awful.spawn("pcmanfm-qt") -- comes from `user_likes.lua`'
+		awful.spawn("nemo") -- comes from `user_likes.lua`'
 	end,
 })
 

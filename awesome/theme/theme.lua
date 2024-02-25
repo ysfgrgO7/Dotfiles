@@ -6,7 +6,7 @@ local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 
 local theme = {}
-theme.font = "JetbrainsMono Nerd Font 10"
+theme.font = "JetbrainsMono Nerd Font 14"
 
 theme.white = "#dee1e6"
 theme.black = "#1E1E1E"
@@ -21,7 +21,7 @@ theme.blue = "#569CD6"
 theme.nord_blue = "#60a6e0"
 theme.orange = "#d3967d"
 theme.cyan = "#9CDCFE"
-theme.sun = "#e1c487"
+theme.yellow = "#e1c487"
 theme.purple = "#c68aee"
 
 theme.bg_normal = theme.black
@@ -46,8 +46,13 @@ theme.border_width = dpi(2)
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
-theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_normal)
-theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
+theme.taglist_squares_sel = 0
+theme.taglist_squares_unsel = 0
+
+theme.taglist_fg_occupied = theme.white
+theme.taglist_fg_urgent = theme.red
+theme.taglist_fg_focus = theme.white
+theme.taglist_fg_empty = theme.grey
 
 -- Variables set for theming notifications:
 -- notification_font
@@ -67,11 +72,17 @@ theme.menu_width = dpi(100)
 -- beautiful.variable in your rc.lua
 
 -- Define the image to load
-theme.titlebar_close_button_normal = themes_path .. "default/titlebar/close_normal.png"
-theme.titlebar_close_button_focus = themes_path .. "default/titlebar/close_focus.png"
+theme.titlebar_close_button_focus = theme_assets.taglist_squares_sel(dpi(60), theme.red)
+theme.titlebar_close_button_normal = theme_assets.taglist_squares_sel(dpi(60), theme.red)
 
-theme.titlebar_minimize_button_normal = themes_path .. "default/titlebar/minimize_normal.png"
-theme.titlebar_minimize_button_focus = themes_path .. "default/titlebar/minimize_focus.png"
+theme.titlebar_maximized_button_focus_inactive = theme_assets.taglist_squares_unsel(dpi(60), theme.green)
+theme.titlebar_maximized_button_focus_active = theme_assets.taglist_squares_sel(dpi(60), theme.green)
+
+theme.titlebar_maximized_button_normal_inactive = theme_assets.taglist_squares_unsel(dpi(60), theme.green)
+theme.titlebar_maximized_button_normal_active = theme_assets.taglist_squares_sel(dpi(60), theme.green)
+
+theme.titlebar_minimize_button_focus = theme_assets.taglist_squares_sel(dpi(60), theme.yellow)
+theme.titlebar_minimize_button_normal = theme_assets.taglist_squares_sel(dpi(60), theme.yellow)
 
 theme.titlebar_ontop_button_normal_inactive = themes_path .. "default/titlebar/ontop_normal_inactive.png"
 theme.titlebar_ontop_button_focus_inactive = themes_path .. "default/titlebar/ontop_focus_inactive.png"
@@ -87,11 +98,6 @@ theme.titlebar_floating_button_normal_inactive = themes_path .. "default/titleba
 theme.titlebar_floating_button_focus_inactive = themes_path .. "default/titlebar/floating_focus_inactive.png"
 theme.titlebar_floating_button_normal_active = themes_path .. "default/titlebar/floating_normal_active.png"
 theme.titlebar_floating_button_focus_active = themes_path .. "default/titlebar/floating_focus_active.png"
-
-theme.titlebar_maximized_button_normal_inactive = themes_path .. "default/titlebar/maximized_normal_inactive.png"
-theme.titlebar_maximized_button_focus_inactive = themes_path .. "default/titlebar/maximized_focus_inactive.png"
-theme.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
-theme.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
 
 theme.wallpaper = themes_path .. "default/background.png"
 

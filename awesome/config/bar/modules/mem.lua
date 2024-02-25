@@ -3,7 +3,8 @@ local M = {}
 local wibox = require("wibox")
 local gmatch, lines, floor = string.gmatch, io.lines, math.floor
 local helpers = require("config.bar.modules.helpers")
-local markup = require("config.bar.modules.markup")
+local markup = require("config.bar.modules.helpers.markup")
+local beautiful = require("beautiful")
 
 -- Memory usage (ignoring caches)
 -- lain.widget.mem
@@ -55,8 +56,8 @@ end
 function M.mems()
 	local mem = M.factory({
 		settings = function()
-			local memm = " " .. memnow .. "GB/" .. memtotal .. "GB"
-			widget:set_markup(markup("#8FBBBA", memm))
+			local memm = "󰘚 " .. memnow .. "GB/" .. memtotal .. "GB"
+			widget:set_markup(markup(beautiful.purple, memm))
 		end,
 	})
 	return mem

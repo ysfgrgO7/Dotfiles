@@ -3,7 +3,8 @@ local awful = require("awful")
 local shell = require("awful.util").shell
 local wibox = require("wibox")
 local helpers = require("config.bar.modules.helpers")
-local markup = require("config.bar.modules.markup")
+local markup = require("config.bar.modules.helpers.markup")
+local beautiful = require("beautiful")
 local string = string
 
 function M.factory(args)
@@ -56,10 +57,10 @@ function M.vol()
 			if volume_now.status == "off" then
 				vlevel = "M"
 			else
-				vlevel = " " .. vlevel
+				vlevel = " " .. vlevel .. "%"
 			end
 
-			widget:set_markup(markup("#80A1C0", " " .. vlevel .. "%"))
+			widget:set_markup(markup(beautiful.yellow, vlevel))
 		end,
 	})
 

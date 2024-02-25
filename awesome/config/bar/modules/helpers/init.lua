@@ -1,6 +1,7 @@
 local M = {}
 local timer = require("gears.timer")
 local spawn = require("awful.spawn")
+local beautiful = require("beautiful")
 local timer_table = {}
 
 function M.newtimer(name, timeout, fun, nostart, stoppable)
@@ -33,6 +34,17 @@ function M.lines_match(regexp, path)
 		end
 	end
 	return lines
+end
+
+function M:inc_fontsize(inc, font)
+	if not font then
+		font = beautiful.font_name
+	end
+	return font .. " " .. tostring(beautiful.font + inc)
+end
+
+function M.colorize_text(text, color)
+	return "<span foreground='" .. color .. "'>" .. text .. "</span>"
 end
 
 return M

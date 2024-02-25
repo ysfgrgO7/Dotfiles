@@ -18,27 +18,32 @@ client.connect_signal("request::titlebars", function(c)
 		end)
 	)
 
-	awful.titlebar(c):setup({
+	local top_titlebar = awful.titlebar(c, {
+		size = 25,
+		font = "JetbrainsMono Nerd Font 12",
+	})
+	top_titlebar:setup({
 		{ -- Left
-			-- awful.titlebar.widget.iconwidget(c),
+			awful.titlebar.widget.iconwidget(c),
 			buttons = buttons,
 			layout = wibox.layout.fixed.horizontal,
 		},
 		{ -- Middle
 			{ -- Title
 				align = "center",
+				font = "JetbrainsMono Nerd Font 12",
 				widget = awful.titlebar.widget.titlewidget(c),
 			},
 			buttons = buttons,
+			font = "JetbrainsMono Nerd Font 12",
 			layout = wibox.layout.flex.horizontal,
 		},
 		{ -- Right
-			-- awful.titlebar.widget.floatingbutton(c),
+			awful.titlebar.widget.minimizebutton(c),
 			awful.titlebar.widget.maximizedbutton(c),
-			-- awful.titlebar.widget.stickybutton(c),
-			-- awful.titlebar.widget.ontopbutton(c),
 			awful.titlebar.widget.closebutton(c),
 			layout = wibox.layout.fixed.horizontal(),
+			font = "JetbrainsMono Nerd Font 12",
 		},
 		layout = wibox.layout.align.horizontal,
 	})
