@@ -8,7 +8,8 @@ require("awful.autofocus")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
-local terminal = "alacritty"
+local config = require("defaults")
+local terminal = config.terminal
 local modkey = "Mod4"
 
 -- {{{ Key bindings
@@ -45,7 +46,7 @@ M.globalkeys = gears.table.join(
 		awful.spawn(terminal)
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey }, "w", function()
-		awful.spawn("brave")
+		awful.spawn(config.browser)
 	end, { description = "open a Browser", group = "launcher" }),
 
 	-- Layouts

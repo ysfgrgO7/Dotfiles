@@ -333,7 +333,7 @@ function Launcher:open()
 	self:run_prompt()
 
 	self.popup_widget.placement = function(d)
-		awful.placement.bottom_left(d, { honor_workarea = true, margins = beautiful.useless_gap * 2 })
+		awful.placement.top_left(d, { honor_workarea = true, margins = beautiful.useless_gap * 2 })
 	end
 end
 

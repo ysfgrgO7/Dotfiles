@@ -30,15 +30,15 @@ screen.connect_signal("arrange", function(s)
 end)
 
 -- Corners
-local function add_rounded_corners(c)
-	if not c.maximized then
-		c.shape = gears.shape.rounded_rect
-	else
-		c.shape = gears.shape.rectangle
-	end
-end
-client.connect_signal("manage", add_rounded_corners)
-client.connect_signal("property::maximized", add_rounded_corners)
+-- local function add_rounded_corners(c)
+-- 	if not c.maximized then
+-- 		c.shape = gears.shape.rounded_rect
+-- 	else
+-- 		c.shape = gears.shape.rectangle
+-- 	end
+-- end
+-- client.connect_signal("manage", add_rounded_corners)
+-- client.connect_signal("property::maximized", add_rounded_corners)
 
 -- Hide when not floating
 client.connect_signal("property::floating", function(c)

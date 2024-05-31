@@ -5,6 +5,7 @@ local wibox = require("wibox")
 local naughty = require("naughty")
 local markup = require("config.bar.modules.helpers.markup")
 local beautiful = require("beautiful")
+local config = require("defaults")
 
 local M = {}
 
@@ -38,7 +39,7 @@ local firefox = make_launcher({
 	align = "center",
 	onclick = function()
 		donotif("browser")
-		awful.spawn("brave") -- comes from `user_likes.lua`
+		awful.spawn(config.browser) -- comes from `user_likes.lua`
 	end,
 })
 
@@ -47,7 +48,7 @@ local terminal = make_launcher({
 	align = "center",
 	onclick = function()
 		donotif("terminal")
-		awful.spawn("alacritty") -- comes from `user_likes.lua`
+		awful.spawn(config.terminal) -- comes from `user_likes.lua`
 	end,
 })
 
@@ -55,7 +56,7 @@ local explorer = make_launcher({
 	markup = markup(beautiful.blue, " "),
 	onclick = function()
 		donotif("explorer")
-		awful.spawn("nemo") -- comes from `user_likes.lua`'
+		awful.spawn(config.filemanager) -- comes from `user_likes.lua`'
 	end,
 })
 

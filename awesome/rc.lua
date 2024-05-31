@@ -6,7 +6,8 @@ require("awful.autofocus")
 local beautiful = require("beautiful")
 local menubar = require("menubar")
 local keys = require("config.keys")
-local terminal = "alacritty"
+local config = require("defaults")
+local terminal = config.terminal
 require("awful.hotkeys_popup.keys")
 
 -- Errors

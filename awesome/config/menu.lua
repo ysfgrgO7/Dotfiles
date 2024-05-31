@@ -6,7 +6,8 @@ local awful = require("awful")
 require("awful.autofocus")
 local beautiful = require("beautiful")
 local hotkeys_popup = require("awful.hotkeys_popup")
-local terminal = "alacritty"
+local config = require("defaults")
+local terminal = config.terminal
 local editor = os.getenv("EDITOR") or "nano"
 local editor_cmd = terminal .. " -e " .. editor
 local menubar = require("menubar")
