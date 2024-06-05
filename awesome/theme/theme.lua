@@ -58,6 +58,22 @@ elseif config.colorscheme == "nord" then
 	theme.cyan = "#9aafe6"
 	theme.yellow = "#EBCB8B"
 	theme.purple = "#B48EAD"
+elseif config.colorscheme == "ashes" then
+	theme.white = "#c7ccd1"
+	theme.black = "#161a1d"
+	theme.grey = "#44484b"
+	theme.grey1 = "#272b2e"
+	theme.grey2 = "#1c2023"
+	theme.red = "#c79595"
+	theme.pink = "#c795ae"
+	theme.green = "#aec795"
+	theme.green1 = "#95c7ae"
+	theme.blue = "#95aec7"
+	theme.nord_blue = "#8ca5be"
+	theme.orange = "#c7ae95"
+	theme.cyan = "#9eb7d0"
+	theme.yellow = "#c7c795"
+	theme.purple = "#ae95c7"
 end
 
 theme.bg_normal = theme.black
