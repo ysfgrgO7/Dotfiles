@@ -5,7 +5,8 @@ pcall(require, "luarocks.loader")
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
-local menubar = require("menubar")
+-- local menubar = require("menubar")
+local Launcher = require("config.menu")
 local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 local config = require("defaults")
@@ -40,7 +41,7 @@ M.globalkeys = gears.table.join(
 		awful.screen.focused().mypromptbox:run()
 	end, { description = "run prompt", group = "launcher" }),
 	awful.key({ modkey }, "d", function()
-		menubar.show()
+		Launcher:toggle() --menubar.show()
 	end, { description = "show the menubar", group = "launcher" }),
 	awful.key({ modkey }, "Return", function()
 		awful.spawn(terminal)
