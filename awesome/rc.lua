@@ -46,7 +46,6 @@ run_once({ "nm-applet" })
 run_once({ "nitrogen --restore" })
 awful.spawn.with_shell("xclip")
 awful.spawn.with_shell("picom")
-awful.spawn.with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 awful.spawn.with_shell("awesome-appmenu")
 
 -- }}}

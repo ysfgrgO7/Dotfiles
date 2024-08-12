@@ -1,6 +1,6 @@
 return {
 	browser = "brave",
 	filemanager = "nemo",
-	terminal = "alacritty",
+	terminal = "kitty",
 	colorscheme = "ashes",
 }
