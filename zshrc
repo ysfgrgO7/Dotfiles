@@ -37,8 +37,8 @@ export PF_INFO="os pkgs memory wm shell editor palette"
 export LC_ALL="en_US.UTF-8"
 export TZ="Africa/Cairo"
 export HARDWARECLOCK=localtime
-export EDITOR="nvim"
-export TERMINAL="alacritty"
+export EDITOR="nvoid"
+export TERMINAL="kitty"
 export BROWSER="brave"
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
@@ -51,3 +51,8 @@ fi
 if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
+if [ -d "$HOME/.cargo/bin" ]; then
+	PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+lfetch
