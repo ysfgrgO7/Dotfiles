@@ -31,6 +31,7 @@ alias ls='exa --group-directories-first --icons -la'
 alias up='sudo pacman -Syyu'
 alias orphans='sudo pacman -Qtdq | sudo pacman -Rns -'
 alias yay='paru'
+alias ranger='yazi'
 
 ## Defaults
 export PF_INFO="os pkgs memory wm shell editor palette"
