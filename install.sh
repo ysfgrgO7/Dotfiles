@@ -1,9 +1,8 @@
 #!/bin/bash
 
-if command -v pacman &>/dev/null; then
-	echo ""
-else
-	exit 1
+if ! command -v pacman &>/dev/null; then
+    echo "This script requires an Arch-based system (pacman not found)."
+    exit 1
 fi
 
 # Basic Setup
@@ -19,7 +18,7 @@ if [ "$(id -u)" = 0 ]; then
 	exit 1
 fi
 clear
-cp -r ~/.config/ ~/.configoldbc
+cp -r ~/.config ~/.config_backup_$(date +%s)
 
 # Fonts
 clear
@@ -33,9 +32,8 @@ while true; do
 	cd newfont
 	tar xf JetBrainsMono.tar.xz
 	cd ../
-	sudo cp -r newfont /usr/share/fonts/
+	sudo cp -r newfont/* /usr/share/fonts/
 	sudo fc-cache -fv
-	cd ~/.post_install
 	break
       ;;
     n|N)
@@ -57,6 +55,16 @@ makepkg -si
 
 # Install Dependencies
 sudo pacman -Syu --noconfirm --needed base-devel cmake fd ripgrep git zsh fzf exa alacritty kitty neovim python-pip python-pynvim nodejs npm yarn yazi lua lua51
+
+# Dotfiles
+cp -r ./linux/zshrc ~/.zshrc
+cp -r ./linux/alacritty ~/.config/alacritty
+cp -r ./linux/kitty ~/.config/kitty
+
+# Lfetch
+cp -r ./linux/lfetch ~/.local/share/lfetch
+cd ~/.local/share/lfetch
+sudo make install || exit
 
 while true; do
 	read -p "Do you want to reboot? [Y/n] " yn
