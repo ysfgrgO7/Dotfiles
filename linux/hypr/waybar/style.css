@@ -1,0 +1,113 @@
+/* Mapped from your Kitty Terminal Colors */
+@define-color bg        #1c2023; /* background */
+@define-color fg        #c7ccd1; /* foreground */
+@define-color alt_bg    #303437; /* color8 / inactive tab */
+@define-color blue      #95aec7; /* color4 / active tab */
+@define-color red       #c79595; /* color1 */
+@define-color green     #aec795; /* color2 */
+@define-color yellow    #c7c795; /* color3 */
+@define-color magenta   #a58cbe; /* color5 */
+@define-color cyan      #9eb7d0; /* color6 */
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+window#waybar {
+  background: alpha(@bg, 0.9);
+  color: @fg;
+  border-radius: 10px;
+  border-bottom: 2px solid @alt_bg;
+}
+
+/* Common Module Styling */
+#workspaces,
+#clock,
+#pulseaudio,
+#backlight,
+#tray,
+#custom-lock,
+#custom-reboot,
+#custom-quit,
+#custom-shutdown {
+  padding: 0 10px;
+  margin: 4px 2px;
+  color: @fg;
+}
+
+/* Individual Color Accents */
+#clock {
+  color: @cyan;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#pulseaudio {
+  color: @blue;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+/* Workspaces - Matching your Active Tab style */
+#workspaces button {
+  color: @fg;
+  padding: 0 8px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  background: @blue;
+  color: @bg;
+  border-radius: 6px;
+}
+
+#workspaces button:hover {
+  background: @alt_bg;
+  color: @blue;
+  border-radius: 6px;
+}
+
+/* Power Menu Drawer Colors */
+#custom-shutdown {
+  color: @red;
+}
+#custom-reboot {
+  color: @magenta;
+}
+#custom-lock {
+  color: @yellow;
+}
+#custom-quit {
+  color: @green;
+}
+
+/* Interaction Highlights */
+#clock:hover,
+#backlight:hover,
+#pulseaudio:hover {
+  background: @alt_bg;
+  border-radius: 6px;
+}
+
+/* Tooltip - Using your 'selection' colors */
+tooltip {
+  background: @bg;
+  border: 1px solid @blue;
+}
+
+tooltip label {
+  color: @fg;
+}
+
+#tray {
+  background: @alt_bg;
+  border-radius: 6px;
+}

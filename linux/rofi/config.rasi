@@ -1,0 +1,18 @@
+configuration {
+    /* Enable drun, our custom finder script, and the calc plugin */
+    modi: "drun,finder:~/.config/rofi/finder.sh,calc";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 11";
+    
+    /* Display names for the modes */
+    display-drun: "󰀻 Apps";
+    display-finder: "󰈞 Files";
+    display-calc: "󰪚 Calc";
+    
+    /* Spotlight-like behavior */
+    terminal: "alacritty";
+    disable-history: false;
+    sidebar-mode: true;
+}
+
+@theme "~/.config/rofi/spotlight.rasi"
