@@ -1,7 +1,6 @@
 {
   "layer": "top",
-  "position": "top",
-  "margin-top": 5,
+  "position": "top", "margin-top": 5,
   "margin-left": 10,
   "margin-right": 10,
   "spacing": 4,
@@ -11,6 +10,7 @@
   "modules-center": [],
   "modules-right": [
     "tray",
+    "battery",
     "backlight",
     "pulseaudio",
 	"clock",
@@ -95,5 +95,22 @@
   "tray": {
     "icon-size": 18,
     "spacing": 10
+  },
+
+  "battery": {
+  	"interval": 60,
+  	"states": {
+  		"warning": 30,
+  		"critical": 15
+  	},
+  	"events": {
+  		"on-discharging-warning": "notify-send -u normal 'Low Battery'",
+  		"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+  		"on-charging-100": "notify-send -u normal 'Battery Full!'"
+  	},
+  	"format": "{icon} {capacity}%",
+  	"format-icons": ["", "", "", "", ""],
+  	"max-length": 25
   }
+
 }

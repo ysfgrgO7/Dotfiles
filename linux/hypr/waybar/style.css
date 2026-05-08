@@ -30,6 +30,7 @@ window#waybar {
 #pulseaudio,
 #backlight,
 #tray,
+#battery,
 #custom-lock,
 #custom-reboot,
 #custom-quit,
@@ -41,11 +42,15 @@ window#waybar {
 
 /* Individual Color Accents */
 #clock {
-  color: @cyan;
+  color: @magenta;
 }
 
 #backlight {
   color: @yellow;
+}
+
+#battery {
+  color: @green;
 }
 
 #pulseaudio {
