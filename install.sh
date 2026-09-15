@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 if ! command -v pacman &>/dev/null; then
     echo "This script requires an Arch-based system (pacman not found)."
     exit 1
